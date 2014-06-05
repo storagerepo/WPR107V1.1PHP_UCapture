@@ -1,7 +1,7 @@
 <div class="5grid-layout" id="copyright">
     <div class="row">
         <div class="12u">
-            <section>
+            <section >
 
                 <!-- Dummy area -->
                 <br/>

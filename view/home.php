@@ -19,7 +19,9 @@ require("header.php");
                     <div id="tabs-container">
                         <ul class="tabs-menu">
                             <li class="current"><a href="#tab-1">ABOUT <span style="color:#fff;">U</span>CAPTURE</a></li>
+                            <li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
                             <li><a href="#tab-2">HOW IT WORKS </a></li>
+
 
                         </ul>
                         <div class="tab">
@@ -84,7 +86,7 @@ require("header.php");
                 </section>
             </div>
             <div class="4u mobileUI-main-content">
-                <section id="pbox3">
+                <section id="pbox3"><br>
                     <span style="color:#00ff00;font-size:18px;line-height:5px;"><br/>SOME OF OUR PARTNERS..</span><br/><br/>
                     <table width="100%"><tr>
 

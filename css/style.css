@@ -749,12 +749,12 @@ a#login_pop:hover, a#join_pop:hover {
     border:1px solid #dcdcdc;
     display:inline-block;
     color:#fffcff;
-    font-family:arial;
+    font-family:aharoni;
     font-size:14px;
     font-weight:bold;
     font-style:normal;
     padding:8px;
-
+    margin-right: -6%;
     width:100px;
     text-decoration:none;
     text-align:center;
@@ -774,6 +774,51 @@ a#login_pop:hover, a#join_pop:hover {
      top:1px;
  }
 
+.submit_btn_update{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00ff00), color-stop(1, #22612b) );
+    background:-moz-linear-gradient( center top, #00ff00 5%, #22612b 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ff00', endColorstr='#22612b');
+    background-color:#00ff00;
+    -webkit-border-top-left-radius:6px;
+    -moz-border-radius-topleft:6px;
+    border-top-left-radius:6px;
+    -webkit-border-top-right-radius:6px;
+    -moz-border-radius-topright:6px;
+    border-top-right-radius:6px;
+    -webkit-border-bottom-right-radius:6px;
+    -moz-border-radius-bottomright:6px;
+    border-bottom-right-radius:6px;
+    -webkit-border-bottom-left-radius:6px;
+    -moz-border-radius-bottomleft:6px;
+    border-bottom-left-radius:6px;
+    text-indent:0;
+    border:1px solid #dcdcdc;
+    display:inline-block;
+    color:#fffcff;
+    font-family:aharoni;
+    font-size:14px;
+    font-weight:bold;
+    font-style:normal;
+    padding:8px;
+
+    width:100px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 13px #c9c5c9;
+}
+.submit_btn_update:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #22612b), color-stop(1, #00ff00) );
+    background:-moz-linear-gradient( center top, #22612b 5%, #00ff00 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#22612b', endColorstr='#00ff00');
+    background-color:#22612b;
+    padding:8px;
+    text-align:center;
+    width:100px;
+    cursor:pointer;
+}.submit_btn_update:active {
+     position:relative;
+     top:1px;
+ }
 
 
 .imgmarquee
@@ -833,6 +878,7 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .table {
     border-collapse: collapse;
+
 }
 
 .td, .th {

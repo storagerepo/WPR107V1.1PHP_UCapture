@@ -19,6 +19,7 @@ session_start();
 <div id="tabs-container">
     <ul class="tabs-menu">
         <li ><a href="#tab-2"> <span style="color:#fff;">U</span>CAPTURE ACTIVITY</a></li>
+        <li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
         <li class="current"><a href="#tab-1"><span style="color:#fff;">U</span>CAPTURE PROFILE</a></li>
 
     </ul>
@@ -265,7 +266,7 @@ session_start();
 
                 ?>
                 <form enctype="multipart/form-data" class="form-horizontal" action="../services/updateuser.php" method="POST" ng-app="profile" novalidate>
-                    <table width="460px">
+                    <table class="table">
                         <?php
                         if(!isset($_SESSION['error'])&&!isset($_SESSION['require']))
                         {
@@ -287,7 +288,7 @@ session_start();
 
                                 </td></tr>
                             <tr><td width="50%"></td><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right"><span class="register_labels">
-                                    <input type="submit" value="UPDATE" class="submit_btn"/></span></td>
+                                    <input type="submit" value="UPDATE" class="submit_btn_update"/></span></td>
                                 <!--<td width="50%" style="padding-left: 50px;">
                                     <input type="reset" value="RESET" class="submit_btn"/></td>-->
                             </tr>
@@ -313,7 +314,7 @@ session_start();
 
                                 </td></tr>
                             <tr><td width="50%"></td><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right"><span class="register_labels">
-                                    <input type="submit" value="UPDATE" class="submit_btn"/></span></td>
+                                    <input type="submit" value="UPDATE" class="submit_btn_update"/></span></td>
                                 <!--<td width="50%" style="padding-left: 50px;">
                                     <input type="reset" value="RESET" class="submit_btn"/></td>-->
                             </tr>
@@ -339,9 +340,9 @@ session_start();
 
         <?php
         if(isset($_SESSION['profile']['user_image']))
-            echo '<img width="40%" height="200" alt="google" title="click to set profile image" style="margin:0 0 0 55px;" src="data:image/jpeg;base64,'.base64_encode($_SESSION['profile']['user_image'] ).'" class="profile-pic" id="upload-button"/>';
+            echo '<img class="user_image" alt="google" title="click to set profile image"  src="data:image/jpeg;base64,'.base64_encode($_SESSION['profile']['user_image'] ).'" class="profile-pic" id="upload-button"/>';
         else
-            echo '<img alt="google"  title="click to set profile image" src="../images/avatar.png" class="profile-pic" id="upload-button" width="40%" height="200" />'
+            echo '<img alt="google" title="click to set profile image" src="../images/avatar.png" class="profile-pic" id="upload-button" width="40%" height="200" />'
         ?>
 
         <BR/><BR/><BR/>

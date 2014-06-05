@@ -19,13 +19,14 @@ session_start();
 <div id="tabs-container">
     <ul class="tabs-menu">
         <li ><a href="#tab-2"> <span style="color:#fff;">U</span>CAPTURE ACTIVITY</a></li>
+        <li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
         <li class="current"><a href="#tab-1"><span style="color:#fff;">U</span>CAPTURE PROFILE</a></li>
 
     </ul>
     <div class="tab">
         <div id="tab-2" class="tab-content">
         <div id="content-4" class="contentscrollbar_profile">
-        <table width="96%" cellpadding="0"cellspacing="0" border="1" style="table-layout: fixed" class="profile_table" >
+        <table width="96%" cellpadding="0"cellspacing="0"style="table-layout: fixed" class="profile_table" >
 
             <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span  class="activity_th">DATE</span></td>
                 <td width="32%" style="padding-bottom:10px;"><span   class="activity_th">ACTIVITY</span></td>
@@ -233,9 +234,9 @@ session_start();
         <div id="tab-1" class="tab-content">
            <div id="content-5" class="contentscrollbar">
                 <span > <a href="editProfile.php" class="edit_lable">EDIT</a></span>
-                <br/>
+                <br/><br/>
 
-                <table width="99%"class="profile_table" >
+                <table class="profile_table" style="table-layout: fixed;">
 
 
                     <tr><td width="40%"class="profile_label">
@@ -244,7 +245,7 @@ session_start();
                     <tr><td width="30%" class="profile_label">NAME</td>
                         <td width="75%" align="left" class="profile_label_value"><?php echo $_SESSION['profile']['firstname']; echo " " .$_SESSION['profile']['lastname'];  ?></td></tr>
                     <tr><td width="25%" class="profile_label">DOB</td>
-                        <td width="75%"  align="left" class="profile_label_value"><?php echo $_SESSION['profile']['dob']; ?></td></tr>
+                        <td width="75%"  align="left" class="profile_label_value_number"><?php echo $_SESSION['profile']['dob']; ?></td></tr>
                     <tr><td width="25%" class="profile_label">EMAIL</td>
                         <td width="75%"  align="left"class="mobile_data"><?php echo $_SESSION['profile']['email']; ?></td></tr>
                     <tr><td width="25%" class="profile_label">ADDRESS</td>
@@ -282,7 +283,7 @@ session_start();
         <BR/><BR/><BR/>
         <span class="register_header">ACTIVITY IN MY NETWORK</span>
         <br/><br/><br/><div id="content-6" class="contentscrollbar_friends">
-        <table width="460px">
+        <table class="profile_friends_table">
             <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
                     JOHN SMITH
                 </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>

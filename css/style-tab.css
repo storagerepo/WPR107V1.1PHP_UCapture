@@ -385,7 +385,7 @@ ul.style1 a img {
     padding: 0em 0em 0em 3em;
     width:40%;
     border:2px solid blue;
-    max-height:10%;
+    max-height:12%;
     overflow:auto;
     color:#fff;
     float: left;
@@ -1414,6 +1414,7 @@ a#login_pop:hover, a#join_pop:hover {
     -webkit-border-bottom-left-radius:6px;
     -moz-border-radius-bottomleft:6px;
     border-bottom-left-radius:6px;
+    margin-right: -6%;
     text-indent:0;
     /*border:1px solid #dcdcdc;*/
     display:inline-block;
@@ -1441,6 +1442,56 @@ a#login_pop:hover, a#join_pop:hover {
     width:auto;
     cursor:pointer;
 }.submit_btn:active {
+     position:relative;
+     top:1px;
+     padding:5px;
+ }
+
+.submit_btn_update{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00ff00), color-stop(1, #22612b) );
+    background:-moz-linear-gradient( center top, #00ff00 5%, #22612b 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ff00', endColorstr='#22612b');
+    background-color:#00ff00;
+    -webkit-border-top-left-radius:6px;
+    -moz-border-radius-topleft:6px;
+    border-top-left-radius:6px;
+    -webkit-border-top-right-radius:6px;
+    -moz-border-radius-topright:6px;
+    border-top-right-radius:6px;
+    -webkit-border-bottom-right-radius:6px;
+    -moz-border-radius-bottomright:6px;
+    border-bottom-right-radius:6px;
+    -webkit-border-bottom-left-radius:6px;
+    -moz-border-radius-bottomleft:6px;
+    border-bottom-left-radius:6px;
+
+    text-indent:0;
+    /*border:1px solid #dcdcdc;*/
+    display:inline-block;
+    color:#fffcff;
+    font-family:arial;
+    font-size:80%;
+    font-weight:bold;
+    font-style:normal;
+    padding:5px;
+    width:auto;
+    max-width:100px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 13px #c9c5c9;
+}
+.submit_btn_update:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #22612b), color-stop(1, #00ff00) );
+    background:-moz-linear-gradient( center top, #22612b 5%, #00ff00 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#22612b', endColorstr='#00ff00');
+    background-color:#22612b;
+    padding:1px;
+    padding:5px;
+    text-align:center;
+    max-width:100px;
+    width:auto;
+    cursor:pointer;
+}.submit_btn_update:active {
      position:relative;
      top:1px;
      padding:5px;
@@ -1633,7 +1684,7 @@ a#login_pop:hover, a#join_pop:hover {
 
 }
 .mobile_data{
-    font-size: 100%;
+    font-size: 110%;
     color:#fff;
 
 }
@@ -1651,7 +1702,12 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .profile_label_value{
     padding-bottom:10px;
-    font-size:110%;
+    font-size:120%;
+    color:#fff;
+}
+.profile_label_value_number{
+    padding-bottom:10px;
+    font-size:100%;
     color:#fff;
 }
 .avatar_image{
@@ -1661,7 +1717,7 @@ a#login_pop:hover, a#join_pop:hover {
 .user_image{
     width:40%;
     height:4%;
-    margin: 0 0 0 55px;
+    margin: 0 0 0 0;
 }
 .activity_th{
     color:#00ff00;
@@ -1721,4 +1777,7 @@ a#login_pop:hover, a#join_pop:hover {
     font-size: 100%;
     text-decoration: none;
 
+}
+.profile_friends_table{
+    width: 100%;
 }

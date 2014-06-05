@@ -383,7 +383,7 @@ ul.style1 a img {
     padding: 0em 0em 0em 3em;
     width:90%;
     /* border:2px solid blue; */
-    max-height:150px;
+    max-height:180px;
     overflow:auto;
     color:#fff;
 }
@@ -1051,7 +1051,7 @@ ul.style5 .first {
     height: auto;
     padding:5px;
     color:#000;
-    font-size:110%;
+    font-size:70%;
     font-family:aharoni;
     text-decoration:none;
 }
@@ -1074,7 +1074,7 @@ ul.style5 .first {
     padding:5px;
     color:#000;
 
-    font-size:110%;
+    font-size:70%;
 
     text-decoration:none;
     font-family:aharoni;
@@ -1363,7 +1363,9 @@ a#login_pop:hover, a#join_pop:hover {
 .popup input[type="text"]:hover, .popup input[type="password"]:hover {
 
 }
-
+.break_height{
+    line-height: 0px;
+}
 .searchtextbox{
     outline: none;
     border-bottom: 2px solid #000;
@@ -1372,6 +1374,7 @@ a#login_pop:hover, a#join_pop:hover {
     border-right: none;
     height:4%;
     margin-top: 10px;
+    margin-bottom: 2px;
     padding: 2px;
     color:#00ff00;
     font-size:80%;
@@ -1409,6 +1412,7 @@ a#login_pop:hover, a#join_pop:hover {
     /*border:1px solid #dcdcdc;*/
     display:inline-block;
     color:#fffcff;
+    margin-right: -6%;
     font-family:arial;
     font-size:80%;
     font-weight:bold;
@@ -1437,6 +1441,55 @@ a#login_pop:hover, a#join_pop:hover {
      padding:5px;
  }
 
+.submit_btn_update{
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #00ff00), color-stop(1, #22612b) );
+    background:-moz-linear-gradient( center top, #00ff00 5%, #22612b 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ff00', endColorstr='#22612b');
+    background-color:#00ff00;
+    -webkit-border-top-left-radius:6px;
+    -moz-border-radius-topleft:6px;
+    border-top-left-radius:6px;
+    -webkit-border-top-right-radius:6px;
+    -moz-border-radius-topright:6px;
+    border-top-right-radius:6px;
+    -webkit-border-bottom-right-radius:6px;
+    -moz-border-radius-bottomright:6px;
+    border-bottom-right-radius:6px;
+    -webkit-border-bottom-left-radius:6px;
+    -moz-border-radius-bottomleft:6px;
+    border-bottom-left-radius:6px;
+    text-indent:0;
+    /*border:1px solid #dcdcdc;*/
+    display:inline-block;
+    color:#fffcff;
+
+    font-family:arial;
+    font-size:80%;
+    font-weight:bold;
+    font-style:normal;
+    padding:5px;
+    width:auto;
+    max-width:100px;
+    text-decoration:none;
+    text-align:center;
+    text-shadow:1px 1px 13px #c9c5c9;
+}
+.submit_btn_update:hover {
+    background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #22612b), color-stop(1, #00ff00) );
+    background:-moz-linear-gradient( center top, #22612b 5%, #00ff00 100% );
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#22612b', endColorstr='#00ff00');
+    background-color:#22612b;
+    padding:1px;
+    padding:5px;
+    text-align:center;
+    max-width:100px;
+    width:auto;
+    cursor:pointer;
+}.submit_btn_update:active {
+     position:relative;
+     top:1px;
+     padding:5px;
+ }
 
 
 .imgmarquee
@@ -1622,7 +1675,7 @@ a#login_pop:hover, a#join_pop:hover {
 
 }
 .mobile_data{
-    font-size: 70%;
+    font-size: 100%;
     color:#fff;
 
 }
@@ -1638,7 +1691,12 @@ a#login_pop:hover, a#join_pop:hover {
     font-weight:bold;
 }
 .profile_label_value{
-    padding-bottom:5;
+    padding-bottom:5px;
+    font-size:120%;
+    color:#fff;
+}
+.profile_label_value_number{
+    padding-bottom:5px;
     font-size:100%;
     color:#fff;
 }
@@ -1649,7 +1707,7 @@ a#login_pop:hover, a#join_pop:hover {
 .user_image{
     width:80%;
     height:6%;
-    margin: 0 0 0 55px;
+    margin: 0 0 0 0;
 }
 .activity_th{
     color:#00ff00;
@@ -1672,7 +1730,7 @@ a#login_pop:hover, a#join_pop:hover {
     height: auto;
     padding:5px;
     color:#000;
-    font-size:16px;
+    font-size:70%;
     font-family:aharoni;
     text-decoration:none;
 }
@@ -1708,4 +1766,7 @@ a#login_pop:hover, a#join_pop:hover {
     font-size: 100%;
     text-decoration: none;
 
+}
+.profile_friends_table{
+    width: 100%;
 }

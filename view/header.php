@@ -116,22 +116,22 @@ if(isset($_POST['submit'])) {
             </div>
         </div> -->
         <table width="97%" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;width:96% ;">
-            <tr><td  align="left" style="overflow:hidden;"width="46%"><div class="headerLink"><img src="../images/Majorlogo.png"class="mobile_logo" width="300" height="88" alt="UCapture"/>  </div></td>
+            <tr><td  align="left" style="overflow:hidden;"><div class="headerLink"><img src="../images/Majorlogo.png"class="mobile_logo" width="300" height="88" alt="UCapture"/>  </div></td>
 
-                <td  align="right" style="   overflow:hidden;vertical-align: middle;padding-bottom: 20px;"width="50%"><br/><font color="#00ff00" >
+                <td  align="right" style="   overflow:hidden;vertical-align: middle;padding-bottom: 20px;"><br/><font color="#00ff00" >
                         <?php
                          //session_start();
                         if(!isset($_SESSION['user_id']))
                         { ?>
                         <a href="#login_form" id="login_pop" style=" font-size: 120%;">LOGIN</a>/
-                        <a href="userRegistration.php" id="join_pop" style=" font-size: 120%;">SIGN UP</a></font><br/><br/><br/>
+                        <a href="userRegistration.php" id="join_pop" style=" font-size: 120%;">SIGN UP</a></font><span class="break_height"> <br/><br/><br/></span>
                     <?php
                     }
                     elseif(isset($_SESSION['user_id']))
                     {?>
-                        <a href="profile.php" id="login_pop" style="   font-size: 120%; ">MY ACCOUNT</a>&nbsp;
+                        <a href="profile.php" id="login_pop" style="   font-size: 100%; ">MY ACCOUNT</a>&nbsp;
                        <span class="invite_user"> <span style="color: #000000"> <?php echo "Hi! ".$_SESSION['user_id']."  " ;?></span>
-                        <a  href="../services/logout.php">Logout</a></span><br/>
+                        <a  href="../services/logout.php">Logout</a></span><span class="break_height"> <br/><br/><br/></span>
                     <?php
                     }
                     ?>

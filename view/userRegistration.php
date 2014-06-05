@@ -73,42 +73,42 @@ require("header.php");
                                             {
                                                 ?>
                                                 <tr class="tr" ><td> <span class="register_labels">FIRST NAME</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;" value="" name="firstname"/><input type="text" autocomplete="off"class="txtbx" value="" name="firstname"/></td>
+                                                    <td width="32%" style=" padding-bottom:10px;"align="right"/><input type="text" autocomplete="off"class="txtbx" value="" name="firstname"/></td>
                                                 </tr>
                                                 <tr class="tr" ><td> <span class="register_labels">LAST NAME</span></td>
 
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="text" class="txtbx" value="" autocomplete="off"name="lastname"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx" value="" autocomplete="off"name="lastname"/></td>
                                                 </tr>
                                                 <tr class="tr" >
                                                     <td width="32%" style="padding-bottom:10px;" ><span class="register_labels">USER NAME</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="text" class="txtbx" value="" autocomplete="off"name="username"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx" value="" autocomplete="off"name="username"/></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">PASSWORD</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="password" class="txtbx" value="" name="password"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="password" class="txtbx" value="" name="password"/></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">CONFIRM PASSWORD</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="password" class="txtbx" value="" name="confirm_password"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="password" class="txtbx" value="" name="confirm_password"/></td>
                                                 </tr>
 
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">EMAIL</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="text" class="txtbx" value=""autocomplete="off" name="email" /></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx" value=""autocomplete="off" name="email" /></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">PHONE</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;">
+                                                    <td width="32%" style="padding-bottom:10px;"align="right">
                                                         <input type="text" style="font-size: 15px;" class="txtbx" value=""name="mobile" autocomplete="off"/></td>
                                                 </tr>
-                                                <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">ADDRESS</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><textarea class="txtbx" value="" name="address"autocomplete="off"></textarea></td>
+                                                <tr class="tr" ><td width="32%" style=" padding-bottom:10px;vertical-align: middle;"><span class="register_labels">ADDRESS</span></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx" value="" name="address"autocomplete="off"></textarea></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">DATE OF BIRTH</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="text" class="txtbx" value="" name="dob" autocomplete="off"id="datepicker"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx" value="" name="dob" autocomplete="off"id="datepicker"/></td>
                                                 </tr>
-                                                <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><!--<span class="register_labels">IMAGE</span>--></td>
-                                                    <td width="32%" style="padding-bottom:10px;">
+                                                <tr class="tr" ><td width="32%" style=" "><!--<span class="register_labels">IMAGE</span>--></td>
+                                                    <td width="32%" style=""align="right">
                                                         <input type="file" accept="image/*" class="file-upload" value="" name="userImage" id="userimage" /></td>
                                                 </tr>
-                                                <tr class="tr" ><td width="32%"></td><td width="32%" style="padding-top:20px;padding-right:20px;" align="right"><span class="register_labels">
-                        <input type="submit" value="REGISTER" class="submit_btn"/>
+                                                <tr class="tr" ><td width="32%"></td><td width="32%" style="padding-top:20px;padding-right:20px;" align="right">
+                                                         <input type="submit" value="REGISTER" class="submit_btn"/>
                     </span></td>
                                                    <!-- <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>-->
                                                 </tr>
@@ -130,36 +130,36 @@ require("header.php");
                                                 </tr>
                                                 <tr class="tr" >
                                                     <td width="32%" style="padding-bottom:10px;" style="padding-bottom:10px;"><span class="register_labels">USER NAME</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="text" autocomplete="off"class="txtbx" <?php valid_check('username'); ?>  value="<?php echo $_SESSION['values']['username']; ?>" name="username"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" autocomplete="off"class="txtbx" <?php valid_check('username'); ?>  value="<?php echo $_SESSION['values']['username']; ?>" name="username"/></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">PASSWORD</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="password" class="txtbx" <?php valid_check('password'); ?> value="" name="password"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="password" class="txtbx" <?php valid_check('password'); ?> value="" name="password"/></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">CONFIRM PASSWORD</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="password" class="txtbx" <?php valid_check('confirm_password'); ?> value="" name="confirm_password"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="password" class="txtbx" <?php valid_check('confirm_password'); ?> value="" name="confirm_password"/></td>
                                                 </tr>
 
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">EMAIL</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input type="text" class="txtbx"autocomplete="off" <?php valid_check('email'); ?> value="<?php echo $_SESSION['values']['email']; ?>" name="email" /></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx"autocomplete="off" <?php valid_check('email'); ?> value="<?php echo $_SESSION['values']['email']; ?>" name="email" /></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">PHONE</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;">
+                                                    <td width="32%" style="padding-bottom:10px;"align="right">
                                                         <input type="text" class="txtbx" <?php valid_check('mobile'); ?>autocomplete="off" value="<?php echo $_SESSION['values']['mobile']; ?>" name="mobile" /></td>
                                                 </tr>
-                                                <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">ADDRESS</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><textarea class="txtbx"autocomplete="off" <?php valid_check('address'); ?>  name="address"><?php echo $_SESSION['values']['address']; ?></textarea></td>
+                                                <tr class="tr" ><td width="32%" style=" padding-bottom:10px;vertical-align: middle;"><span class="register_labels">ADDRESS</span></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx"autocomplete="off" <?php valid_check('address'); ?>  name="address"><?php echo $_SESSION['values']['address']; ?></textarea></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style=" padding-bottom:10px;"><span class="register_labels">DATE OF BIRTH</span></td>
-                                                    <td width="32%" style=" padding-bottom:10px;"><input type="text"autocomplete="off" class="txtbx" <?php valid_check('dob'); ?> value="<?php echo $_SESSION['values']['dob']; ?>" name="dob" id="datepicker"/></td>
+                                                    <td width="32%" style=" padding-bottom:10px;"align="right"><input type="text"autocomplete="off" class="txtbx" <?php valid_check('dob'); ?> value="<?php echo $_SESSION['values']['dob']; ?>" name="dob" id="datepicker"/></td>
                                                 </tr>
-                                                <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><!--<span class="register_labels">IMAGE</span>--></td>
-                                                    <td width="32%" style="padding-bottom:10px;">
+                                                <tr class="tr" ><td width="32%" style=" "><!--<span class="register_labels">IMAGE</span>--></td>
+                                                    <td width="32%" align="right">
                                                         <input type="file" accept="image/*" class="file-upload" value="" name="userImage" id="userimage" /></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%"></td>
-                                                <td width="32%" align="right"><span class="register_labels">
+                                                <td width="32%" align="right"style="padding-bottom:10px;">
                                                 <input type="submit" value="REGISTER" class="submit_btn"/>
-                                                </span></td>
+                                                </td>
                                                    <!-- <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>-->
                                                 </tr>
                                             <?php
@@ -187,7 +187,7 @@ require("header.php");
 					<br/><br/>
                     <img src="../images/avatar.png" title="Click to set profile image" class="profile-pic" id="upload-button"/>
                     <BR/><BR/><BR/>
-					<span class="register_header">CHOOSE IMAGE TO UPLOAD</span>
+					<!--<span class="register_header">CHOOSE IMAGE TO UPLOAD</span>-->
 					<br/><br/><br/>
 					</section>
 			</div>
