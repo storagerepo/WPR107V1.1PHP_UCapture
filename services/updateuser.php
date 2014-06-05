@@ -86,17 +86,25 @@ foreach($_POST as $key=>$value)
 
 
 //Validation
-//if(!isset($_POST['firstname'])|| trim($_POST['firstname'])=='')
-  //  $_SESSION['require_profile']['firstname']="Firstname should not be blank";
+if(!isset($_POST['firstname'])|| trim($_POST['firstname'])=='')
+    $_SESSION['require_profile']['firstname']="Firstname should not be blank";
+if(!isset($_POST['lastname'])|| trim($_POST['lastname'])=='')
+    $_SESSION['require_profile']['lastname']="Lastname should not be blank";
+if(!isset($_POST['dob'])|| trim($_POST['dob'])=='')
+    $_SESSION['require_profile']['dob']="Date Of Birth should not be blank";
+if(!isset($_POST['email'])|| trim($_POST['email'])=='')
+    $_SESSION['require_profile']['email']="Email Id should not be blank";
+if(!isset($_POST['address'])|| trim($_POST['address'])=='')
+    $_SESSION['require_profile']['address']="Address should not be blank";
 
 //Check no required field
 if(!isset($_SESSION['require_profile']))
 {
-   //No blank values execute query
-if(isset($imgData))
-    $userdetail = "UPDATE tbl_user_registration SET  firstname = '".$firstname."', lastname = '".$lastname."', dob = '".$dob."', email = '".$email."', address = '".$address."', mobile = '".$mobile."', user_image='".$imgData."' WHERE username ='".$_SESSION['user_id']."'";
-else
-    $userdetail = "UPDATE tbl_user_registration SET  firstname = '".$firstname."', lastname = '".$lastname."', dob = '".$dob."', email = '".$email."', address = '".$address."', mobile = '".$mobile."' WHERE username ='".$_SESSION['user_id']."'";
+    //No blank values execute query
+    if(isset($imgData))
+        $userdetail = "UPDATE tbl_user_registration SET  firstname = '".$firstname."', lastname = '".$lastname."', dob = '".$dob."', email = '".$email."', address = '".$address."', mobile = '".$mobile."', user_image='".$imgData."' WHERE username ='".$_SESSION['user_id']."'";
+    else
+        $userdetail = "UPDATE tbl_user_registration SET  firstname = '".$firstname."', lastname = '".$lastname."', dob = '".$dob."', email = '".$email."', address = '".$address."', mobile = '".$mobile."' WHERE username ='".$_SESSION['user_id']."'";
 
 
     $result=$mysqli->query($userdetail);
@@ -104,9 +112,10 @@ else
     {
         $_SESSION['success_profile']="Account Updated Successfully!!";
         unset($_SESSION['values']);
-        unset($_SESSION['require']);
+        unset($_SESSION['require_profile']);
         unset($_SESSION['error_profile']);
         header("Location:../view/profile.php");
+        $_SESSION['success_profile']="Account Updated Successfully!!";
     }
     else
     {
@@ -115,5 +124,10 @@ else
     }
 
 //header("Location:../view/profile.php?username=".$username);
+}
+
+else//Some required fields are blank
+{
+    header("Location:../view/editProfile.php");
 }
 ?>
