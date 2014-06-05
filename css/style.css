@@ -3,7 +3,7 @@
 /*********************************************************************************/
 @font-face {
     font-family: 'aharoni'; /*a name to be used later*/
-    src: url('../fonts/aharoni.ttf'); /*URL to font*/
+    src: url('../fonts/Calibri.ttf'); /*URL to font*/
 }
 html, body {
     height: 100%;
@@ -359,6 +359,15 @@ ul.style5 .first {
     font-family:aharoni;
     text-decoration:none;
 }
+.headerMenuSearch{
+    width:auto;
+    height: auto;
+    padding:5px;
+    color:#000;
+    font-size:16px;
+    font-family:aharoni;
+    text-decoration:none;
+}
 .headerMenu{
     width:auto;
     height: auto;
@@ -376,9 +385,9 @@ ul.style5 .first {
     color:#000;
     font-family:aharoni;
     border-bottom:2px solid black;
-    -webkit-box-shadow: 0 8px 6px -6px black;
+    /*-webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
+    box-shadow: 0 8px 6px -6px black;*/
 
 }
 .headerMenuactive{
@@ -692,18 +701,25 @@ a#login_pop:hover, a#join_pop:hover {
 }
 
 .searchtextbox{
-    border: 1px solid #00ff00;
+    outline: none;
+    border-bottom: 2px solid #000;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 
     height:25px;
     margin: 0;
-    padding: 2px;
-    color:#666;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 2px;
+    padding-right: 25px;
+    color:#00ff00;
     font-size:16px;
     width:200px;
-    -webkit-box-shadow: inset 0px 0px 5px 0px #00ff00;
+    /*-webkit-box-shadow: inset 0px 0px 5px 0px #00ff00;
     -moz-box-shadow: inset 0px 0px 5px 0px #00ff00;
     box-shadow: inset 0px 0px 5px 0px #00ff00;
-
+*/
     /*-webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
     box-shadow: 0 8px 6px -6px black;

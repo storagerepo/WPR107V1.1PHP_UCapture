@@ -586,3 +586,12 @@ y-axis
     font-size:17px;
     color:#00ff00;
 }
+.headerMenuSearch{
+    width:auto;
+    height: auto;
+    padding:5px;
+    color:#000;
+    font-size:16px;
+    font-family:aharoni;
+    text-decoration:none;
+}

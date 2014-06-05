@@ -137,7 +137,8 @@ if(isset($_POST['submit'])) {
                      --><span style=" padding-right:200px;">
 <a class="headerMenuactive" href="index.php">HOME</a>
 <a class="headerMenu" href="#">SHOP</a>
-<input type="text" class="searchtextbox" placeholder="search" value="" name=""/>
+
+<span class="headerMenuSearch"> SEARCH</span><input type="text" class="searchtextbox" placeholder="Enter text to search" value="" name=""/>
 </span> <br/><br/>	<br/><br/>	<br/><br/>
                     <!-- popup form #1 -->
                     <a href="#x" class="overlay" id="login_form"></a>
