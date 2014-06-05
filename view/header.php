@@ -126,7 +126,7 @@ if(isset($_POST['submit'])) {
                     }
                     elseif(isset($_SESSION['user_id']))
                     {?>
-                        <a href="profile.php" id="login_pop" style=" font-size: 100%; ">MY ACCOUNT</a><br/><br/>
+                        <a href="profile.php" id="login_pop" style=" font-size: 100%; ">MY ACCOUNT</a>&nbsp;&nbsp;
                         <span style=" font-weight: bold;color:#000000;"><?php echo "Hi! ".$_SESSION['user_id']."  " ;?></span>
                         <a style="font-size: 100%;color: #00ff00;" href="../services/logout.php">Logout</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  <br/>
                     <?php

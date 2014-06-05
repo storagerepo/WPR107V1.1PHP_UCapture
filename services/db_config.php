@@ -3,7 +3,7 @@
 $host = "localhost";
 $db_name = "ucapture";
 $username = "root";
-$password = "";
+$password = "root";
 
 //connect to mysql server
 $mysqli = new mysqli($host, $username, $password, $db_name);

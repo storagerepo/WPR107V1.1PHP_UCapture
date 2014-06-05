@@ -110,7 +110,7 @@ require("header.php");
                                                 <tr class="tr" ><td width="32%" style="padding-top:20px;padding-right:20px;" align="right"><span class="register_labels">
                         <input type="submit" value="REGISTER" class="submit_btn"/>
                     </span></td>
-                                                    <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>
+                                                   <!-- <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>-->
                                                 </tr>
                                             <?php
                                             }
@@ -159,7 +159,7 @@ require("header.php");
                                                 <tr class="tr" ><td width="32%" style="padding-top:20px;padding-right:20px;" align="right"><span class="register_labels">
                         <input type="submit" value="REGISTER" class="submit_btn"/>
                     </span></td>
-                                                    <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>
+                                                   <!-- <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>-->
                                                 </tr>
                                             <?php
 

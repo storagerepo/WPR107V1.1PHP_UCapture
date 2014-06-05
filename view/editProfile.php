@@ -288,8 +288,8 @@ session_start();
                                 </td></tr>
                             <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right">
                                     <input type="submit" value="UPDATE" class="submit_btn"/></td>
-                                <td width="50%" style="padding-left: 50px;">
-                                    <input type="reset" value="RESET" class="submit_btn"/></td>
+                                <!--<td width="50%" style="padding-left: 50px;">
+                                    <input type="reset" value="RESET" class="submit_btn"/></td>-->
                             </tr>
                         <?php
                         }
@@ -314,8 +314,8 @@ session_start();
                                 </td></tr>
                             <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right">
                                     <input type="submit" value="UPDATE" class="submit_btn"/></td>
-                                <td width="50%" style="padding-left: 50px;">
-                                    <input type="reset" value="RESET" class="submit_btn"/></td>
+                                <!--<td width="50%" style="padding-left: 50px;">
+                                    <input type="reset" value="RESET" class="submit_btn"/></td>-->
                             </tr>
                         <?php
 
