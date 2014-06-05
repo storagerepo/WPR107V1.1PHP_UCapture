@@ -356,7 +356,7 @@ ul.style1 a img {
 #pbox1 {
     padding: 0em 0em 0em 0em;
     width:45%;
-    border:2px solid blue;
+    /*border:2px solid blue;*/
     max-height:600px;
     max-height:600px;
     overflow:auto;
@@ -384,7 +384,7 @@ ul.style1 a img {
 #pboxprofileleft {
     padding: 0em 0em 0em 3em;
     width:40%;
-    border:2px solid blue;
+   /* border:2px solid blue;*/
     max-height:10%;
     overflow:auto;
     color:#fff;
@@ -399,7 +399,7 @@ ul.style1 a img {
     margin:0 0 0 0px;
     padding: 0em 0em 0em 1em;
     width:45%;
-    border:2px solid red;
+    /*border:2px solid red;*/
     height:auto;
 
 }
@@ -1688,4 +1688,37 @@ a#login_pop:hover, a#join_pop:hover {
     font-size:16px;
     font-family:aharoni;
     text-decoration:none;
+}
+.contentscrollbar_friends{
+    overflow: auto;
+    position: relative;
+    padding-top: 0px;
+    background: #000000;
+    margin: 0px;
+    width: 60%;
+    max-width: 60%;
+    height:190px;
+    overflow-x:hidden ;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box; box-sizing: border-box;
+}
+
+.contentscrollbar_friends.hidden{ display: none; }
+
+.contentscrollbar_friends.light{
+    background-color: #000;
+    color: #333;
+}
+.invite_user a{
+    color:#00ff00;
+    font-size: 100%;
+    text-decoration: none;
+    font-weight: bold;
+
+}
+.invite_user a:hover{
+    color:#000;
+    font-size: 100%;
+    text-decoration: none;
+
 }

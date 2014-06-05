@@ -5,7 +5,7 @@
 
                 <!-- Dummy area -->
                 <br/>
-                <span class="copyrightfontdiv">&copy; INFO @ <a href="#">UCAPTURE.COM </a></span>
+                <span class="copyrightfontdiv">INFO @ <a href="#">UCAPTURE.COM </a></span>
                 <p> <!--<a href="#"><img src="images/smedia1.png"/></a>
 				<a href="#"><img src="images/smedia2.png"/></a>
 				--><a href="#"><img src="../images/smedia3.png" height="40" class="footer_image"/></a>

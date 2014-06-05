@@ -13,7 +13,7 @@ session_start();
 <div class="5grid-layout" id="page-wrapper" style="background: #000;">
 <div class="row">
 <div class="8u mobileUI-main-content">
-<section id="pboxprofileleft">
+<section id="pboxprofileleft"><br/>
 
 
 <div id="tabs-container">
@@ -272,12 +272,12 @@ session_start();
                             ?>
 
                             <tr><td width="50%"style="padding-bottom:10px;font-size:17px;color:#00ff00;">USER NAME</td><td width="50%"><input type="text" disabled style="background-color:darkgray " class="txtbx" value="<?php echo $_SESSION['profile']['username']; ?>" name="username"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">FIRST NAME</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['profile']['firstname']; ?>" name="firstname"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">LAST NAME</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['profile']['lastname'];?>" name="lastname"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">DATE OF BIRTH</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['profile']['dob']; ?>"  name="dob" id="datepicker"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">EMAIL</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['profile']['email']; ?>" name="email"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">ADDRESS</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['profile']['address']; ?>" name="address"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PHONE</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['profile']['mobile']; ?>" name="mobile"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">FIRST NAME</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['firstname']; ?>" name="firstname"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">LAST NAME</td><td width="50%"><input type="text"autocomplete="off" class="txtbx" value="<?php echo $_SESSION['profile']['lastname'];?>" name="lastname"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">DATE OF BIRTH</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['dob']; ?>"  name="dob" id="datepicker"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">EMAIL</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['email']; ?>" name="email"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">ADDRESS</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['address']; ?>" name="address"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PHONE</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['mobile']; ?>" name="mobile"/></td></tr>
                             <!-- <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PASSWORD</td><td width="50%"><?php /*echo $_SESSION['profile']['password']; */?></td></tr>-->
                             <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;"></td><td width="50%">
 
@@ -286,8 +286,8 @@ session_start();
 
 
                                 </td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right">
-                                    <input type="submit" value="UPDATE" class="submit_btn"/></td>
+                            <tr><td width="50%"></td><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right"><span class="register_labels">
+                                    <input type="submit" value="UPDATE" class="submit_btn"/></span></td>
                                 <!--<td width="50%" style="padding-left: 50px;">
                                     <input type="reset" value="RESET" class="submit_btn"/></td>-->
                             </tr>
@@ -298,12 +298,12 @@ session_start();
                             ?>
 
                             <tr><td width="50%"style="padding-bottom:10px;font-size:17px;color:#00ff00;">USER NAME</td><td width="50%"><input type="text" disabled style="background-color:darkgray " class="txtbx" value="<?php echo $_SESSION['profile']['username']; ?>" name="username"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">FIRST NAME</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['values']['firstname']; ?>" name="firstname"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">LAST NAME</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['values']['lastname'];?>" name="lastname"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">DATE OF BIRTH</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['values']['dob']; ?>"  name="dob" id="datepicker"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">EMAIL</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['values']['email']; ?>" name="email"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">ADDRESS</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['values']['address']; ?>" name="address"/></td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PHONE</td><td width="50%"><input type="text" class="txtbx" value="<?php echo $_SESSION['values']['mobile']; ?>" name="mobile"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">FIRST NAME</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['firstname']; ?>" name="firstname"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">LAST NAME</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['lastname'];?>" name="lastname"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">DATE OF BIRTH</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['dob']; ?>"  name="dob" id="datepicker"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">EMAIL</td><td width="50%"><input type="text" class="txtbx"autocomplete="off" value="<?php echo $_SESSION['values']['email']; ?>" name="email"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">ADDRESS</td><td width="50%"><input type="text" class="txtbx" autocomplete="off"value="<?php echo $_SESSION['values']['address']; ?>" name="address"/></td></tr>
+                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PHONE</td><td width="50%"><input type="text" class="txtbx"autocomplete="off" value="<?php echo $_SESSION['values']['mobile']; ?>" name="mobile"/></td></tr>
                             <!-- <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PASSWORD</td><td width="50%"><?php /*echo $_SESSION['profile']['password']; */?></td></tr>-->
                             <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;"></td><td width="50%">
 
@@ -312,8 +312,8 @@ session_start();
 
 
                                 </td></tr>
-                            <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right">
-                                    <input type="submit" value="UPDATE" class="submit_btn"/></td>
+                            <tr><td width="50%"></td><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right"><span class="register_labels">
+                                    <input type="submit" value="UPDATE" class="submit_btn"/></span></td>
                                 <!--<td width="50%" style="padding-left: 50px;">
                                     <input type="reset" value="RESET" class="submit_btn"/></td>-->
                             </tr>
@@ -344,7 +344,7 @@ session_start();
             echo '<img alt="google"  title="click to set profile image" src="../images/avatar.png" class="profile-pic" id="upload-button" width="40%" height="200" />'
         ?>
 
-        <BR/>
+        <BR/><BR/><BR/>
         <span class="register_header">CLICK TO UPLOAD IMAGE</span>
         <br/><br/>
 

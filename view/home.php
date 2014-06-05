@@ -15,7 +15,7 @@ require("header.php");
     <div class="5grid-layout" id="page-wrapper" style=" background: #000">
         <div class="row">
             <div class="8u mobileUI-main-content">
-                <section id="pbox1" >
+                <section id="pbox1" ><br/>
                     <div id="tabs-container">
                         <ul class="tabs-menu">
                             <li class="current"><a href="#tab-1">ABOUT <span style="color:#fff;">U</span>CAPTURE</a></li>
@@ -87,11 +87,9 @@ require("header.php");
                 <section id="pbox3">
                     <span style="color:#00ff00;font-size:18px;line-height:5px;"><br/>SOME OF OUR PARTNERS..</span><br/><br/>
                     <table width="100%"><tr>
-                            <td style="vertical-align: middle;">
-                                <button onclick="flowleft();" class="nav_btn_left"></button>
-                            </td>
+
                             <td><div class="div_marquee">
-                                    <marquee id="myMarquee" onmouseover="this.stop();" onmouseout="this.start();"scrolldelay=150 >
+                                    <marquee id="myMarquee" scrolldelay=150 >
                                         <img src="../images/google.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
                                         <img src="../images/moto.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
                                         <img src="../images/jeep.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
@@ -108,9 +106,7 @@ require("header.php");
                                     </marquee>
                                 </div>
                             </td>
-                            <td style="vertical-align: middle;">
-                                <button  onclick="flowright();" class="nav_btn_right"> </button>
-                            </td>
+
                         </tr></table><br/><br/><br/>
 
 
