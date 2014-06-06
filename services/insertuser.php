@@ -114,9 +114,9 @@ if(trim($_POST['password'])!= trim($_POST['confirm_password']))
 
     if(!isset($_POST['mobile'])|| trim($_POST['mobile'])=='')
           $_SESSION['require']['mobile']="Mobile should not be blank";
-   /* elseif(!preg_match("^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$",$_POST['mobile']))
+   elseif(!preg_match("/^[0-9]{10}/",$_POST['mobile']))
         $_SESSION['error']['mobile'] = "Invalid Mobile Number";
-  */  if(!isset($_POST['address'])|| trim($_POST['address'])=='')
+   if(!isset($_POST['address'])|| trim($_POST['address'])=='')
           $_SESSION['require']['address']="Address Should not blank";
     if(!isset($_POST['dob'])|| trim($_POST['dob'])=='')
           $_SESSION['require']['dob']="Date of Birth Should not blank";
