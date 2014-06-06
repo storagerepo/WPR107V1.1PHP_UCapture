@@ -330,7 +330,7 @@ session_start();
     </div>
 </div>
 
-</section>
+</section><span class="break_footer"><br><br><br><br><br><br></span>
 </div>
 <div class="4u mobileUI-main-content">
     <section id="pboxprofileright">

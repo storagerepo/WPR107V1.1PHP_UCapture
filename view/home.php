@@ -4,8 +4,6 @@
     <title>UCapture</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
 
-    <link rel="shortcut icon" href="images/meta_icon.png" >
-    <link rel="icon" href="images/meta_icon.png" type="image/x-icon">
 </head>
 <body>
 <div id="header-wrapper">
@@ -102,7 +100,7 @@ require("header.php");
                     </div>
 
                 </section>
-                <span class="break_footer"><br><br><br><br></span>
+                <span class="break_footer"><br><br><br><br><br><br></span>
             </div>
             <div class="4u mobileUI-main-content">
                 <section id="pbox3"><br>

@@ -5,7 +5,7 @@
 
                 <!-- Dummy area -->
                <table width="100%">
-                    <tr><td align="right" style=" vertical-align: middle;width: 94%"><!--<span class="copyrightfontdiv">-->INFO @ <a href="#">UCAPTURE.COM </a><!--</span>--></td>
+                    <tr><td align="right" style=" vertical-align: middle;width: 90%"><!--<span class="copyrightfontdiv">-->INFO @ <a href="#">UCAPTURE.COM </a><!--</span>--></td>
                             <!--<a href="#"><img src="images/smedia1.png"/></a>
 				<a href="#"><img src="images/smedia2.png"/></a>
 				--><td align="right" style=" vertical-align: middle"><a href="#"><img src="../images/smedia3.png"  class="footer_image"/></a>
