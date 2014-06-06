@@ -159,7 +159,7 @@ require("header.php");
                                                 </tr>
                                                 <tr class="tr" ><td width="32%"></td>
                                                 <td width="32%" align="right"style="padding-bottom:10px;">
-                                                <input type="submit" value="REGISTER" class="submit_btn_update"/>
+                                                <input type="submit" value="REGISTER" class="submit_btn"/>
                                                 </td>
                                                    <!-- <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>-->
                                                 </tr>
