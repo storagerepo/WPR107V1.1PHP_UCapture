@@ -108,7 +108,7 @@ require("header.php");
                                                         <input type="file" accept="image/*" class="file-upload" value="" name="userImage" id="userimage" /></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%"></td><td width="32%" style="padding-top:20px;padding-right:20px;" align="right">
-                                                         <input type="submit" value="REGISTER" class="submit_btn"/>
+                                                         <input type="submit" value="REGISTER" class="submit_btn_update"/>
                     </span></td>
                                                    <!-- <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>-->
                                                 </tr>
@@ -118,7 +118,7 @@ require("header.php");
                                             {
                                                 ?>
                                                 <tr class="tr" ><td> <span class="register_labels">FIRST NAME</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"><input autocomplete="off" type="text" class="txtbx"
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input autocomplete="off" type="text" class="txtbx"
                                                             <?php
                                                             valid_check('firstname');
                                                             ?>
@@ -126,7 +126,7 @@ require("header.php");
                                                 </tr>
                                                 <tr class="tr" ><td> <span class="register_labels">LAST NAME</span></td>
 
-                                                    <td width="32%" style=" padding-bottom:10px;"><input type="text"autocomplete="off" class="txtbx" <?php valid_check('lastname'); ?> value="<?php echo $_SESSION['values']['lastname']; ?>" name="lastname"/></td>
+                                                    <td width="32%" style=" padding-bottom:10px;"align="right"><input type="text"autocomplete="off" class="txtbx" <?php valid_check('lastname'); ?> value="<?php echo $_SESSION['values']['lastname']; ?>" name="lastname"/></td>
                                                 </tr>
                                                 <tr class="tr" >
                                                     <td width="32%" style="padding-bottom:10px;" style="padding-bottom:10px;"><span class="register_labels">USER NAME</span></td>
@@ -158,7 +158,7 @@ require("header.php");
                                                 </tr>
                                                 <tr class="tr" ><td width="32%"></td>
                                                 <td width="32%" align="right"style="padding-bottom:10px;">
-                                                <input type="submit" value="REGISTER" class="submit_btn"/>
+                                                <input type="submit" value="REGISTER" class="submit_btn_update"/>
                                                 </td>
                                                    <!-- <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>-->
                                                 </tr>

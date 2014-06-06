@@ -74,7 +74,7 @@ strong {
 /* Copyright */
 
 #copyright {
-    height:50px;
+    height:40px;
     width:1350px;
     /*width:100%;*/
     /*float:right;*/
@@ -84,6 +84,9 @@ strong {
     text-align: right;
     border-top: solid 1px rgba(0,0,0,0.15);
     font-weight:bold;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    bottom: 0;
 
 }
 
@@ -148,10 +151,10 @@ strong {
     align:right;
     float:right;
     overflow: hidden;
-    margin-bottom: 1em;
-    padding: 2em 0em;
+    margin-bottom: 0em;
+    padding: 0em 0em;
     background: #FFFFFF;
-    box-shadow: 0px 0px 5px 2px rgba(0,0,0,.1);
+    /*box-shadow: 0px 0px 5px 2px rgba(0,0,0,.1);*/
 }
 
 /* Button style 1 */
@@ -339,14 +342,12 @@ ul.style5 .first {
 
 .copyrightfontdiv
 {
-    margin-left:950px;
-    margin-top:15px;
-    font-size:16px;
-    padding-left:20px;
+
     color: #00ff00;
-    float:left;
-    width:220px;
-    height:15px;
+   margin-top: -15px;
+    vertical-align: middle;
+
+
     /* border:2px solid red; */
 
 }
@@ -505,7 +506,7 @@ a#login_pop:hover, a#join_pop:hover {
     right: 0;
     top: 0;
     visibility: hidden;
-    z-index: 1;
+    z-index: 2;
 
     -webkit-transition: opacity .5s;
     -moz-transition: opacity .5s;

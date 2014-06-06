@@ -75,7 +75,7 @@ body {
 /* Main Wrapper */
 
 #wrapper {
-    padding: 1.5em 1em 0em 1em;
+    width: 100%;
     background: #000;
 }
 
@@ -189,7 +189,7 @@ ul.style1 a img {
     background-color: #000;
     color:#00ff00;
     border-bottom: 3px solid #00ff00;
-    z-index: 0;
+    z-index: 1;
 }
 
 .tabs-menu li a {
@@ -356,7 +356,7 @@ ul.style1 a img {
 #pbox1 {
     padding: 0em 0em 0em 0em;
     width:45%;
-    border:2px solid blue;
+    /*border:2px solid blue;*/
     max-height:600px;
     max-height:600px;
     overflow:auto;
@@ -384,7 +384,7 @@ ul.style1 a img {
 #pboxprofileleft {
     padding: 0em 0em 0em 3em;
     width:40%;
-    border:2px solid blue;
+    /*border:2px solid blue;*/
     max-height:12%;
     overflow:auto;
     color:#fff;
@@ -399,7 +399,7 @@ ul.style1 a img {
     margin:0 0 0 0px;
     padding: 0em 0em 0em 1em;
     width:45%;
-    border:2px solid red;
+    /*border:2px solid red;*/
     height:auto;
 
 }
@@ -1189,7 +1189,7 @@ a#login_pop:hover, a#join_pop:hover {
     right: 0;
     top: 0;
     visibility: hidden;
-    z-index: 1;
+    z-index: 2;
 
     -webkit-transition: opacity .5s;
     -moz-transition: opacity .5s;
@@ -1780,4 +1780,10 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .profile_friends_table{
     width: 100%;
+}
+.login_header{
+    font-size:120%;
+}
+.break_footer{
+    display: none;
 }

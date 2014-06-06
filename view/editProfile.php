@@ -288,7 +288,7 @@ session_start();
 
                                 </td></tr>
                             <tr><td width="50%"></td><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right"><span class="register_labels">
-                                    <input type="submit" value="UPDATE" class="submit_btn_update"/></span></td>
+                                    <input type="submit" value="UPDATE" class="submit_btn"/></span></td>
                                 <!--<td width="50%" style="padding-left: 50px;">
                                     <input type="reset" value="RESET" class="submit_btn"/></td>-->
                             </tr>
@@ -314,7 +314,7 @@ session_start();
 
                                 </td></tr>
                             <tr><td width="50%"></td><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right"><span class="register_labels">
-                                    <input type="submit" value="UPDATE" class="submit_btn_update"/></span></td>
+                                    <input type="submit" value="UPDATE" class="submit_btn"/></span></td>
                                 <!--<td width="50%" style="padding-left: 50px;">
                                     <input type="reset" value="RESET" class="submit_btn"/></td>-->
                             </tr>

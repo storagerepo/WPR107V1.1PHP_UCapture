@@ -3,11 +3,28 @@
 <head>
     <title>UCapture</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
     <link rel="shortcut icon" href="images/meta_icon.png" >
     <link rel="icon" href="images/meta_icon.png" type="image/x-icon">
 </head>
 <body>
 <div id="header-wrapper">
+    <!--[if IE 5]>
+
+   <br/>
+    <![endif]-->
+    <!--[if IE 6]>
+
+    <br/>
+    <![endif]-->
+    <!--[if IE 7]>
+
+    <br/>
+    <![endif]-->
+    <!--[if IE 8]>
+
+    <br/>
+    <![endif]-->
 <?php
 require("header.php");
 ?></div>
@@ -15,6 +32,7 @@ require("header.php");
     <div class="5grid-layout" id="page-wrapper" style=" background: #000">
         <div class="row">
             <div class="8u mobileUI-main-content">
+
                 <section id="pbox1" ><br/>
                     <div id="tabs-container">
                         <ul class="tabs-menu">
@@ -84,6 +102,7 @@ require("header.php");
                     </div>
 
                 </section>
+                <span class="break_footer"><br><br><br><br></span>
             </div>
             <div class="4u mobileUI-main-content">
                 <section id="pbox3"><br>
@@ -138,6 +157,8 @@ function valid_check($key)
 }
  ?>
 </script>
+
+
 </body>
 </html>
 

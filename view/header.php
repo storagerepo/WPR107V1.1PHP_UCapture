@@ -25,6 +25,7 @@
     <script src="../js/jquery.mCustomScrollbar.concat.min.js"></script>
 
     <script>
+
         (function($){
             $(window).load(function(){
 
@@ -92,6 +93,7 @@ if(isset($_POST['submit'])) {
 
 <div id="header-wrapper">
     <header id="header" class="5grid-layout">
+
         <!-- <div id="row">
             <div id="12u">
                 <div id="logo">
@@ -118,13 +120,13 @@ if(isset($_POST['submit'])) {
         <table width="97%" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;width:96% ;">
             <tr><td  align="left" style="overflow:hidden;"><div class="headerLink"><img src="../images/Majorlogo.png"class="mobile_logo" width="300" height="88" alt="UCapture"/>  </div></td>
 
-                <td  align="right" style="   overflow:hidden;vertical-align: middle;padding-bottom: 20px;"><br/><font color="#00ff00" >
+                <td  align="right" style="    overflow:hidden;vertical-align: middle;padding-bottom: 20px;"><br/><font color="#00ff00" >
                         <?php
                          //session_start();
                         if(!isset($_SESSION['user_id']))
                         { ?>
-                        <a href="#login_form" id="login_pop" style=" font-size: 120%;">LOGIN</a>/
-                        <a href="userRegistration.php" id="join_pop" style=" font-size: 120%;">SIGN UP</a></font><span class="break_height"> <br/><br/><br/></span>
+                        <span class="login_header"><a href="#login_form" id="login_pop" >LOGIN</a>/
+                        <a href="userRegistration.php" id="join_pop" >SIGN UP</a></font><span class="break_height"> <br/><br/><br/></span></span>
                     <?php
                     }
                     elseif(isset($_SESSION['user_id']))
@@ -138,10 +140,11 @@ if(isset($_POST['submit'])) {
                     <!-- <a href="#login_form" id="login_pop">LOG IN</a>/
                                     <a href="#join_form" id="join_pop">SIGN UP</a></font><br/><br/><br/>
                      -->
-<a class="headerMenuactive" href="index.php">HOME</a>
+                    <span class="menu_up_mobile_only">
+<a class="headerMenuactive" href="../index.php">HOME</a>
 <a class="headerMenu" href="#">SHOP</a>
 
-<span class="headerMenuSearch"> SEARCH</span><input type="text" class="searchtextbox" placeholder="Enter text to search" value="" name=""/>
+<span class="headerMenuSearch"> SEARCH</span><input type="text" class="searchtextbox" placeholder="type here" value="" name=""/>
  <br/><br/>	<br/><br/>	<br/><br/><br/>
                     <!-- popup form #1 -->
                     <a href="#x" class="overlay" id="login_form"></a>
@@ -175,7 +178,9 @@ if(isset($_POST['submit'])) {
                                     <input type="password" id="password" value="" name="password"/>
                                 </div><br/>
                                 <a href="#join_form" id="join_pop">Forgot Your Password?</a><BR/>
-                                <span style="float: right"> <input type="submit" value="Log In" class="submit_btn"/>&nbsp;&nbsp;&nbsp;<a class="submit_btn" href="#close">Cancel</a></span>
+                                <span style="float: right">
+                                    <input type="submit" value="Log In" class="submit_btn"/>&nbsp;&nbsp;&nbsp;
+                                    <input type="button" class="submit_btn"onclick="location.href='#close'" value="Cancel"/><!-- <a class="submit_btn" href="#close">Cancel</a>--></span>
                             <?php
                             }
                             else
@@ -191,7 +196,8 @@ if(isset($_POST['submit'])) {
                                 </div><br/>
 
                                 <a href="#join_form" id="join_pop">Forgot Your Password?</a><BR/>
-                                <span style="float: right"> <input type="submit" value="Log In" class="submit_btn"/>&nbsp;&nbsp;&nbsp;<a class="submit_btn" href="#close">Cancel</a></span>
+                                <span style="float: right"> <input type="submit" value="Log In" class="submit_btn"/>&nbsp;&nbsp;
+                                    &nbsp;<input type="button" class="submit_btn"onclick="location.href='#close'" value="Cancel"/><!--<a class="submit_btn" href="#close">Cancel</a>--></span>
 
                             <?php
 
@@ -209,11 +215,12 @@ if(isset($_POST['submit'])) {
                         <form action="" name="">
                         <div>
                             <label for="login">USER NAME</label>
-                            <input type="text" id="login" value="" name="username"/>
-                        </div><input type="submit" value="SEND" class="submit_btn"/>&nbsp;&nbsp;&nbsp;<a class="submit_btn" href="#close">Cancel</a>
+                            <input type="text" id="login" value="" name="username" autocomplete="off"/>
+                        </div><input type="submit" value="SEND" class="submit_btn"/>&nbsp;&nbsp;&nbsp;
+                            <!--<a class="submit_btn" href="#close">Cancel</a>--><input type="button" class="submit_btn"onclick="location.href='#close'" value="Cancel"/>
                         </form>
                     </div>
-                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/></span>
                 </td></tr>
 
         </table>
@@ -222,6 +229,22 @@ if(isset($_POST['submit'])) {
 <a class="headerMenu" href="#">SHOP</a>
 <a class="headerMenuCurrent" href="#">SEARCH</a> -->
     </header>
+
 </div>
+    <script>$(document).ready(function () {
+            $(".text").hide();$(".text1").hide();
+            $("#r1").click(function () {
+                $(".text").show();
+                $(".text1").hide();
+            });
+            $("#r2").click(function () {
+                $(".text").hide();
+                $(".text1").hide();
+            });
+            $("#r3").click(function () {
+                $(".text").hide();
+                $(".text1").show();
+            });
+        });</script>
 </body>
 </html>
