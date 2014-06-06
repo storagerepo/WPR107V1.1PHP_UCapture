@@ -276,7 +276,7 @@ session_start();
             echo '<img class="user_image" alt="Profile Image"  src="data:image/jpeg;base64,'.base64_encode($_SESSION['profile']['user_image'] ).'"/>';
         }
         else{
-        echo '<img alt="Profile Image" class="avatar_image" src="../images/avatar.png"/>';
+        echo '<img alt="Profile Image" class="avatar_image" src="../images/avatar.png" />';
 
         }
         ?>
