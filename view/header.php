@@ -93,7 +93,7 @@ if(isset($_POST['submit'])) {
                     <!-- popup form #1 -->
                     <a href="#x" class="overlay" id="login_form"></a>
                     <div class="popup" style="margin-top:0px;">
-                        <h2>Login</h2>
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Login</h2>
                         <form class="form-horizontal" action="../services/signin.php" method="POST">
                             <?php
                             if(!isset($_SESSION['values']))
@@ -139,7 +139,7 @@ if(isset($_POST['submit'])) {
                     <!-- popup form #2 -->
                     <a href="#x" class="overlay" id="join_form"></a>
                     <div class="popup" style="margin-top:-30%; ">
-                        <h2>FORGOT PASSWORD</h2>
+                        <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FORGOT PASSWORD</h2>
                         <form action="" name="">
                         <div>
                             <label for="login">&nbsp;&nbsp;USER NAME</label>
