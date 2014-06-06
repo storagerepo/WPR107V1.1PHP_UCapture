@@ -105,22 +105,22 @@ require("header.php");
             <div class="4u mobileUI-main-content">
                 <section id="pbox3"><br>
                     <span style="color:#00ff00;font-size:18px;line-height:5px;"><br/>SOME OF OUR PARTNERS..</span><br/><br/>
-                    <table width="100%"><tr>
+                    <table style=" width:100%"><tr>
 
                             <td><div class="div_marquee">
                                     <marquee id="myMarquee" scrolldelay=150 >
-                                        <img src="../images/google.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/moto.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/jeep.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/str.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/usair.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/disnep.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/google.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/moto.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/jeep.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/str.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/usair.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/disnep.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/google.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/moto.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/jeep.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/str.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/usair.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/disnep.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/google.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/moto.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/jeep.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/str.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/usair.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/disnep.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
 
                                     </marquee>
                                 </div>
@@ -131,7 +131,7 @@ require("header.php");
 
 
 
-                    <iframe width="97%" height="315" src="//www.youtube.com/embed/O95gBhEaAKI" frameborder="1" allowfullscreen></iframe>
+                    <iframe width="97%" height="315" src="//www.youtube.com/embed/O95gBhEaAKI"  allowfullscreen></iframe>
                 </section>
             </div>
         </div>

@@ -101,7 +101,8 @@ require("header.php");
                                                     <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx" value="" name="address"autocomplete="off"></textarea></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">DATE OF BIRTH</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx" value="" name="dob" autocomplete="off"id="datepicker"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right">
+                                                        <input type="date" class="txtbx" value="25/05/1990" name="dob" autocomplete="off"/></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style=" "><!--<span class="register_labels">IMAGE</span>--></td>
                                                     <td width="32%" style=""align="right">
