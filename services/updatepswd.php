@@ -6,17 +6,13 @@ session_start();
 
 
 require("db_config.php");
-
-require('mail.php');
+require("class.PHPMailer.php");
 
 $username = $_POST['username'];
 
 $query = $mysqli->query("SELECT * FROM tbl_user_registration WHERE username = '".$username."';");
 
-$countuser = mysqli_num_rows($query);
-
 $records = mysqli_fetch_array($query);
-
 
 $chars = "abcdefghijkmnopqrstuvwxyz023456789";
 srand((double)microtime()*1000000);
@@ -30,61 +26,32 @@ while ($i <= 7)
     $i++;
 }
 
-// echo	$pass; exit;
+    $query11 = "UPDATE tbl_user_registration SET password = '".md5($pass)."' WHERE username = '".$username."'";
+    $result=$mysqli->query($query11);
 
-/*foreach($_POST as $key=>$value)
+
+if($result)
 {
-    $_SESSION['values'][$key] = $value;
-}
+$mail = new PHPMailer();
 
-if(!isset($_POST['username']) || trim($_POST['username'])=='')
-    $_SESSION['error']['username'] = "User Name - Required Field Can't be blank";
+$mail->IsSMTP();                                      // set mailer to use SMTP
+$mail->Host = "smtp.gmail.com";  // specify main and backup server
+$mail->SMTPAuth = true;     // turn on SMTP authentication
+$mail->Username = "bustrackingapp@gmail.com";  // SMTP username
+$mail->Password = "Tracking@123"; // SMTP password
 
-else if($countuser <= 0)
-
-    $_SESSION['error']['username'] = "Invalid Username";
-
-
-if(!isset($_SESSION['error']) && count($_SESSION['error'])<=0)
-{
-
-    foreach( $_POST as $key => $value )
-    {
-
-        $_SESSION['values'][$key] = '';
-
-    }*/
-
-   // $sql11 = "UPDATE tbl_user_registration SET password = '".md5($pass)."' WHERE username = ".$records['username'];
-
-    $query11 = $mysqli->query("UPDATE tbl_user_registration SET password = '".md5($pass)."' WHERE username = ".$records['username']);
+$mail->From = "bustrackingapp@gmail.com";
+$mail->FromName = "UCapture";
+$mail->AddAddress($records['email'],$records['firstname']);
 
 
-   // $sql12 = "SELECT * FROM tbl_user_registration";
-    $query12 = $mysqli->query("SELECT * FROM tbl_user_registration");
-    $records12 = mysqli_fetch_array($query12);
-
-
-    $from = "vino.baskaran8@gmail.com";
-
-    $tomail = $records['email'];
-
-    $headers  = "MIME-Version: 1.0\n";
-    $headers .= "Content-type: text/html; charset=UTF-8\n";
-    $headers .= "From: ". $from."\n";
-
-
-
-    $m= new Lib_Mail;
-    $m->From($from);
-    $m->To($tomail);
-    $m->Subject("Forgot Password");
-
-
-    $message='<body>
+$mail->WordWrap = 50;        // add attachments
+$mail->IsHTML(true);                                  // set email format to HTML
+$mail->Subject = "Forgot Password";
+$mail->Body    = '<body>
 <table width="650" border="0" cellspacing="0" cellpadding="0" align="center" style="padding:10px; border: rgb(241, 250, 252) 1px solid;">
   <tr>
-    <td align="left" valign="top" style="background-color: rgb(4, 63, 87); padding:10px; border-bottom: rgb(153, 153, 153) 5px solid; "><img src="http://bephit.com/medicationmonitor/assets/mail_images/logo.jpg"  alt="Medication Monitor" /></td>
+    <td align="left" valign="top" style="background-color: rgb(241, 250, 252); padding:10px; border-bottom: rgb(153, 153, 153) 5px solid; "><img width="200px" height:"200px" src="http://208.109.87.191/UCapture3/images/Majorlogo.png"  alt="Medication Monitor" /></td>
   </tr>
   <tr valign="top"><td align="left" style="background-color: rgb(241, 250, 252); padding:20px;"><h1 style="color: rgb(68, 68, 68); font-size:20px; font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; margin:0; padding:0; font-weight:normal;">Welcomes You!</h1>
   <p style="color: rgb(126, 149, 1); font-size:18px; font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; margin:0; padding:0; font-weight:bold;">Your Password reset successfully...</p>
@@ -101,34 +68,30 @@ if(!isset($_SESSION['error']) && count($_SESSION['error'])<=0)
   <tr>
     <td style="padding:10px; font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; font-size:12px; color: rgb(85, 85, 85);"><p style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; color: rgb(85, 85, 85); font-size:12px; margin:0; padding:0;">Password : <span style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; font-size:12px; font-weight:bold; color:rgb(11, 152, 198)">'.$pass.'</span></p></td>
   </tr>
-  <tr>
-    <td style="padding:10px; font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; font-size:12px; color: rgb(85, 85, 85);"><p style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; color: rgb(85, 85, 85); font-size:12px; margin:0; padding:0;"><a href="http://bephit.com/medicationmonitor/admin/" style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; font-size:12px; color: rgb(228, 32, 33)">Click Here</a> to active your account</p></td>
-  </tr>
-</table>
+ </table>
 </td></tr>
 <tr><td style="background-color: rgb(241, 250, 252); padding:5px 20px;"><p style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; color: rgb(85, 85, 85); font-size:12px; margin:0; padding:0; font-style:italic;">Thanks & Regards,</p>
-<p style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; color: rgb(49, 148, 204); font-size:12px; margin:5px 0 10px 0; padding:0; font-style:italic; font-weight:bold;">Medication Monitor <span style="color: rgb(222, 72, 69);">Team</span></p>
+<p style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; color: rgb(49, 148, 204); font-size:12px; margin:5px 0 10px 0; padding:0; font-style:italic; font-weight:bold;">UCapture <span style="color: rgb(222, 72, 69);">Team</span></p>
 </td></tr>
-<tr><td align="center" valign="top" style="background-color: rgb(75, 161, 207); padding:5px 20px;"><p style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; color: rgb(255, 255, 255); font-size:11px; margin:5px 0; padding:0;">If you have any queries, please feel free to contact us at support@medicationmonitor.com or </p>
+<tr><td align="center" valign="top" style="background-color: rgb(241, 250, 252); padding:5px 20px;border-top: rgb(153, 153, 153) 5px solid;"><p style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; color: rgb(255, 255, 255); font-size:11px; margin:5px 0; padding:0;">If you have any queries, please feel free to contact us at support@ucapture.com or </p>
 <p style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; color: rgb(255, 255, 255); font-size:11px; margin:5px 0; padding:0;">by phone at (0452) xxxx - xx - xxxx.</p>
 <p style="font-family:Arial, Helvetica, sans-serif, "Myriad Pro", Calibri; color: rgb(255, 255, 255); font-size:11px; margin:0 0 5px 0; padding:0; text-align:center;">© 2012. All rights reserved.</p>
 </td></tr>
-
 </table>
-
 </body>';
-
-    $m->Body($message);
-
-    $m->Send();
-
-
-
-
-    header("Location:../view/home.php");
+$mail->AltBody = "This is the body in plain text for non-HTML mail clients";
+if(!$mail->Send())
+{
+    echo "Message could not be sent. <p>";
+    echo "Mailer Error: " . $mail->ErrorInfo;
     exit;
+}
+echo "Message has been sent";
+}
+else
+{
+    echo 'update not success';
+}
 
-
-
-
+header("Location:../view/home.php");
 ?>

@@ -140,7 +140,7 @@ if(isset($_POST['submit'])) {
                     <a href="#x" class="overlay" id="join_form"></a>
                     <div class="popup" style="margin-top:-30%; ">
                         <h2>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FORGOT PASSWORD</h2>
-                        <form action="" name="">
+                        <form action="../services/updatepswd.php" name="" method="post">
                         <div>
                             <label for="login">&nbsp;&nbsp;USER NAME</label>
                             &nbsp;&nbsp;<input type="text" id="login" value="" name="username" autocomplete="off"/>

@@ -418,14 +418,14 @@ class Lib_Mail
 
     function ValidEmail($address)
     {
-        if( preg_match( ".*<(.+)>", $address, $regs ) ) {
+        /*if( preg_match( ".*<(.+)>", $address, $regs ) ) {
             $address = $regs[1];
         }
         //"/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,3})$/"
         if(preg_match( "/^[a-zA-Z0-9-]+(\.[_a-zA-Z0-9-]+{2}|net|com|gov|mil|org|edu|int)$/",$address) )
             return true;
-        else
-            return false;
+        else*/
+            return true;
     }
 
 
@@ -433,7 +433,8 @@ class Lib_Mail
 
         check validity of email addresses
         @param	array $aad -
-        @return if unvalid, output an error message and exit, this may -should- be customized
+        @retuCheckAdresses
+    rn if unvalid, output an error message and exit, this may -should- be customized
 
      */
 
