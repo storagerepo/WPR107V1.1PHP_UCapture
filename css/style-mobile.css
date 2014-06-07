@@ -413,7 +413,7 @@ border: 1px solid white;
     padding: 0em 0em 0em 0em;
     width:90%;
     overflow-x: hidden;
-    /* border:2px solid blue;*/
+    border:2px solid blue;
     max-height:400px;
     overflow-y:auto;
     color:#fff;

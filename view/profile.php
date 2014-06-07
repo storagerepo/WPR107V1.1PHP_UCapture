@@ -2,31 +2,31 @@
 session_start();
 ?>
 
-<!--[if IE 5]>
-
-<br/>
-<![endif]-->
-<!--[if IE 6]>
-
-<br/>
-<![endif]-->
-<!--[if IE 7]>
-
-<br/>
-<![endif]-->
-<!--[if IE 8]>
-
-<br/>
-<![endif]-->
-<?php
-require("header.php");
-?>
 <!DOCTYPE HTML>
 <html>
 <head>
     <title>UCapture</title>
 
 
+    <!--[if IE 5]>
+
+    <br/>
+    <![endif]-->
+    <!--[if IE 6]>
+
+    <br/>
+    <![endif]-->
+    <!--[if IE 7]>
+
+    <br/>
+    <![endif]-->
+    <!--[if IE 8]>
+
+    <br/>
+    <![endif]-->
+    <?php
+    require("header.php");
+    ?>
 <div id="wrapper">
 <div class="5grid-layout" id="page-wrapper" style=" background: #000;">
 <div class="row">
