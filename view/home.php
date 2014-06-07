@@ -6,7 +6,7 @@
 
 </head>
 <body>
-<div id="header-wrapper">
+
     <!--[if IE 5]>
 
    <br/>
@@ -25,7 +25,7 @@
     <![endif]-->
 <?php
 require("header.php");
-?></div>
+?>
 <div id="wrapper">
     <div class="5grid-layout" id="page-wrapper" style=" background: #000">
         <div class="row">
@@ -100,27 +100,27 @@ require("header.php");
                     </div>
 
                 </section>
-                <span class="break_footer"><br><br><br><br><br><br></span>
+                <!--<span class="break_footer"><br><br><br><br><br><br></span>-->
             </div>
             <div class="4u mobileUI-main-content">
                 <section id="pbox3"><br>
-                    <span style="color:#00ff00;font-size:18px;line-height:5px;"><br/>SOME OF OUR PARTNERS..</span><br/><br/>
+                    <span class="home_right_heading"><br/>SOME OF OUR PARTNERS..</span><br/><br/>
                     <table style=" width:100%"><tr>
 
                             <td><div class="div_marquee">
                                     <marquee id="myMarquee" scrolldelay=150 >
-                                        <img src="../images/google.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/moto.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/jeep.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/str.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/usair.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/disnep.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/google.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/moto.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/jeep.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/str.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/usair.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
-                                        <img src="../images/disnep.PNG" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/google.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/moto.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/jeep.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/str.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/usair.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/disnep.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/google.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/moto.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/jeep.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/str.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/usair.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
+                                        <img src="../images/disnep.png" width="80px" height="110px" alt="google" class="imgmarquee"/>
 
                                     </marquee>
                                 </div>
@@ -137,11 +137,7 @@ require("header.php");
         </div>
     </div>
 </div>
-<div class="5grid-layout" id="copyright">
-<?php
-require("footer.php");
 
-?></div>
 <script>
     <?php
     unset($_SESSION['login_error']);
@@ -160,3 +156,7 @@ function valid_check($key)
 </body>
 </html>
 
+    <?php
+    require("footer.php");
+
+    ?>

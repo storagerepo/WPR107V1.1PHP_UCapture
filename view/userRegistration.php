@@ -2,6 +2,26 @@
 session_start();
 ?>
 
+    <!--[if IE 5]>
+
+    <br/>
+    <![endif]-->
+    <!--[if IE 6]>
+
+    <br/>
+    <![endif]-->
+    <!--[if IE 7]>
+
+    <br/>
+    <![endif]-->
+    <!--[if IE 8]>
+
+    <br/>
+    <![endif]-->
+<?php
+require("header.php");
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -12,11 +32,7 @@ session_start();
     <link rel="stylesheet" href="../css/other css/jquery-ui.css">
 </head>
 <body>
-<div id="header-wrapper">
-<?php
-require("header.php");
-?>
-</div>
+
 <div id="wrapper">
 	<div class="5grid-layout" id="page-wrapper"style="background: #000;">
 		<div class="row">
@@ -151,7 +167,8 @@ require("header.php");
                                                     <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx"autocomplete="off" <?php valid_check('address'); ?>  name="address"><?php echo $_SESSION['values']['address']; ?></textarea></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style=" padding-bottom:10px;"><span class="register_labels">DATE OF BIRTH</span></td>
-                                                    <td width="32%" style=" padding-bottom:10px;"align="right"><input type="text"autocomplete="off" class="txtbx" <?php valid_check('dob'); ?> value="<?php echo $_SESSION['values']['dob']; ?>" name="dob" id="datepicker"/></td>
+                                                    <td width="32%" style=" padding-bottom:10px;"align="right">
+                                                        <input type="date" autocomplete="off" class="txtbx" style="width: 75%;" <?php valid_check('dob'); ?> value="<?php echo $_SESSION['values']['dob']; ?>" name="dob" /></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style=" "><!--<span class="register_labels">IMAGE</span>--></td>
                                                     <td width="32%" align="right">
@@ -180,7 +197,7 @@ require("header.php");
     </div>
 </div>
 
-					</section><span class="break_footer"><br><br><br><br><br><br></span>
+					</section>
 			</div>
 			<div class="4u mobileUI-main-content">
 				<section id="pboxregisterright">
@@ -203,10 +220,7 @@ unset($_SESSION['error']);
 ?>
 
 <br/><br/><br>
-<?php
-require("footer.php");
 
-?>
 
 <script>
     $(document).ready(function() {
@@ -261,3 +275,7 @@ function valid_check($key)
 
 </body>
 </html>
+<?php
+require("footer.php");
+
+?>

@@ -1030,7 +1030,7 @@ a#login_pop:hover, a#join_pop:hover {
 
     font-size: 13px;
     color: #666;
-    border: 1px solid red;
+    /*border: 1px solid red;*/
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     border-radius: 3px;
@@ -1080,4 +1080,9 @@ a#login_pop:hover, a#join_pop:hover {
 
 .file-upload {
     display:none;
+}
+.home_right_heading{
+    color:#00ff00;
+    font-size:18px;
+    line-height:5px;
 }

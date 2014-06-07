@@ -1,16 +1,34 @@
 <?php
 session_start();
 ?>
+
+<!--[if IE 5]>
+
+<br/>
+<![endif]-->
+<!--[if IE 6]>
+
+<br/>
+<![endif]-->
+<!--[if IE 7]>
+
+<br/>
+<![endif]-->
+<!--[if IE 8]>
+
+<br/>
+<![endif]-->
+<?php
+require("header.php");
+?>
 <!DOCTYPE HTML>
 <html>
 <head>
     <title>UCapture</title>
 
-    <?php
-    require("header.php");
-    ?>
+
 <div id="wrapper">
-<div class="5grid-layout" id="page-wrapper" style="background: #000;">
+<div class="5grid-layout" id="page-wrapper" style=" background: #000;">
 <div class="row">
 <div class="8u mobileUI-main-content">
 <section id="pboxprofileleft"><br/>
@@ -263,7 +281,7 @@ session_start();
     </div>
 </div>
 
-</section><span class="break_footer"><br><br><br><br><br><br></span>
+</section>
 </div>
 <div class="4u mobileUI-main-content">
     <section id="pboxprofileright">
@@ -381,9 +399,6 @@ session_start();
 </div>
 </div>
 </div>
-<?php
-require("footer.php");
-?>
 
 <?php
 unset($_SESSION['profile']);
@@ -393,3 +408,6 @@ unset($_SESSION['values']);
 
 </body>
 </html>
+<?php
+require("footer.php");
+?>

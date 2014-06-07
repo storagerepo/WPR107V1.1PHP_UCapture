@@ -147,7 +147,7 @@
 #pbox3 {
     float:left;
     margin:0 0 0 -120px;
-    padding: 0em 0em 0em 1em;
+    padding: 0em 0em 0em 0em;
     width:500px;
     /* border:2px solid red; */
     min-height:475px;
@@ -668,4 +668,10 @@ y-axis
     height: 200px;
     width: 25px ;
     /*border: 2px solid red;*/
+}
+.login_textbox_br{
+    display: none;
+}
+.footer_table{
+    width:90%;
 }

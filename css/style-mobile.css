@@ -11,7 +11,9 @@ body {
 /* Header */
 
 #header-wrapper {
+    top: 0;
     margin-top:-13%;
+    /*border: 2px solid red;*/
 }
 
 
@@ -77,6 +79,8 @@ body {
 #wrapper {
     width: 100%;
     background: #000;
+    margin-top: 3px;
+    /*border: 2px solid red; */
 }
 
 /* Welcome */
@@ -157,8 +161,9 @@ ul.style1 a img {
 .header_mobile{
     display: block;
     width:100%;
-    height: 20%;
+    height: 22%;
     background: #fff;
+    /*border: 2px solid red;*/
 
 
 }
@@ -237,6 +242,7 @@ ul.style1 a img {
 
 
 #header-wrapper {
+border: 1px solid white;
     /* overflow: hidden; */
 
 }
@@ -247,12 +253,14 @@ ul.style1 a img {
 }
 
 #header {
+    padding:2px;
     /* overflow: hidden; */
     background: #fff;
     margin: 0 auto 0 auto;
     padding: 0 0 0em 0;
     width:100%;
-    height:100px;
+    height:110px;
+    top: 0;
 
 
 }
@@ -271,7 +279,7 @@ ul.style1 a img {
     padding: 0em 0em 0em 0em;
     letter-spacing: -.1em;
     text-decoration: none;
-    font-size: 4em;
+
     font-weight: bold;
     color: #FFFFFF;
 }
@@ -355,7 +363,7 @@ ul.style1 a img {
 }
 
 #pbox1 {
-    padding:0;
+    padding:0 0 0 3em;
     width:90%;
     max-height:600px;
     max-height:600px;
@@ -677,7 +685,7 @@ y-axis
     margin: 0px;
     width: 100%;
     max-width: 100%;
-    height: 130px;
+    height: 250px;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
 
@@ -715,7 +723,7 @@ body {
     padding: 0em;
     background: #000;
     font-family: aharoni;
-    font-size: 10pt;
+    font-size: 70%;
     color: #525252;
     overflow-x:hidden;
 }
@@ -776,7 +784,7 @@ strong {
 }
 
 #copyright p {
-    font-size:70%;
+    font-size:60%;
     padding-right:0px;
     float:center;
     color: #00ff00;
@@ -1096,7 +1104,7 @@ ul.style5 .first {
     color:#00ff00;
     border-bottom:2px solid #00ff00;
     text-decoration:none;
-    font-size:15px;
+    font-size:70%;
     border-top:none;
     border-left:none;
     border-right:none;
@@ -1115,7 +1123,7 @@ ul.style5 .first {
     color:#00ff00;
     border-bottom:2px solid #000;
     text-decoration:none;
-    font-size:15px;
+    font-size:70%;
     border-top:none;
     border-left:none;
     border-right:none;
@@ -1658,16 +1666,16 @@ a#login_pop:hover, a#join_pop:hover {
     font-size: 1px;
 }
 .signup_font{
-    font-size: 100%;
+    font-size: 80%;
 }
 
 .register_labels{
     color:#FFF;
-    font-size:100%;
+    font-size:80%;
 }
 .register_header{
     color:#00ff00;
-    font-size:100%;
+    font-size:80%;
 }
 .profile_label{
     padding-bottom:5;
@@ -1678,7 +1686,7 @@ a#login_pop:hover, a#join_pop:hover {
 
 }
 .mobile_data{
-    font-size: 100%;
+    font-size: 80%;
     color:#fff;
 
 }
@@ -1695,12 +1703,12 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .profile_label_value{
     padding-bottom:5px;
-    font-size:120%;
+    font-size:80%;
     color:#fff;
 }
 .profile_label_value_number{
     padding-bottom:5px;
-    font-size:100%;
+    font-size:80%;
     color:#fff;
 }
 .avatar_image{
@@ -1736,6 +1744,7 @@ a#login_pop:hover, a#join_pop:hover {
     font-size:80%;
     font-family:aharoni;
     text-decoration:none;
+    display: none;
 }
 .contentscrollbar_friends{
     overflow: auto;
@@ -1774,10 +1783,23 @@ a#login_pop:hover, a#join_pop:hover {
     width: 100%;
 }
 .login_header{
-    font-size: 80%;
+    font-size: 110%;
 }.menu_up_mobile_only{
     margin-top:-5.5%;
  }
 .break_footer{
     display: none;
+}
+.login_textbox_br{
+    display: block;
+}
+.footer_table{
+    width:60%;
+    font-size: 80%;
+ }
+
+.home_right_heading{
+    color:#00ff00;
+    font-size:100%;
+    line-height:5px;
 }

@@ -210,7 +210,7 @@
 
 			_headQueue.pushE_5grid(_baseURL + _opts['prefix'] + '-mobile.css');
 		}
-        else if (_mobile && ((ww <= 1100 && ww >480) ||( sw <= 1100 && sw>480)) || _mobileOnly)
+        else if (_mobile && ((ww <= 1100 && ww > 480) ||( sw <= 1100 && sw > 480)) || _mobileOnly)
         {
             _5grid.isMobile = true;
             _head.prepend('<meta name="viewport" content="initial-scale=1.0; minimum-scale=1.0; maximum-scale=1.0;" />');
