@@ -26,12 +26,12 @@ session_start();
     <![endif]-->
     <?php
     require("header.php");
-    ?>
+    ?><span class="wrapper_height_for_dt"><br><br><br><br><br><br><br></span>
 <div id="wrapper">
 <div class="5grid-layout" id="page-wrapper" style=" background: #000;">
 <div class="row">
 <div class="8u mobileUI-main-content">
-<section id="pboxprofileleft"><br/>
+<section id="pboxprofileleft"><span class="disable_br_in_tabs"> <br/></span>
 
 
 <div id="tabs-container">
@@ -43,10 +43,11 @@ session_start();
     </ul>
     <div class="tab">
         <div id="tab-2" class="tab-content">
-        <div id="content-4" class="contentscrollbar_profile">
+        <div id="content-4" class="contentscrollbar_profile"><br>
+        <marquee direction="up" scrolldelay=300 onmouseover="this.stop();" onmouseout="this.start();">
         <table width="96%" cellpadding="0"cellspacing="0"style="table-layout: fixed" class="profile_table" >
 
-            <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span  class="activity_th">DATE</span></td>
+            <tr class="tr" ><td width="32%" style=" padding-bottom:24px;"><span  class="activity_th">DATE</span></td>
                 <td width="32%" style="padding-bottom:10px;"><span   class="activity_th">ACTIVITY</span></td>
                 <td width="32%" style="padding-bottom:10px;">
                     <span  class="activity_th">LBS.CAPTURED</span></td></tr>
@@ -237,13 +238,13 @@ session_start();
                     <span class="activity_td_odd">1500</span></td></tr>
             <tr class="tr" ><td width="32%" style="padding-bottom:10px;">
                     <span class="activity_td_odd">5-18-14</span></td>
-                <td width="32%" style="padding-bottom:10px;overflow:auto;"><span class="activity_td_even">BESTBUY.COMBESTBUY.COMBESTBUY.COMBESTBUY.COM</span></td>
+                <td width="32%" style=" padding-bottom:10px;overflow:auto;"><span class="activity_td_even">BESTBUY.COMBESTBUY.COMBESTBUY.COMBESTBUY.COM</span></td>
                 <td width="32%" style="padding-bottom:10px;">
                     <span class="activity_td_odd">1755</span></td></tr>
 
 
 
-        </table><br><br><br>
+        </table></marquee><br><br><br>
             </div> </div>
         <?php
 
@@ -251,7 +252,7 @@ session_start();
         ?>
         <div id="tab-1" class="tab-content">
            <div id="content-5" class="contentscrollbar">
-                <span > <a href="editProfile.php" class="edit_lable">EDIT</a></span>
+
                 <br/><br/>
 
                 <table class="profile_table" style="table-layout: fixed;">
@@ -263,15 +264,15 @@ session_start();
                     <tr><td width="30%" class="profile_label">NAME</td>
                         <td width="75%" align="left" class="profile_label_value"><?php echo $_SESSION['profile']['firstname']; echo " " .$_SESSION['profile']['lastname'];  ?></td></tr>
                     <tr><td width="25%" class="profile_label">DOB</td>
-                        <td width="75%"  align="left" class="profile_label_value_number"><?php echo $_SESSION['profile']['dob']; ?></td></tr>
+                        <td width="75%"  align="left" class="profile_label_value"><?php echo $_SESSION['profile']['dob']; ?></td></tr>
                     <tr><td width="25%" class="profile_label">EMAIL</td>
-                        <td width="75%"  align="left"class="mobile_data"><?php echo $_SESSION['profile']['email']; ?></td></tr>
+                        <td width="75%"  align="left"class="profile_label_value"><?php echo $_SESSION['profile']['email']; ?></td></tr>
                     <tr><td width="25%" class="profile_label">ADDRESS</td>
                         <td width="75%"  align="left" class="profile_label_value"><?php echo $_SESSION['profile']['address']; ?></td></tr>
                     <tr><td width="25%" class="profile_label">PHONE</td>
                         <td width="75%"  align="left" class="profile_label_value"><?php echo $_SESSION['profile']['mobile']; ?></td></tr>
                     <!-- <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PASSWORD</td><td width="50%"><?php /*echo $_SESSION['profile']['password']; */?></td></tr>-->
-
+                    <tr><td></td><td align="LEFT"><span > <a href="editProfile.php" class="submit_btn">EDIT</a></span></td></tr>
                 </table>
 
 
@@ -285,113 +286,96 @@ session_start();
 </div>
 <div class="4u mobileUI-main-content">
     <section id="pboxprofileright">
-        <span class="register_header"><br/><span style="color:#fff;" >U</span>CAPTURE AVATAR</span><br/>
-        <br/><br/>
-        <!--<img src="../images/avatar.png" width="40%" height="200" alt="google" style="margin:0 0 0 55px;"/>-->
-        <?php
-        if(isset($_SESSION['profile']['user_image']))
-        {
-            echo '<img class="user_image" alt="Profile Image"  src="data:image/jpeg;base64,'.base64_encode($_SESSION['profile']['user_image'] ).'"/>';
-        }
-        else{
-        echo '<img alt="Profile Image" class="avatar_image" src="../images/avatar.png" />';
-
-        }
-        ?>
-        <BR/><BR/><BR/>
+        <span class="enable_br_in_tabs"><br><br></span>
         <span class="register_header">ACTIVITY IN MY NETWORK</span>
-        <br/><br/><br/><div id="content-6" class="contentscrollbar_friends">
+        <span class="profile_right_scroll" ><br/><br/></span><div id="content-6" class="contentscrollbar_friends">
         <table class="profile_friends_table">
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
+            <tr><td width="50%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">
                     JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;" class="profile_label">
                     JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;" class="profile_label">
                     JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;" class="profile_label">
                     JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
-                    JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
-                    JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
-                    JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
-                    JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
-                    JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;" class="profile_label">
-                    JOHN SMITH
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">8</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">COURTNEY CARL
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">56</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">DAVID SEELIG
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">3</td></tr>
-            <tr><td width="50%" style="padding-bottom:10px;color:#FFF;"class="profile_label">KEVIN SARVER
-                </td><td width="50%" style="padding-bottom:10px;color:#00ff00;"class="profile_label_value">10</td></tr>
+                </td>
+                <td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
+            </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">8</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">56</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">3</td></tr>
+            <tr><td width="50%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="50%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value">10</td></tr>
 
         </table></div>
     </section>

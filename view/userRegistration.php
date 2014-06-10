@@ -32,8 +32,11 @@ session_start();
 <![endif]-->
 <?php
 require("header.php");
+?><div class="login_pop">
+<?php
+require("login_popup.php");
 ?>
-
+</div>
 <div id="wrapper">
 	<div class="5grid-layout" id="page-wrapper"style=" background: #000;">
 		<div class="row">
@@ -43,7 +46,7 @@ require("header.php");
 
 					<div id="tabs-container">
     <ul class="tabs-menu">
-        <li ><a href="#tab-1"> <span style="color:#fff;">U</span>CAPTURE REGISTRATION</a></li>
+        <li ><a href="#tab-1"> <span style=" color:#fff;">U</span>CAPTURE REGISTRATION</a></li>
 
     </ul><br/>
                         <div class="tab">
@@ -53,16 +56,16 @@ require("header.php");
                         <?php
                         if(isset($_SESSION['require']) && count($_SESSION['require'])>0)
                         {
-                            echo '<br/><br/><div style="padding: 10px;border: solid 1px red;background-color: rgba(255,0, 0, 0.2)">
-                            <p><strong>Oh snap! Change a few things up and try submitting again.</strong></p>';
+                            echo '<br/><br/><div style=" padding: 10px;border: solid 1px red;background-color: rgba(255,0, 0, 0.2);">
+                            <p><strong style="color: yellow;">Oh snap! Change a few things up and try submitting again.</strong></p>';
                             foreach($_SESSION['require'] as $key=>$value)
                                 echo '<p>'.$value.'.</p>';
                             echo '</div>';
                         }
                         if(isset($_SESSION['error']) && count($_SESSION['error'])>0)
                         {
-                            echo '<br/><br/><div style="padding: 10px;border: solid 1px red;background-color: rgba(255,0, 0, 0.2)">
-                            <p><strong>Oh snap! Change a few things up and try submitting again.</strong></p>';
+                            echo '<br/><br/><div style=" padding: 10px;border: solid 1px red;background-color: rgba(255,0, 0, 0.2);">
+                            <p><strong style="color: yellow;">Oh snap! Change a few things up and try submitting again.</strong></p>';
                             foreach($_SESSION['error'] as $key=>$value)
                                 echo '<p>'.$value.'.</p>';
                             echo '</div>';
@@ -200,17 +203,17 @@ require("header.php");
 
 					</section>
 			</div>
-			<div class="4u mobileUI-main-content">
+			<!--<div class="4u mobileUI-main-content">
 				<section id="pboxregisterright">
 					<span  class="register_header"><br/><span style="color:#fff;">U</span>CAPTURE AVATAR</span><br/>
 					<br/><br/>
                     <img src="../images/avatar.png" title="Click to set profile image" class="profile-pic" id="upload-button"/>
                     <BR/><BR/><BR/>
-					<!--<span class="register_header">CHOOSE IMAGE TO UPLOAD</span>-->
+					<!--<span class="register_header">CHOOSE IMAGE TO UPLOAD</span>here close comment
 					<br/><br/><br/>
 					</section>
 			</div>
-		</div>
+		</div>-->
 	</div>
 </div>
 <?php

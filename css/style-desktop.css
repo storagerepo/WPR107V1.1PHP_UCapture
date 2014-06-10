@@ -7,6 +7,9 @@
 /* Header */
 
 #header-wrapper {
+    z-index: 999;
+    position: fixed;
+    height: 110px;
     /* overflow: hidden; */
     /*max-height:220px;
     height: auto;
@@ -19,12 +22,15 @@
 }
 
 #header {
+    z-index: 999;
+    /*z-index: 9999999;*/
     /* overflow: hidden; */
     background: #fff;
     margin: 0 auto 0 auto;
     padding: 0 0 0em 0;
     width:100%;
     height:100px;
+    position: fixed;
     /*border: 2px solid yellow;*/
 
 
@@ -100,6 +106,8 @@
     /*border: solid 1px blue;*/
     background:#000;
     width:100%;
+    margin-top: 0;
+
 
 }
 
@@ -126,15 +134,21 @@
 /* Page Wrapper */
 
 #page-wrapper {
-    margin-top:15px;
-    /* border:2px solid pink;*/
+    width: 95%;
+    margin-top:0;
+    max-height:40%;
+    height: 40%;
+   position: relative;
+
+    /*border:2px solid pink;*/
     background:#000000;
+
 }
 
 #pbox1 {
-    padding: 0em 0em 0em 3em;
-    width:600px;
-    /* border:2px solid blue; */
+    padding: 0em 0em 0em 0em;
+    width:680px;
+    /*border:2px solid blue;*/
     max-height:600px;
     overflow:auto;
     color:#fff;
@@ -146,17 +160,17 @@
 
 #pbox3 {
     float:left;
-    margin:0 0 0 -120px;
+    margin:0 0 0 -170px;
     padding: 0em 0em 0em 0em;
-    width:500px;
-    /* border:2px solid red; */
+    width:600px;
+    /*border:2px solid red;*/
     min-height:475px;
 
 }
 
 #pboxprofileleft {
-    padding: 0em 0em 0em 3em;
-    width:650px;
+    padding: 0em 0em 0em 12em;
+    width:500px;
     /*border:2px solid blue;*/
     max-height:700px;
     overflow:auto;
@@ -167,17 +181,37 @@
 
 #pboxprofileright {
     float:left;
-    margin:0 0 0 -70px;
-    padding: 0em 0em 0em 1em;
+    margin:0 0 0 -200px;
+    padding: 1.8em 0em 0em 1em;
     width:400px;
-    /* border:2px solid red; */
+     /*border:2px solid red;*/
     min-height:475px;
 
 }
 
+#pboxeditprofileleft {
+    padding: 0em 0em 0em 28em;
+    width:500px;
+    /*border:2px solid blue;*/
+    max-height:700px;
+    overflow:auto;
+    color:#fff;
+}
 
+
+
+#pboxeditprofileright {
+    float:left;
+    margin:0 0 0 -200px;
+    padding: 1.8em 0em 0em 1em;
+    width:400px;
+    /*border:2px solid red;*/
+    min-height:475px;
+
+}
 #pboxregisterleft {
-    padding: 0em 0em 0em 3em;
+    margin-top: 100px;
+    padding: 0em 0em 0em 25em;
     width:600px;
     overflow-x: hidden;
     /*border:2px solid blue;*/
@@ -217,6 +251,7 @@
 /* Footer */
 
 #footer {
+    position: fixed;
 }
 
 #footer #fbox1 {
@@ -234,9 +269,9 @@
 
 
 
-/* 
+/*
 ------------------------------------------------------------------------------------------------------------------------
-1. BASIC STYLE  
+1. BASIC STYLE
 ------------------------------------------------------------------------------------------------------------------------
 */
 
@@ -260,9 +295,9 @@
 
 
 
-/* 
+/*
 ------------------------------------------------------------------------------------------------------------------------
-2. VERTICAL SCROLLBAR 
+2. VERTICAL SCROLLBAR
 y-axis
 ------------------------------------------------------------------------------------------------------------------------
 */
@@ -320,7 +355,7 @@ y-axis
     cursor: pointer;
     width: 100%;
     height: 30px; /* minimum dragger height */
-    z-index: 1;
+    z-index: 12;
 }
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{ /* the dragger element */
@@ -426,6 +461,7 @@ y-axis
 
 
 .contentscrollbar{
+    /*border: 2px solid yellow;*/
     overflow: auto;
     position: relative;
     padding-top: 20px;
@@ -499,6 +535,7 @@ y-axis
     height: 30px;
     float: left;
     clear: both;
+    /*border:2px solid #ffffff;*/
 }
 
 .tabs-menu li {
@@ -509,6 +546,7 @@ y-axis
     margin-right: 0px;
     background-color: #000;
     color:#00ff00;
+    z-index: 1000;
     /* border-top: 1px solid #d4d4d1;
     border-right: 1px solid #d4d4d1;
     border-left: 1px solid #d4d4d1; */
@@ -538,7 +576,7 @@ y-axis
 }
 
 .tab {
-    /* border: 1px solid #d4d4d1; */
+    /*border: 1px solid #3bb9ff;*/
     background-color: #000;
     float: left;
     margin-bottom: 20px;
@@ -562,29 +600,29 @@ y-axis
 
     color:#FFF;
     font-size:17px;
-   /* padding-right: 60px;*/
+    /* padding-right: 60px;*/
 }
 .register_header{
     color:#00ff00;
     font-size:18px;
 }
 .profile_label{
-    padding-bottom:10px;
+    padding-bottom:20px;
     font-size:17px;
     color:#00ff00;
 }
 .profile_label_value{
-    padding-bottom:5px;
+    padding-bottom:20px;
     font-size:17px;
     color:#fff;
 }
 .profile_label_value_number{
-    padding-bottom:5px;
+    padding-bottom:20px;
     font-size:16px;
     color:#fff;
 }
 .mobile_data{
-    padding-bottom:5px;
+    padding-bottom:20px;
     font-size:17px;
     color:#fff;
 }
@@ -652,7 +690,7 @@ y-axis
 }
 .profile_table{
     width:100%;
-   /* border:2px solid red;*/
+    /* border:2px solid red;*/
 }
 .profile_friends_table{
     width: 460px;
@@ -673,5 +711,30 @@ y-axis
     display: none;
 }
 .footer_table{
-    width:90%;
+    width:50%;
+    padding-right: 15px;
+}
+.padding_scroll{
+    padding-right: 15px;
+}
+.header-wrapper_scroll_comp{
+
+margin-top: 0px;}
+
+.home_top_break{
+    display: block;
+}
+.login_pop{
+    display: block;
+ border: 2px solid yellow;
+    height: 10px;
+}
+.wrapper_height_for_dt{
+    display: block;
+}
+.enable_br_in_tabs{
+    display: none;
+}
+.login_br_for_big_screen{
+    display: block;
 }

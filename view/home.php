@@ -23,10 +23,15 @@
 
     <br/>
     <![endif]-->
+
 <?php
 require("header.php");
-?>
-<div id="wrapper">
+?><div class="login_pop">
+    <?php
+    require("login_popup.php");
+    ?>
+</div><span class="wrapper_height_for_dt"><br><br><br><br><br><br><br></span>
+<div id="wrapper" class="header-wrapper_scroll_comp">
     <div class="5grid-layout" id="page-wrapper" style=" background: #000">
         <div class="row">
             <div class="8u mobileUI-main-content">
@@ -43,7 +48,7 @@ require("header.php");
                         <div class="tab">
                             <div id="tab-1" class="tab-content">
                                 <div id="content-4" class="contentscrollbar">
-                                    <p>
+                                    <div class="padding_scroll"><p>
                                         <?php
 
                                         ?>
@@ -71,7 +76,7 @@ require("header.php");
                                     </p>	<br/>
                                     <p>QUAM NUNC PUTAMUS PARUM CLARAM, ANTEPOSUERIT LITTERARUM FORMAS HUMANITATIS PER SEACULA QUARTA DECIMA ET QUINTA DECIMA. EODEM MODO TYPI, QUI NUNC NOBIS VIDENTUR
                                     </p>		<br/>	<p>QUAM NUNC PUTAMUS PARUM CLARAM, ANTEPOSUERIT LITTERARUM FORMAS HUMANITATIS PER SEACULA QUARTA DECIMA ET QUINTA DECIMA. EODEM MODO TYPI, QUI NUNC NOBIS VIDENTUR
-                                    </p>	<p>&nbsp;</p>
+                                    </p>	<p>&nbsp;</p></div>
                                 </div> </div>
                             <div id="tab-2" class="tab-content">
                                 <div id="content-5" class="contentscrollbar">
@@ -137,7 +142,7 @@ require("header.php");
         </div>
     </div>
 </div>
-
+    <br><br><br><br>
 <script>
     <?php
     unset($_SESSION['login_error']);

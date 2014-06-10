@@ -11,8 +11,9 @@ body {
 /* Header */
 
 #header-wrapper {
-    top: 0;
-    margin-top:-13%;
+    margin-top:0;
+    position: fixed;
+    z-index: 999;
     /*border: 2px solid red;*/
 }
 
@@ -242,6 +243,7 @@ ul.style1 a img {
 
 
 #header-wrapper {
+    top: 0;
 border: 1px solid white;
     /* overflow: hidden; */
 
@@ -390,10 +392,11 @@ border: 1px solid white;
 #pboxprofileleft {
     padding: 0em 0em 0em 3em;
     width:90%;
-    /* border:2px solid blue; */
+    /*border:2px solid blue;*/
     max-height:180px;
     overflow:auto;
     color:#fff;
+    font-size: 100%;
 }
 
 
@@ -413,10 +416,11 @@ border: 1px solid white;
     padding: 0em 0em 0em 0em;
     width:90%;
     overflow-x: hidden;
-    border:2px solid blue;
+    /*border:2px solid blue;*/
     max-height:400px;
     overflow-y:auto;
     color:#fff;
+    margin-top:100px;
 }
 
 
@@ -1215,10 +1219,10 @@ a#login_pop:hover, a#join_pop:hover {
     padding: 3px;
     position: relative;
     text-align: justify;
-
+    left: 50%;
     visibility: hidden;
-    z-index: 10;
-    width:75%;
+    z-index: 1000;
+
 
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -1250,7 +1254,7 @@ a#login_pop:hover, a#join_pop:hover {
     border: 3px solid #fff;
     display: inline-block;
 
-
+    top: 50%;
     opacity: 0;
     padding: 1%;
     position: relative;
@@ -1259,7 +1263,7 @@ a#login_pop:hover, a#join_pop:hover {
     margin-top:-180px;
 
     visibility: hidden;
-    z-index: 10;
+    z-index: 1000;
     /*background-color: #fff;
     border: 3px solid #fff;
     display: inline-block;
@@ -1379,10 +1383,7 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .searchtextbox{
     outline: none;
-    border-bottom: 2px solid #000;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border-bottom: 1px solid #00ff00;
     height:4%;
     margin-top: 10px;
     margin-bottom: 2px;
@@ -1675,10 +1676,11 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .register_header{
     color:#00ff00;
-    font-size:80%;
+    font-size:120%;
 }
 .profile_label{
-    padding-bottom:5;
+    width: 50%;
+    padding-bottom:8px;
     font-size:80%;
     color:#00ff00;
 }
@@ -1703,7 +1705,7 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .profile_label_value{
     padding-bottom:5px;
-    font-size:80%;
+    font-size:120%;
     color:#fff;
 }
 .profile_label_value_number{
@@ -1780,7 +1782,7 @@ a#login_pop:hover, a#join_pop:hover {
 
 }
 .profile_friends_table{
-    width: 100%;
+    width: 110%;
 }
 .login_header{
     font-size: 110%;
@@ -1794,7 +1796,7 @@ a#login_pop:hover, a#join_pop:hover {
     display: block;
 }
 .footer_table{
-    width:60%;
+    width:50%;
     font-size: 80%;
  }
 
@@ -1802,4 +1804,29 @@ a#login_pop:hover, a#join_pop:hover {
     color:#00ff00;
     font-size:100%;
     line-height:5px;
+}
+.header-wrapper_scroll_comp{
+margin-top:0;
+}
+.home_top_break{
+    display: none;
+}
+.login_pop{
+    display: block;
+    border: 2px solid yellow;
+    height: 50px;
+}
+
+.wrapper_height_for_dt{
+    display: block;
+    height: 50px;
+}
+.profile_right_scroll{
+    display: none;
+}
+.enable_br_in_tabs{
+    display: none;
+}
+.login_br_for_big_screen{
+    display: none;
 }

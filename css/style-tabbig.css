@@ -1376,10 +1376,8 @@ a#login_pop:hover, a#join_pop:hover {
 }
 
 .searchtextbox{
-    border-bottom: 2px solid #000;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    border: 2px solid #00ff00;
+
     height:4%;
     margin-top: 10px;
     padding: 2px;
@@ -1792,10 +1790,22 @@ a#login_pop:hover, a#join_pop:hover {
     display: none;
 }
 .footer_table{
-    width:88%;
+    width:50%;
 }
 .home_right_heading{
     color:#00ff00;
     font-size:100%;
     line-height:5px;
+}
+.enable_br_in_tabs{
+    display: none;
+}
+.login_br_for_big_screen{
+    display: none;
+}
+.login_pop{
+    display: block;
+    /*border: 2px solid yellow;*/
+    height: 50px;
+    margin-top: -50px;
 }
