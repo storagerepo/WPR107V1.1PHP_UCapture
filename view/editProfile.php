@@ -27,6 +27,7 @@ session_start();
 <?php
 require("header.php");
 ?><span class="wrapper_height_for_dt"><br><br><br><br><br><br><br><br></span>
+<span class="profile_tab_top_margin"><br><br><br><br></span>
 <div id="wrapper" >
 <div class="5grid-layout" id="page-wrapper" style=" background: #000;">
 <div class="row">
@@ -294,6 +295,7 @@ require("header.php");
                             <tr><td width="50%" class="register_labels">USER NAME</td><td width="50%"><input type="text" disabled style="background-color:darkgray " class="txtbx" value="<?php echo $_SESSION['profile']['username']; ?>" name="username"/></td></tr>
                             <tr><td width="50%" class="register_labels">FIRST NAME</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['firstname']; ?>" name="firstname"/></td></tr>
                             <tr><td width="50%" class="register_labels">LAST NAME</td><td width="50%"><input type="text"autocomplete="off" class="txtbx" value="<?php echo $_SESSION['profile']['lastname'];?>" name="lastname"/></td></tr>
+                            <tr><td width="50%" class="register_labels">PASSWORD</td><td width="50%"><input type="password"autocomplete="off" class="txtbx" value="<?php echo $_SESSION['profile']['password'];?>" name="password"/></td></tr>
                             <tr><td width="50%" class="register_labels">DATE OF BIRTH</td><td width="50%"><input type="date" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['dob']; ?>"  name="dob" /></td></tr>
                             <tr><td width="50%" class="register_labels">EMAIL</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['email']; ?>" name="email"/></td></tr>
                             <tr><td width="50%" class="register_labels">ADDRESS</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['address']; ?>" name="address"/></td></tr>
@@ -320,6 +322,7 @@ require("header.php");
                             <tr><td width="50%"class="register_labels">USER NAME</td><td width="50%"><input type="text" disabled style="background-color:darkgray " class="txtbx" value="<?php echo $_SESSION['profile']['username']; ?>" name="username"/></td></tr>
                             <tr><td width="50%" class="register_labels">FIRST NAME</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['firstname']; ?>" name="firstname"/></td></tr>
                             <tr><td width="50%" class="register_labels">LAST NAME</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['lastname'];?>" name="lastname"/></td></tr>
+                            <tr><td width="50%" class="register_labels">PASSWORD</td><td width="50%"><input type="password"autocomplete="off" class="txtbx" value="<?php echo $_SESSION['profile']['password'];?>" name="password"/></td></tr>
                             <tr><td width="50%" class="register_labels">DATE OF BIRTH</td><td width="50%"><input type="date" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['dob']; ?>"  name="dob" /></td></tr>
                             <tr><td width="50%" class="register_labels">EMAIL</td><td width="50%"><input type="text" class="txtbx"autocomplete="off" value="<?php echo $_SESSION['values']['email']; ?>" name="email"/></td></tr>
                             <tr><td width="50%" class="register_labels">ADDRESS</td><td width="50%"><input type="text" class="txtbx" autocomplete="off"value="<?php echo $_SESSION['values']['address']; ?>" name="address"/></td></tr>

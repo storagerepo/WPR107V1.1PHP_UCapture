@@ -1809,3 +1809,6 @@ a#login_pop:hover, a#join_pop:hover {
     height: 50px;
     margin-top: -50px;
 }
+.profile_tab_top_margin{
+    display: none;
+}

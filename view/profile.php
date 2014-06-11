@@ -27,6 +27,7 @@ session_start();
     <?php
     require("header.php");
     ?><span class="wrapper_height_for_dt"><br><br><br><br><br><br><br></span>
+<span class="profile_tab_top_margin"><br><br><br><br></span>
 <div id="wrapper">
 <div class="5grid-layout" id="page-wrapper" style=" background: #000;">
 <div class="row">
@@ -44,13 +45,16 @@ session_start();
     <div class="tab">
         <div id="tab-2" class="tab-content">
         <div id="content-4" class="contentscrollbar_profile"><br>
+        <table width="96%" cellpadding="0"cellspacing="0"style="table-layout: fixed" class="profile_table" >
+
+        <tr class="tr" ><td width="32%" style=" padding-bottom:24px;"><span  class="activity_th">DATE</span></td>
+            <td width="32%" style="padding-bottom:10px;"><span   class="activity_th">ACTIVITY</span></td>
+            <td width="32%" style="padding-bottom:10px;">
+                <span  class="activity_th">LBS.CAPTURED</span></td></tr>
+</table>
         <marquee direction="up" scrolldelay=300 onmouseover="this.stop();" onmouseout="this.start();">
         <table width="96%" cellpadding="0"cellspacing="0"style="table-layout: fixed" class="profile_table" >
 
-            <tr class="tr" ><td width="32%" style=" padding-bottom:24px;"><span  class="activity_th">DATE</span></td>
-                <td width="32%" style="padding-bottom:10px;"><span   class="activity_th">ACTIVITY</span></td>
-                <td width="32%" style="padding-bottom:10px;">
-                    <span  class="activity_th">LBS.CAPTURED</span></td></tr>
 
             <tr class="tr" ><td width="32%" style="padding-bottom:10px;">
                     <span class="activity_td_odd">5-18-14</span></td>

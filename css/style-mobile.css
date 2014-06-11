@@ -372,6 +372,7 @@ border: 1px solid white;
     overflow:auto;
     color:#fff;
     background: #000;
+    /*border: 2px solid yellow;*/
 }
 
 
@@ -1214,15 +1215,15 @@ a#login_pop:hover, a#join_pop:hover {
     background-color: #fff;
     border: 1px solid #fff;
     display: inline-block;
-    top:40%;
+    top:50%;
     opacity: 0;
     padding: 3px;
-    position: relative;
+    position: fixed;
     text-align: justify;
     left: 50%;
     visibility: hidden;
     z-index: 1000;
-
+    width: 75%;
 
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -1358,11 +1359,131 @@ a#login_pop:hover, a#join_pop:hover {
     width: 50%;
     font-size: 80%;
 }*/
+.popup2 {
+
+    background-color: #fff;
+    border: 1px solid #fff;
+    display: inline-block;
+    top:50%;
+    opacity: 0;
+    padding: 3px;
+    position: fixed;
+    text-align: justify;
+    left: 50%;
+    visibility: hidden;
+    z-index: 1000;
+    width: 75%;
+
+
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+
+.popup2:read-only {
+    background-color: #fff;
+    border: 3px solid #fff;
+    display: inline-block;
+
+    top: 50%;
+    opacity: 0;
+    padding: 1%;
+    position: relative;
+
+    text-align: justify;
+    margin-top:-180px;
+
+    visibility: hidden;
+    z-index: 1000;
+    /*background-color: #fff;
+    border: 3px solid #fff;
+    display: inline-block;
+    left: 25%;
+    -o-left: 0%;
+    opacity: 0;
+    padding: 15px;
+    position: relative;
+    text-align: justify;
+    -moz-top:-150px;
+    -o-top:-150px;
+    visibility: hidden;
+    z-index: 10;
+*/
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border-radius: 10px;
+
+    -webkit-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -moz-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -ms-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    -o-box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0 1px 1px 2px rgba(0, 0, 0, 0.4) inset;
+
+    -webkit-transition: opacity .5s, top .5s;
+    -moz-transition: opacity .5s, top .5s;
+    -ms-transition: opacity .5s, top .5s;
+    -o-transition: opacity .5s, top .5s;
+    transition: opacity .5s, top .5s;
+}
+.overlay:target+.popup2 {
+
+    top: 50%;
+    opacity: 1;
+    visibility: visible;
+}
+.popup2 input[type="text"], .popup2 input[type="password"] {
+    outline: none;
+    padding: 2%;
+    font-family:aharoni;
+    width: 90%;
+    height:25%;
+    font-size: 80%;
+    color: #666;
+    border: 1px solid #ccc;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0px 0px 10px 0px #eee;
+    -moz-box-shadow: inset 0px 0px 10px 0px #eee;
+    box-shadow: inset 0px 0px 10px 0px #eee;
+    background:#fff;
+}
+.popup2 input[type="text"]:hover, .popup2 input[type="password"]:hover {
+
+}
 .popup input[type="text"], .popup input[type="password"] {
     outline: none;
     padding: 2%;
     font-family:aharoni;
-    width: 50%;
+    width: 90%;
     height:25%;
     font-size: 80%;
     color: #666;
@@ -1828,5 +1949,8 @@ margin-top:0;
     display: none;
 }
 .login_br_for_big_screen{
+    display: none;
+}
+.profile_tab_top_margin{
     display: none;
 }

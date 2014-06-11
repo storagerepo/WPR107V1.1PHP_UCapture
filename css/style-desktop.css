@@ -148,7 +148,7 @@
 #pbox1 {
     padding: 0em 0em 0em 0em;
     width:680px;
-    /*border:2px solid blue;*/
+    /*border:2px solid orange;*/
     max-height:600px;
     overflow:auto;
     color:#fff;
@@ -726,7 +726,7 @@ margin-top: 0px;}
 }
 .login_pop{
     display: block;
- border: 2px solid yellow;
+ /*border: 2px solid yellow;*/
     height: 10px;
 }
 .wrapper_height_for_dt{
@@ -737,4 +737,7 @@ margin-top: 0px;}
 }
 .login_br_for_big_screen{
     display: block;
+}
+.profile_tab_top_margin{
+    display: none;
 }

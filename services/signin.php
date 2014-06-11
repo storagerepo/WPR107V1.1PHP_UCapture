@@ -34,7 +34,6 @@ if(!isset($_POST['password']) || trim($_POST['password'])=='')
 if($countuser==0)
 {
     $_SESSION['login_error']['login'] = "Invalid Username/Password";
-  // echo "invalid";
     header("Location:../view/home.php");
    //   exit;
 }

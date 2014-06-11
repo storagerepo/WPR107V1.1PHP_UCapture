@@ -21,10 +21,14 @@ body {
 /* Main Wrapper */
 
 #wrapper {
-    width: 100%;
+    width: 99.8%;
     background: #000;
-}
 
+}
+.profile_tab_top_margin{
+   display: block;
+
+}
 /* Welcome */
 
 #welcome {
@@ -48,6 +52,8 @@ body {
 /* Page Wrapper */
 
 #page-wrapper {
+    width: 99.8%;
+    overflow-x:hidden ;
 }
 
 #page-wrapper section {
@@ -97,7 +103,7 @@ ul.style1 a img {
     height: 70%;
     line-height: 70%;
     float: left;
-    font-size:130%;
+    font-size:100%;
 
     background-color: #000;
     color:#00ff00;
@@ -271,15 +277,19 @@ ul.style1 a img {
 #page-wrapper {
 
     background: #000;
+    width: 99.8%;
+    overflow-x: hidden;
+    /*border: 1px solid yellow;*/
 }
 
 #pbox1 {
     padding-right:5% ;
     padding: 0;
     width:49%;
-    border-left: 24px solid #000;
-    /*border-top:2px solid blue;*/
-    max-height:600px;
+    /*border: 2px solid blue;*/
+    /*border-left: 2px solid #3bb9ff;
+    border-top:2px solid blue;
+    */max-height:600px;
     max-height:600px;
     overflow:auto;
     color:#fff;
@@ -287,6 +297,7 @@ ul.style1 a img {
     float: left;
     margin-bottom:5% ;
     font-size: 80%;
+    margin: 0 0 0 3%;
 }
 
 
@@ -295,21 +306,22 @@ ul.style1 a img {
 
 #pbox3 {
 
-    float:right;
+    float:left;
     margin:0 0 0 0px;
     /*padding: 0em 0em 0em -10em;*/
     width:43%;
-    /*border-top:1px solid red ;*/
-    border-left:15px solid #000;
-    border-right:15px solid #000;
+    /*border:1px solid red ;*/
+   /* border-left:2px solid #000;
+    border-right:15px solid #000;*/
     height:auto;
     background: #000;
+    margin: 0 0 0 2%;
 
 }
 
 #pboxprofileleft {
     padding: 0em 0em 0em 5em;
-    width:44%;
+    width:48%;
     /*border:2px solid blue;*/
     max-height:12%;
     overflow:auto;
@@ -325,7 +337,7 @@ ul.style1 a img {
     float:left;
     margin:0 0 0 0px;
     padding: 2% 0 0 0;
-    width:45%;
+    width:40%;
     /*border:2px solid red;*/
     height:auto;
 
@@ -763,6 +775,7 @@ strong {
 #wrapper {
     /*border:1px solid yellow;*/
     width: 99.9%;
+    overflow-x:hidden ;
 
 }
 
@@ -1169,10 +1182,10 @@ a#login_pop:hover, a#join_pop:hover {
     border: 3px solid #fff;
     display: inline-block;
     top:50%;
-    left: 50%;
+    left: 30%;
     opacity: 0;
     padding: 1px;
-    position: relative;
+    position: fixed;
     text-align: justify;
     visibility: hidden;
     z-index: 1000;
@@ -1180,6 +1193,7 @@ a#login_pop:hover, a#join_pop:hover {
     padding-left:1% ;
     padding-top: 4%;
     padding-bottom: 2%;
+    margin: 0 auto;
 
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
@@ -1270,11 +1284,11 @@ a#login_pop:hover, a#join_pop:hover {
     border: 3px solid #fff;
     display: inline-block;
     top:50%;
+
     left:10%;
-    left:50%;
     opacity: 0;
     padding: 1px;
-    position: absolute;
+    position: fixed;
     text-align: justify;
 
     visibility: hidden;
@@ -1461,21 +1475,15 @@ a#login_pop:hover, a#join_pop:hover {
 .searchtextbox{
     outline: none;
     border: 2px solid #00ff00;
+    border: 2px solid #00ff00;
 
-    height:17px;
+    height:10px;
     margin-top: 10px;
-    padding: 2px;
+    padding: 3px;
     color:#00ff00;
     font-size:80%;
     width:40%;
-    /*-webkit-box-shadow: inset 0px 0px 5px 0px #00ff00;
-    -moz-box-shadow: inset 0px 0px 5px 0px #00ff00;
-    box-shadow: inset 0px 0px 5px 0px #00ff00;
-*/
-    /*-webkit-box-shadow: 0 8px 6px -6px black;
-    -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;
-    */background:url(../images/srch_icon.png) no-repeat right;
+    background:url(../images/srch_icon.png) no-repeat right;
     background-size:25px 25px;
 }
 
@@ -1757,7 +1765,7 @@ a#login_pop:hover, a#join_pop:hover {
 }
 .register_header{
     color:#00ff00;
-    font-size:130%;
+    font-size:100%;
 }
 .profile_label{
     padding-bottom:10px;
