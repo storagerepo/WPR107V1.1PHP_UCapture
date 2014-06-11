@@ -136,13 +136,13 @@ require("header.php");
 
 
 
-                    <iframe width="97%" height="315" src="//www.youtube.com/embed/O95gBhEaAKI"  allowfullscreen></iframe>
+                    <iframe width="97%" height="280" src="//www.youtube.com/embed/O95gBhEaAKI"  allowfullscreen></iframe>
                 </section>
             </div>
         </div>
     </div>
 </div>
-    <br><br><br><br>
+    <br><br>
 <script>
     <?php
     unset($_SESSION['login_error']);

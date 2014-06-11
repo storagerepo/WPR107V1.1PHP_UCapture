@@ -4,11 +4,11 @@
             <section >
 
                 <!-- Dummy area -->
-               <table width="100%">
-                    <tr><td align="right" style="vertical-align: middle;spadding-right:2px"class="footer_table"><!--<span class="copyrightfontdiv">-->INFO @ <a href="#">UCAPTURE.COM </a><!--</span>--></td>
+               <table width="98%"  style="">
+                    <tr><td align="right" style=" height:25px;vertical-align: middle;padding-right:2px"><span class="copyrightfontdiv">INFO @ <a href="#">UCAPTURE.COM </a></span>
                             <!--<a href="#"><img src="images/smedia1.png"/></a>
 				<a href="#"><img src="images/smedia2.png"/></a>&nbsp;&nbsp;
-				--><td align="left" style="   vertical-align: middle"><a href="#"><img src="../images/smedia3.png"  class="footer_image"/></a>
+				-->&nbsp;&nbsp;<a href="#"><img src="../images/smedia3.png"  class="footer_image"/></a>
                                 <!--<a href="#"><img src="images/smedia4.png"/></a>
                                 --><a href="#"><img src="../images/smedia5.png"  class="footer_image"/></a>
                                 <!--<a href="#"><img src="images/smedia6.png"/></a>

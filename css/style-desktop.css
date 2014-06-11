@@ -137,10 +137,10 @@
     width: 95%;
     margin-top:0;
     max-height:40%;
-    height: 40%;
-   position: relative;
+    height: 37%;
+    position: relative;
 
-    border:2px solid pink;
+    /*border:2px solid pink;*/
     background:#000000;
 
 }
@@ -149,8 +149,8 @@
     padding: 0em 0em 0em 0em;
     width:680px;
     /*border:2px solid orange;*/
-    max-height:600px;
-    overflow:auto;
+    max-height:490px;
+    overflow: hidden;
     color:#fff;
 }
 
@@ -469,7 +469,7 @@ y-axis
     margin: 0px;
     width: 100%;
     max-width: 100%;
-    height: 500px;
+    height: 440px;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
 
@@ -740,4 +740,7 @@ margin-top: 0px;}
 }
 .profile_tab_top_margin{
     display: none;
+}
+.forgot_position{
+    padding-top:20px;
 }

@@ -345,9 +345,20 @@ ul.style5 .first {
 .copyrightfontdiv
 {
 
-    color: #00ff00;
-   margin-top: -15px;
-    vertical-align: middle;
+    color: #666;
+
+    vertical-align: top;
+
+
+    /* border:2px solid red; */
+
+}
+.copyrightfontdiv a
+{
+
+    color: #666;
+
+    vertical-align: top;
 
 
     /* border:2px solid red; */
@@ -530,7 +541,7 @@ a#login_pop:hover, a#join_pop:hover {
     -o-left: 0%;
     opacity: 0;
     padding: 15px;
-    position: relative;
+    position: fixed;
     text-align: justify;
     -moz-top:-150px;
     -o-top:-150px;
