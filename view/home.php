@@ -30,7 +30,7 @@ require("header.php");
     <?php
     require("login_popup.php");
     ?>
-</div><span class="wrapper_height_for_dt"><br><br><br><br><br><br><br></span>
+</div><span class="wrapper_height_for_dt"><br><br><br><br><br><br></span>
 <div id="wrapper" class="header-wrapper_scroll_comp">
     <div class="5grid-layout" id="page-wrapper" style=" background: #000">
         <div class="row">
@@ -46,7 +46,7 @@ require("header.php");
 
                         </ul>
                         <div class="tab">
-                            <div id="tab-1" class="tab-content">
+                            <div id="tab-1" class="tab-content"><br/>
                                 <div id="content-4" class="contentscrollbar">
                                     <div class="padding_scroll"><p>
                                         <?php
@@ -78,9 +78,9 @@ require("header.php");
                                     </p>		<br/>	<p>QUAM NUNC PUTAMUS PARUM CLARAM, ANTEPOSUERIT LITTERARUM FORMAS HUMANITATIS PER SEACULA QUARTA DECIMA ET QUINTA DECIMA. EODEM MODO TYPI, QUI NUNC NOBIS VIDENTUR
                                     </p>	<p>&nbsp;</p></div>
                                 </div> </div>
-                            <div id="tab-2" class="tab-content">
+                            <div id="tab-2" class="tab-content"><br/>
                                 <div id="content-5" class="contentscrollbar">
-                                    <p>VEL ILLUM DOLORE EU FEUGIAT NULLA FACILISIS AT VERO EROS ET ACCUMSAN ET IUSTO ODIO DIGNISSIM QUI BLANDIT PRAESENT LUPTATUM ZZRIL DELENIT AUGUE DUIS DOLORE TE FEUGAIT NULLA FACILISI. NAM LIBER TEMPOR CUM SOLUTA NOBIS ELEIFEND OPTION CONGUE NIHIL IMPERDIET DOMING ID QUOD MAZIM PLACERAT FACER POSSIM ASSUM.
+                                    <div class="padding_scroll"> <p>VEL ILLUM DOLORE EU FEUGIAT NULLA FACILISIS AT VERO EROS ET ACCUMSAN ET IUSTO ODIO DIGNISSIM QUI BLANDIT PRAESENT LUPTATUM ZZRIL DELENIT AUGUE DUIS DOLORE TE FEUGAIT NULLA FACILISI. NAM LIBER TEMPOR CUM SOLUTA NOBIS ELEIFEND OPTION CONGUE NIHIL IMPERDIET DOMING ID QUOD MAZIM PLACERAT FACER POSSIM ASSUM.
                                     </p><br/>
                                     <p>TYPI NON HABENT CLARITATEM INSITAM; EST USUS LEGENTIS IN IIS QUI FACIT EORUM CLARITATEM. INVESTIGATIONES DEMONSTRAVERUNT LECTORES LEGERE ME LIUS QUOD II LEGUNT SAEPIUS. CLARITAS EST ETIAM PROCESSUS DYNAMICUS, QUI SEQUITUR MUTATIONEM CONSUETUDIUM LECTORUM. MIRUM EST NOTARE QUAM LITTERA GOTHICA,
                                     </p><br/>
@@ -97,7 +97,7 @@ require("header.php");
                                     <p>TYPI NON HABENT CLARITATEM INSITAM; EST USUS LEGENTIS IN IIS QUI FACIT EORUM CLARITATEM. INVESTIGATIONES DEMONSTRAVERUNT LECTORES LEGERE ME LIUS QUOD II LEGUNT SAEPIUS. CLARITAS EST ETIAM PROCESSUS DYNAMICUS, QUI SEQUITUR MUTATIONEM CONSUETUDIUM LECTORUM. MIRUM EST NOTARE QUAM LITTERA GOTHICA,
                                     </p><br/>
                                     <p>QUAM NUNC PUTAMUS PARUM CLARAM, ANTEPOSUERIT LITTERARUM FORMAS HUMANITATIS PER SEACULA QUARTA DECIMA ET QUINTA DECIMA. EODEM MODO TYPI, QUI NUNC NOBIS VIDENTUR
-                                    </p><br/>
+                                    </p><br/></div>
                                 </div>
                             </div>
 

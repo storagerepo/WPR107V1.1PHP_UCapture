@@ -67,7 +67,7 @@ if(isset($_POST['submit'])) {
         <table width="97%" border="0" cellpadding="0" cellspacing="0" style="table-layout: fixed;width:96% ;">
             <tr><td  align="center" style=" overflow:hidden;margin: 0 auto;"><div class="headerLink"><img src="../images/Majorlogo.png"class="mobile_logo" width="300" height="84" alt="UCapture"/>  </div></td>
 
-                <td  align="right" style=" overflow:hidden;vertical-align: middle;padding-bottom: 15px;"><font color="#00ff00" >
+                <td  align="right" style=" overflow:hidden;vertical-align: middle;padding: 5px;"><font color="#00ff00" >
                         <?php
                          //session_start();
                         if(!isset($_SESSION['user_id']))

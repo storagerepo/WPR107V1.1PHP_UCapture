@@ -146,8 +146,8 @@
 }
 
 #pbox1 {
-    padding: 0em 0em 0em 0em;
-    width:680px;
+    padding: 0 0 0 24px;
+    width:645px;
     /*border:2px solid orange;*/
     max-height:490px;
     overflow: hidden;
@@ -160,19 +160,19 @@
 
 #pbox3 {
     float:left;
-    margin:0 0 0 -170px;
+    margin:0 0 0 -180px;
     padding: 0em 0em 0em 0em;
-    width:600px;
+    width:590px;
     /*border:2px solid red;*/
     min-height:475px;
 
 }
 
 #pboxprofileleft {
-    padding: 0em 0em 0em 12em;
-    width:500px;
+    padding: 0 0 0 24px;
+    width:600px;
     /*border:2px solid blue;*/
-    max-height:700px;
+    max-height:500px;
     overflow:auto;
     color:#fff;
 }
@@ -181,9 +181,9 @@
 
 #pboxprofileright {
     float:left;
-    margin:0 0 0 -200px;
-    padding: 1.8em 0em 0em 1em;
-    width:400px;
+    margin:0 0 0 -220px;
+    padding: 1.8em 0em 0em 0em;
+    width:600px;
      /*border:2px solid red;*/
     min-height:475px;
 
@@ -192,7 +192,7 @@
 #pboxeditprofileleft {
     padding: 0em 0em 0em 28em;
     width:500px;
-    /*border:2px solid blue;*/
+    border:2px solid blue;
     max-height:700px;
     overflow:auto;
     color:#fff;
@@ -469,7 +469,7 @@ y-axis
     margin: 0px;
     width: 100%;
     max-width: 100%;
-    height: 440px;
+    height: 425px;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
 
@@ -487,10 +487,12 @@ y-axis
     margin: 0px;
     width: 100%;
     max-width: 100%;
-    height:190px;
+    height:420px;
     overflow-x:hidden ;
     -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box; box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*border: 2px solid yellow;*/
 }
 
 .contentscrollbar_friends.hidden{ display: none; }
@@ -507,7 +509,7 @@ y-axis
     margin: 0px;
     width: 100%;
     max-width: 100%;
-    height: 500px;
+    height: 420px;
     -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box;
 }
 
@@ -694,6 +696,7 @@ y-axis
 }
 .profile_friends_table{
     width: 460px;
+
 }
 .login_header{
     font-size: 120%;
@@ -740,7 +743,4 @@ margin-top: 0px;}
 }
 .profile_tab_top_margin{
     display: none;
-}
-.forgot_position{
-    padding-top:20px;
 }
