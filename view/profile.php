@@ -44,21 +44,22 @@ session_start();
     </ul>
     <div class="tab">
         <div id="tab-2" class="tab-content">
-        <div id="content-4" class="contentscrollbar_profile"><br>
-       <!-- <table width="96%" cellpadding="0"cellspacing="0"style="table-layout: fixed" class="profile_table" >
+        <div id="content-4" class="contentscrollbar_profile">
+      <table width="41.5%" cellpadding="0"cellspacing="0"style="table-layout: fixed;background: #000000;position: fixed;"  >
 
         <tr class="tr" ><td width="32%" style=" padding-bottom:24px;"><span  class="activity_th">DATE</span></td>
             <td width="32%" style="padding-bottom:10px;"><span   class="activity_th">ACTIVITY</span></td>
             <td width="32%" style="padding-bottom:10px;">
                 <span  class="activity_th">LBS.CAPTURED</span></td></tr>
-</table>-->
+</table>
         <!--<marquee direction="up" scrolldelay=300 onmouseover="this.stop();" onmouseout="this.start();">-->
-        <table width="96%" cellpadding="0"cellspacing="0"style="table-layout: fixed" class="profile_table" >
+        <table width="96%" cellpadding="0"cellspacing="0"style="table-layout: fixed;background: #000000;" class="profile_table" >
 
-            <tr class="tr" ><td width="32%" style=" padding-bottom:24px;"><span  class="activity_th">DATE</span></td>
-                <td width="32%" style="padding-bottom:10px;"><span   class="activity_th">ACTIVITY</span></td>
-                <td width="32%" style="padding-bottom:10px;">
-                    <span  class="activity_th">LBS.CAPTURED</span></td></tr>
+           <!--<tr class="tr" style="position: fixed;background: #000000;" >
+               <th width="32%" style=" padding-bottom:24px;"><span  class="activity_th">DATE</span><span style="color: #000000;">adsasda </span> </th>
+                <th width="32%" style="padding-bottom:10px;"><span   class="activity_th">ACTIVITY</span></th>
+                <th width="32%" style="padding-bottom:10px;">
+                    <span  class="activity_th">LBS.CAPTURED</span></th></tr>-->
             <tr class="tr" ><td width="32%" style="padding-bottom:10px;">
                     <span class="activity_td_odd">5-18-14</span></td>
                 <td width="32%" style="padding-bottom:10px;"><span class="activity_td_even">BESTBUY.COM</span></td>
@@ -66,7 +67,7 @@ session_start();
                     <span class="activity_td_odd">1500</span></td></tr>
             <tr class="tr" ><td width="32%" style="padding-bottom:10px;">
                     <span class="activity_td_odd">5-18-14</span></td>
-                <td width="32%" style=" padding-bottom:10px;overflow:auto;"><span class="activity_td_even">BESTBUY.COMBESTBUY.COMBESTBUY.COMBESTBUY.COM</span></td>
+                <td width="32%" style=" padding-bottom:10px;overflow:auto;"><span class="activity_td_even">BESTBUY.COM</span></td>
                 <td width="32%" style="padding-bottom:10px;">
                     <span class="activity_td_odd">150000000</span></td></tr>
 
@@ -251,7 +252,7 @@ session_start();
                     <span class="activity_td_odd">1500</span></td></tr>
             <tr class="tr" ><td width="32%" style="padding-bottom:10px;">
                     <span class="activity_td_odd">5-18-14</span></td>
-                <td width="32%" style=" padding-bottom:10px;overflow:auto;"><span class="activity_td_even">BESTBUY.COMBESTBUY.COMBESTBUY.COMBESTBUY.COM</span></td>
+                <td width="32%" style=" padding-bottom:10px;overflow:auto;"><span class="activity_td_even">BESTBUY.COMB</span></td>
                 <td width="32%" style="padding-bottom:10px;">
                     <span class="activity_td_odd">1755</span></td></tr>
 
@@ -300,9 +301,11 @@ session_start();
 <div class="4u mobileUI-main-content">
     <section id="pboxprofileright">
         <span class="enable_br_in_tabs"><br><br></span>
+        <span class="register_header">ACTIVITY IN MY NETWORK</span><br>
+        <img src="../images/avatar.png" class="avatar_image"/><br>
         <span class="register_header">ACTIVITY IN MY NETWORK</span>
         <span class="profile_right_scroll" ><br/><br/></span><div id="content-6" class="contentscrollbar_friends">
-        <marquee direction="up" scrolldelay=300 onmouseover="this.stop();" onmouseout="this.start();" height="300" >
+        <marquee direction="up" scrolldelay=300 onmouseover="this.stop();" onmouseout="this.start();" height="150" >
         <table class="profile_friends_table">
             <tr><td width="90%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">
                     JOHN SMITH
