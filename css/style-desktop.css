@@ -9,7 +9,7 @@
 #header-wrapper {
     z-index: 999;
     position: fixed;
-    height: 110px;
+    height: 90px;
     /* overflow: hidden; */
     /*max-height:220px;
     height: auto;
@@ -29,7 +29,7 @@
     margin: 0 auto 0 auto;
     padding: 0 0 0em 0;
     width:100%;
-    height:100px;
+    height:85px;
     position: fixed;
     /*border: 2px solid yellow;*/
 
@@ -140,7 +140,7 @@
     height: 40%;
    position: relative;
 
-    /*border:2px solid pink;*/
+    border:2px solid pink;
     background:#000000;
 
 }

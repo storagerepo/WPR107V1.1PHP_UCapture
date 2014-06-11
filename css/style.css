@@ -76,7 +76,7 @@ strong {
 
 #copyright {
     position: fixed;
-    height:40px;
+    height:30px;
     width:1365px;
     /*width:100%;*/
     /*float:right;*/
@@ -335,7 +335,7 @@ ul.style5 .first {
 
 
 .headerLink{
-    height:100px ;
+    height:84px ;
     width:auto;
     background:#ffffff;
     /* border:2px solid blue; */
