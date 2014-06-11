@@ -210,12 +210,12 @@
 
 }
 #pboxregisterleft {
-    margin-top: 100px;
-    padding: 0em 0em 0em 25em;
-    width:600px;
+    margin-top: 80px;
+    padding: 0em 0em 0em 3.5em;
+    width:1200px;
     overflow-x: hidden;
-    /*border:2px solid blue;*/
-    max-height:700px;
+ /* border:2px solid blue;*/
+    max-height:490px;
     overflow-y:auto;
     color:#fff;
 }
@@ -224,7 +224,7 @@
 
 #pboxregisterright {
     float:left;
-    margin:0 0 0 -170px;
+    margin:0px 0 0 -170px;
     padding: 0em 0em 0em 1em;
     width:400px;
     /* border: 2px solid red;*/

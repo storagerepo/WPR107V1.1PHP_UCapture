@@ -18,10 +18,13 @@
                 <label for="password">&nbsp;&nbsp;Password</label>
                 <span class="login_textbox_br"><br/></span> &nbsp;&nbsp;<input type="password" id="password" value="" name="password"/>
             </div>
-            <a href="#join_form" id="join_pop">&nbsp;&nbsp;Forgot Password?</a><BR/>
-            <span style="float: right">
-                                    <input type="submit" value="Log In" class="submit_btn"/>&nbsp;&nbsp;&nbsp;
-                                    <input type="button" class="submit_btn"onclick="location.href='#close'" value="Cancel"/><!-- <a class="submit_btn" href="#close">Cancel</a>--></span>
+            <table width="99%">
+            <tr><td style="vertical-align: middle;">
+
+            <a href="#join_form" id="join_pop">&nbsp;&nbsp;Forgot Password?</a></td>
+                <td align="right">
+            <span style="float: right"><input type="submit" value="Log In" class="submit_btn"/></span></td></tr></table>
+                                    <!--<input type="button" class="submit_btn"onclick="location.href='#close'" value="Cancel"/>--><!--<a class="submit_btn" href="#close">X</a>-->
         <?php
         }
         else
@@ -34,11 +37,13 @@
             <div>
                 <label for="password">&nbsp;&nbsp;Password</label>
                 <span class="login_textbox_br"><br/></span> &nbsp;&nbsp;<input type="password" id="password" value="" name="password"/>
-            </div><br/>
-
-            <a href="#join_form" id="join_pop">&nbsp;&nbsp;Forgot Password?</a><BR/>
-            <span style="float: right"> <input type="submit" value="Log In" class="submit_btn"/>&nbsp;&nbsp;
-                                    &nbsp;<input type="button" class="submit_btn"onclick="location.href='#close'" value="Cancel"/><!--<a class="submit_btn" href="#close">Cancel</a>--></span>
+            </div>
+             <table width="99%">
+            <tr><td style="vertical-align: middle;">
+            <a href="#join_form" id="join_pop" >&nbsp;&nbsp;Forgot Password?</a></td>
+                <td align="right">
+            <span style="float: right"> <input type="submit" value="Log In" class="submit_btn"/></span></td></tr></table>
+                                    <!--<input type="button" class="submit_btn"onclick="location.href='#close'" value="Cancel"/>--><!--<a class="submit_btn" href="#close">Cancel</a>-->
 
         <?php
 
