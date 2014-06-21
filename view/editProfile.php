@@ -286,20 +286,20 @@ require("header.php");
 
                 ?>
                 <form enctype="multipart/form-data" class="form-horizontal" action="../services/updateuser.php" method="POST" ng-app="profile" novalidate>
-                    <table class="table">
+                    <table class="table1">
                         <?php
                         if(!isset($_SESSION['error'])&&!isset($_SESSION['require']))
                         {
                             ?>
 
-                            <tr><td width="50%" class="register_labels">USER NAME</td><td width="50%"><input type="text" disabled style="background-color:darkgray " class="txtbx" value="<?php echo $_SESSION['profile']['username']; ?>" name="username"/></td></tr>
-                            <tr><td width="50%" class="register_labels">FIRST NAME</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['firstname']; ?>" name="firstname"/></td></tr>
-                            <tr><td width="50%" class="register_labels">LAST NAME</td><td width="50%"><input type="text"autocomplete="off" class="txtbx" value="<?php echo $_SESSION['profile']['lastname'];?>" name="lastname"/></td></tr>
-                            <tr><td width="50%" class="register_labels">PASSWORD</td><td width="50%"><input type="password"autocomplete="off" class="txtbx" value="<?php echo $_SESSION['profile']['password'];?>" name="password"/></td></tr>
-                            <tr><td width="50%" class="register_labels">DATE OF BIRTH</td><td width="50%"><input type="date" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['dob']; ?>"  name="dob" /></td></tr>
-                            <tr><td width="50%" class="register_labels">EMAIL</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['email']; ?>" name="email"/></td></tr>
-                            <tr><td width="50%" class="register_labels">ADDRESS</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['address']; ?>" name="address"/></td></tr>
-                            <tr><td width="50%" class="register_labels">PHONE</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['mobile']; ?>" name="mobile"/></td></tr>
+                            <tr><td width="50%" class="register_labels">USERNAME</td><td width="50%" align="right"><input type="text" disabled style="background-color:darkgray " class="txtbx" value="<?php echo $_SESSION['profile']['username']; ?>" name="username"/></td></tr>
+                            <!--<tr><td width="50%" class="register_labels">FIRST NAME</td><td width="50%"align="right"><input type="text" autocomplete="off"class="txtbx" value="<?php /*echo $_SESSION['profile']['firstname']; */?>" name="firstname"/></td></tr>
+                            <tr><td width="50%" class="register_labels">LAST NAME</td><td width="50%"align="right"><input type="text"autocomplete="off" class="txtbx" value="<?php /*echo $_SESSION['profile']['lastname'];*/?>" name="lastname"/></td></tr>
+                            --><tr><td width="50%" class="register_labels">PASSWORD</td><td width="50%"align="right"><input type="password"autocomplete="off" class="txtbx" value="<?php echo $_SESSION['profile']['password'];?>" name="password"/></td></tr>
+                            <!--<tr><td width="50%" class="register_labels">DATE OF BIRTH</td><td width="50%"align="right"><input type="date" autocomplete="off"class="txtbx" value="<?php /*echo $_SESSION['profile']['dob']; */?>"  name="dob" /></td></tr>
+                           --> <tr><td width="50%" class="register_labels">EMAIL</td><td width="50%"align="right"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['email']; ?>" name="email"/></td></tr>
+                            <tr><td width="50%" class="register_labels">ADDRESS</td><td width="50%"align="right"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['address']; ?>" name="address"/></td></tr>
+                            <tr><td width="50%" class="register_labels">PHONE</td><td width="50%"align="right"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['profile']['mobile']; ?>" name="mobile"/></td></tr>
                             <!-- <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PASSWORD</td><td width="50%"><?php /*echo $_SESSION['profile']['password']; */?></td></tr>-->
                             <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;"></td><td width="50%">
 
@@ -309,7 +309,7 @@ require("header.php");
 
                                 </td></tr>
                             <tr><td width="50%"></td><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right"><span class="register_labels">
-                                    <input type="submit" value="UPDATE" class="submit_btn"/></span></td>
+                                    <input type="submit" value="UPDATE" class="submit_btn" id="edit_btn"/></span></td>
                                 <!--<td width="50%" style="padding-left: 50px;">
                                     <input type="reset" value="RESET" class="submit_btn"/></td>-->
                             </tr>
@@ -319,14 +319,14 @@ require("header.php");
                         {
                             ?>
 
-                            <tr><td width="50%"class="register_labels">USER NAME</td><td width="50%"><input type="text" disabled style="background-color:darkgray " class="txtbx" value="<?php echo $_SESSION['profile']['username']; ?>" name="username"/></td></tr>
-                            <tr><td width="50%" class="register_labels">FIRST NAME</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['firstname']; ?>" name="firstname"/></td></tr>
-                            <tr><td width="50%" class="register_labels">LAST NAME</td><td width="50%"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['lastname'];?>" name="lastname"/></td></tr>
-                            <tr><td width="50%" class="register_labels">PASSWORD</td><td width="50%"><input type="password"autocomplete="off" class="txtbx" value="<?php echo $_SESSION['profile']['password'];?>" name="password"/></td></tr>
-                            <tr><td width="50%" class="register_labels">DATE OF BIRTH</td><td width="50%"><input type="date" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['dob']; ?>"  name="dob" /></td></tr>
-                            <tr><td width="50%" class="register_labels">EMAIL</td><td width="50%"><input type="text" class="txtbx"autocomplete="off" value="<?php echo $_SESSION['values']['email']; ?>" name="email"/></td></tr>
-                            <tr><td width="50%" class="register_labels">ADDRESS</td><td width="50%"><input type="text" class="txtbx" autocomplete="off"value="<?php echo $_SESSION['values']['address']; ?>" name="address"/></td></tr>
-                            <tr><td width="50%" class="register_labels">PHONE</td><td width="50%"><input type="text" class="txtbx"autocomplete="off" value="<?php echo $_SESSION['values']['mobile']; ?>" name="mobile"/></td></tr>
+                            <!--<tr><td width="50%" class="register_labels">USERNAME</td><td width="50%"align="right"><input type="text" disabled style="background-color:darkgray " class="txtbx" value="<?php /*echo $_SESSION['profile']['username']; */?>" name="username"/></td></tr>
+                            <tr><td width="50%" class="register_labels">FIRST NAME</td><td width="50%"align="right"><input type="text" autocomplete="off"class="txtbx" value="<?php /*echo $_SESSION['values']['firstname']; */?>" name="firstname"/></td></tr>
+                            --><tr><td width="50%" class="register_labels">LAST NAME</td><td width="50%"align="right"><input type="text" autocomplete="off"class="txtbx" value="<?php echo $_SESSION['values']['lastname'];?>" name="lastname"/></td></tr>
+                            <tr><td width="50%" class="register_labels">PASSWORD</td><td width="50%"align="right"><input type="password"autocomplete="off" class="txtbx" value="<?php echo $_SESSION['profile']['password'];?>" name="password"/></td></tr>
+                            <!--<tr><td width="50%" class="register_labels">DATE OF BIRTH</td><td width="50%"align="right"><input type="date" autocomplete="off"class="txtbx" value="<?php /*echo $_SESSION['values']['dob']; */?>"  name="dob" /></td></tr>
+                            --><tr><td width="50%" class="register_labels">EMAIL</td><td width="50%"align="right"><input type="text" class="txtbx"autocomplete="off" value="<?php echo $_SESSION['values']['email']; ?>" name="email"/></td></tr>
+                            <tr><td width="50%" class="register_labels">ADDRESS</td><td width="50%"align="right"><input type="text" class="txtbx" autocomplete="off"value="<?php echo $_SESSION['values']['address']; ?>" name="address"/></td></tr>
+                            <tr><td width="50%" class="register_labels">PHONE</td><td width="50%"align="right"><input type="text" class="txtbx"autocomplete="off" value="<?php echo $_SESSION['values']['mobile']; ?>" name="mobile"/></td></tr>
                             <!-- <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PASSWORD</td><td width="50%"><?php /*echo $_SESSION['profile']['password']; */?></td></tr>-->
                             <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;"></td><td width="50%">
 
@@ -335,7 +335,7 @@ require("header.php");
 
 
                                 </td></tr>
-                            <tr><td width="50%"></td><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;" align="right"><span class="register_labels">
+                            <tr><td width="50%"></td><td width="50%" style=" padding-bottom:10px;font-size:17px;color:#00ff00;" align="right"><span class="register_labels">
                                     <input type="submit" value="UPDATE" class="submit_btn"/></span></td>
                                 <!--<td width="50%" style="padding-left: 50px;">
                                     <input type="reset" value="RESET" class="submit_btn"/></td>-->

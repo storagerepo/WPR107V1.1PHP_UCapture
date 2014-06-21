@@ -10,7 +10,12 @@ session_start();
 <meta name="description" content="" />
 <meta name="keywords" content="" />
     <link rel="stylesheet" href="../css/other css/jquery-ui.css">
-
+    <script src="../js/polyfiller.js"></script>
+    <script src="../js/modernizr-custom.js"></script>
+    <script>
+        webshims.setOptions('forms-ext', {types: 'date'});
+        webshims.polyfill('forms forms-ext');
+    </script>
 </head>
 <body>
 
@@ -85,7 +90,7 @@ require("login_popup.php");
 
 
                                     <form enctype="multipart/form-data" class="form-horizontal" action="../services/insertuser.php" method="POST" ng-app="register" novalidate>
-                                        <table width="100%" cellpadding="0"cellspacing="0" border="0" class="table" >
+                                        <table  cellpadding="0"cellspacing="0" border="1" class="table" >
                                             <?php
                                             if(!isset($_SESSION['error'])&&!isset($_SESSION['require']))
                                             {
@@ -102,7 +107,7 @@ require("login_popup.php");
                                                         <input type="text" style="font-size: 15px;" class="txtbx" value=""name="mobile" autocomplete="off"/></td>
                                                 </tr>
                                                 <tr class="tr" >
-                                                    <td width="32%" style="padding-bottom:10px; vertical-align: middle;" ><span class="register_labels">USER NAME</span></td>
+                                                    <td width="32%" style="padding-bottom:10px; vertical-align: middle;" ><span class="register_labels">USERNAME</span></td>
                                                     <td width="32%" style="padding-bottom:10px; padding-right: 70px; vertical-align:middle;"align="right" ><input type="text" class="txtbx" value="" autocomplete="off"name="username"/></td>
                                                     <td width="32%" style=" padding-bottom:10px;vertical-align: middle;"><span class="register_labels">ADDRESS</span></td>
                                                     <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx" value="" name="address"autocomplete="off"></textarea></td>
@@ -111,11 +116,11 @@ require("login_popup.php");
                                                     <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" class="txtbx" value="" name="password"/></td>
                                                     <td width="32%" style="padding-bottom:10px;"><span class="register_labels">DATE OF BIRTH</span></td>
                                                     <td width="32%" style="padding-bottom:10px;"align="right">
-                                                        <input type="date" class="txtbx" value="25/05/1990" name="dob" autocomplete="off"/></td>
+                                                        <input type="date" class="txtbx" placeholder="mm/dd/yyyy" name="dob" autocomplete="off"/></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">CONFIRM PASSWORD</span></td>
                                                     <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" class="txtbx" value="" name="confirm_password"/></td>
-                                                    <td width="32%"></td><td width="32%" style="padding-right:20px;" align="right">
+                                                    <td width="32%"></td><td width="32%" style="" align="right">
                                                         <input type="submit" value="REGISTER" class="submit_btn_update"/>
                                                         </span></td>
                                                 </tr>
@@ -160,7 +165,7 @@ require("login_popup.php");
                                                         <input type="text" class="txtbx" <?php valid_check('mobile'); ?>autocomplete="off" value="<?php echo $_SESSION['values']['mobile']; ?>" name="mobile" /></td>
                                                 </tr>
                                                 <tr class="tr" >
-                                                    <td width="32%" style="padding-bottom:10px;vertical-align: middle;"><span class="register_labels">USER NAME</span></td>
+                                                    <td width="32%" style="padding-bottom:10px;vertical-align: middle;"><span class="register_labels">USERNAME</span></td>
                                                     <td width="32%" style="padding-bottom:10px; padding-right: 70px;vertical-align: middle;"align="right"><input type="text" autocomplete="off"class="txtbx" <?php valid_check('username'); ?>  value="<?php echo $_SESSION['values']['username']; ?>" name="username"/></td>
                                                     <td width="32%" style=" padding-bottom:10px;vertical-align: middle;"><span class="register_labels">ADDRESS</span></td>
                                                     <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx"autocomplete="off" <?php valid_check('address'); ?>  name="address"><?php echo $_SESSION['values']['address']; ?></textarea></td>
@@ -173,7 +178,7 @@ require("login_popup.php");
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">CONFIRM PASSWORD</span></td>
                                                     <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" class="txtbx" <?php valid_check('confirm_password'); ?> value="" name="confirm_password"/></td>
-                                                    <td width="32%"></td><td width="32%" style="padding-right:20px;" align="right">
+                                                    <td width="32%"></td><td width="32%" style=" " align="right">
                                                         <input type="submit" value="REGISTER" class="submit_btn_update"/>
                                                         </span></td>
                                                 </tr>

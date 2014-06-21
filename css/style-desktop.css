@@ -160,7 +160,7 @@
 
 #pbox3 {
     float:left;
-    margin:0 0 0 -180px;
+    margin:0 0 0 -152px;
     padding: 0em 0em 0em 0em;
     width:590px;
     /*border:2px solid red;*/
@@ -190,11 +190,11 @@
 }
 
 #pboxeditprofileleft {
-    padding: 0em 0em 0em 28em;
+    padding: 0em 0em 0em 2em;
     width:500px;
-    border:2px solid blue;
+    /*border:2px solid blue;*/
     max-height:700px;
-    overflow:auto;
+    /*overflow:auto;*/
     color:#fff;
 }
 
@@ -209,12 +209,13 @@
     min-height:475px;
 
 }
+
 #pboxregisterleft {
     margin-top: 80px;
     padding: 0em 0em 0em 3.5em;
     width:1200px;
     overflow-x: hidden;
- /* border:2px solid blue;*/
+    /*border:2px solid blue;*/
     max-height:490px;
     overflow-y:auto;
     color:#fff;
@@ -602,7 +603,7 @@ y-axis
 
     color:#FFF;
     font-size:17px;
-    /* padding-right: 60px;*/
+    padding-bottom: 10px
 }
 .register_header{
     color:#00ff00;
@@ -692,7 +693,7 @@ y-axis
 }
 .profile_table{
     width:100%;
-    /* border:2px solid red;*/
+     /*border:2px solid red;*/
 }
 .profile_friends_table{
     width: 460px;
@@ -718,7 +719,7 @@ y-axis
     padding-right: 15px;
 }
 .padding_scroll{
-    padding-right: 15px;
+    padding-right: 45px;
 }
 .header-wrapper_scroll_comp{
 
@@ -743,4 +744,22 @@ margin-top: 0px;}
 }
 .profile_tab_top_margin{
     display: none;
+}
+.table{
+    /*border:2px solid red;*/
+    width:1200px;
+    max-width:100%;
+}
+.table1{
+    width:600px;
+
+}
+.table1 tr{
+    /*border:2px solid red;*/
+}
+#edit_btn{
+    margin:0 0 0 -50px;
+}
+.copyrightfontdivtd{
+    width: 92%;
 }

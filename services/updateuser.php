@@ -86,14 +86,14 @@ foreach($_POST as $key=>$value)
 
 
 //Validation
-if(!isset($_POST['firstname'])|| trim($_POST['firstname'])=='')
+/*if(!isset($_POST['firstname'])|| trim($_POST['firstname'])=='')
     $_SESSION['require_profile']['firstname']="Firstname should not be blank";
 if(!isset($_POST['lastname'])|| trim($_POST['lastname'])=='')
-    $_SESSION['require_profile']['lastname']="Lastname should not be blank";
+    $_SESSION['require_profile']['lastname']="Lastname should not be blank";*/
 if(!isset($_POST['password'])|| trim($_POST['password'])=='')
     $_SESSION['require_profile']['password']="Password should not be blank";
-if(!isset($_POST['dob'])|| trim($_POST['dob'])=='')
-    $_SESSION['require_profile']['dob']="Date Of Birth should not be blank";
+/*if(!isset($_POST['dob'])|| trim($_POST['dob'])=='')
+    $_SESSION['require_profile']['dob']="Date Of Birth should not be blank";*/
 if(!isset($_POST['email'])|| trim($_POST['email'])=='')
     $_SESSION['require_profile']['email']="Email Id should not be blank";
 if(!isset($_POST['address'])|| trim($_POST['address'])=='')
@@ -104,9 +104,9 @@ if(!isset($_SESSION['require_profile']))
 {
     //No blank values execute query
     if(isset($imgData))
-        $userdetail = "UPDATE tbl_user_registration SET  firstname = '".$firstname."', lastname = '".$lastname."', password = '".$password."', dob = '".$dob."', email = '".$email."', address = '".$address."', mobile = '".$mobile."', user_image='".$imgData."' WHERE username ='".$_SESSION['user_id']."'";
+        $userdetail = "UPDATE tbl_user_registration SET   password = '".$password."', email = '".$email."', address = '".$address."', mobile = '".$mobile."', user_image='".$imgData."' WHERE username ='".$_SESSION['user_id']."'";
     else
-        $userdetail = "UPDATE tbl_user_registration SET  firstname = '".$firstname."', lastname = '".$lastname."', password = '".$password."', dob = '".$dob."', email = '".$email."', address = '".$address."', mobile = '".$mobile."' WHERE username ='".$_SESSION['user_id']."'";
+        $userdetail = "UPDATE tbl_user_registration SET   password = '".$password."', email = '".$email."', address = '".$address."', mobile = '".$mobile."' WHERE username ='".$_SESSION['user_id']."'";
 
 
     $result=$mysqli->query($userdetail);

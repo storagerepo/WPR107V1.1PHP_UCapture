@@ -110,7 +110,7 @@ require("header.php");
             <div class="4u mobileUI-main-content">
                 <section id="pbox3"><br>
                     <span class="home_right_heading"><br/>SOME OF OUR PARTNERS..</span><br/><br/>
-                    <table style=" width:100%"><tr>
+                    <table style="width:92%;"><tr>
 
                             <td><div class="div_marquee">
                                     <marquee id="myMarquee" scrolldelay=150 >
@@ -136,7 +136,7 @@ require("header.php");
 
 
 
-                    <iframe width="97%" height="280" src="//www.youtube.com/embed/O95gBhEaAKI"  allowfullscreen></iframe>
+                    <iframe width="91.7%" height="280" src="//www.youtube.com/embed/O95gBhEaAKI"  allowfullscreen></iframe>
                 </section>
             </div>
         </div>

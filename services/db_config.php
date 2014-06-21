@@ -1,6 +1,6 @@
 <?php
 //set connection variables
-$host = "localhost:3307";
+$host = "localhost";
 $db_name = "ucapture";
 $username = "root";
 $password = "";

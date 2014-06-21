@@ -273,7 +273,7 @@ session_start();
 
 
                     <tr><td width="40%"class="profile_label">
-                            USER NAME</td>
+                            USERNAME</td>
                         <td width="60%"  align="left" class="profile_label_value"><?php echo $_SESSION['profile']['username']; ?></td></tr>
                     <tr><td width="30%" class="profile_label">NAME</td>
                         <td width="75%" align="left" class="profile_label_value"><?php echo $_SESSION['profile']['firstname']; echo " " .$_SESSION['profile']['lastname'];  ?></td></tr>
@@ -286,7 +286,7 @@ session_start();
                     <tr><td width="25%" class="profile_label">PHONE</td>
                         <td width="75%"  align="left" class="profile_label_value"><?php echo $_SESSION['profile']['mobile']; ?></td></tr>
                     <!-- <tr><td width="50%" style="padding-bottom:10px;font-size:17px;color:#00ff00;">PASSWORD</td><td width="50%"><?php /*echo $_SESSION['profile']['password']; */?></td></tr>-->
-                    <tr><td></td><td align="LEFT"><span > <a href="editProfile.php" class="submit_btn">EDIT</a></span></td></tr>
+                    <tr><td></td><td align="LEFT"><br> <a href="editProfile.php" class="submit_btn">EDIT</a></td></tr>
                 </table>
 
 
@@ -301,8 +301,8 @@ session_start();
 <div class="4u mobileUI-main-content">
     <section id="pboxprofileright">
         <span class="enable_br_in_tabs"><br><br></span>
-        <span class="register_header">ACTIVITY IN MY NETWORK</span><br>
-        <img src="../images/avatar.png" class="avatar_image"/><br>
+        <span class="register_header">MY AVATAR</span><br>
+        <img src="../images/avatar.png" class="avatar_image"/><br><br>
         <span class="register_header">ACTIVITY IN MY NETWORK</span>
         <span class="profile_right_scroll" ><br/><br/></span><div id="content-6" class="contentscrollbar_friends">
         <marquee direction="up" scrolldelay=300 onmouseover="this.stop();" onmouseout="this.start();" height="150" >
