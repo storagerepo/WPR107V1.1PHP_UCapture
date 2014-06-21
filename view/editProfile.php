@@ -6,6 +6,28 @@ session_start();
 <head>
     <title>UCapture</title>
     <link rel="stylesheet" href="../css/other css/jquery-ui.css">
+    <style>
+
+        .headerMenuactive{
+            width:auto;
+            height: auto;
+            padding:5px;
+            color:#000;
+
+            font-size:16px;
+
+            text-decoration:none;
+            font-family:aharoni;
+            border-bottom:none;
+            /*-webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+        */
+        }
+        .highlight1{
+            border-bottom: 2px solid #00ff00;
+        }
+    </style>
 </head><body>
 
 <!--[if IE 5]>

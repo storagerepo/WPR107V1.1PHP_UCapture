@@ -73,12 +73,12 @@ if(isset($_POST['submit'])) {
                         if(!isset($_SESSION['user_id']))
                         { ?>
                         <span class="login_header"><a href="#login_form" id="login_pop"style="padding-left:2px;padding-right: 2px; " >SIGNIN</a>/
-                        <a href="userRegistration.php" id="join_pop"style="padding-left:2px;padding-right: 2px; " >CREATE ACCOUNT</a></font><span class="break_height"> <br/><br/><br/></span></span>
+                        <a href="userRegistration.php" id="join_pop"style="padding-left:2px;padding-right: 2px; " class="highlight">CREATE ACCOUNT</a></font><span class="break_height"> <br/><br/><br/></span></span>
                     <?php
                     }
                     elseif(isset($_SESSION['user_id']))
                     {?>
-                        <a href="profile.php" id="login_pop" style="   font-size: 100%; ">MY ACCOUNT</a>&nbsp;
+                        <a href="profile.php" id="login_pop" style="   font-size: 100%; " class="highlight1">MY ACCOUNT</a>&nbsp;
                        <span class="invite_user"> <span style="color: #000000"> <?php echo "Hi! ".$_SESSION['user_id']."  " ;?></span>
                         <a  href="../services/logout.php">Logout</a></span><span class="break_height"> <br/><br/><br/></span>
                     <?php

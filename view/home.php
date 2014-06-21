@@ -3,7 +3,25 @@
 <head>
     <title>UCapture</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <style>
 
+        .headerMenuactive{
+            width:auto;
+            height: auto;
+            padding:5px;
+            color:#000;
+
+            font-size:16px;
+
+            text-decoration:none;
+            font-family:aharoni;
+            border-bottom:2px solid black;
+            /*-webkit-box-shadow: 0 8px 6px -6px black;
+            -moz-box-shadow: 0 8px 6px -6px black;
+            box-shadow: 0 8px 6px -6px black;
+        */
+        }
+    </style>
 </head>
 <body>
 

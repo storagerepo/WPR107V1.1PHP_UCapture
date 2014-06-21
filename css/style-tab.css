@@ -1049,7 +1049,7 @@ ul.style5 .first {
     box-shadow: 0 8px 6px -6px black;*/
 
 }
-.headerMenuactive{
+/*.headerMenuactive{
     width:auto;
     height: auto;
     padding:5px;
@@ -1060,11 +1060,11 @@ ul.style5 .first {
     text-decoration:none;
     font-family:aharoni;
     border-bottom:2px solid black;
-   /* -webkit-box-shadow: 0 8px 6px -6px black;
+   *//* -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
-    box-shadow: 0 8px 6px -6px black;*/
+    box-shadow: 0 8px 6px -6px black;*//*
 
-}
+}*/
 .pboxregisterleft a{
     -webkit-box-shadow: 0 8px 6px -6px black;
     -moz-box-shadow: 0 8px 6px -6px black;
