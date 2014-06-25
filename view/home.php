@@ -32,7 +32,7 @@ session_start();
 <?php
 if(isset($_SESSION['login_error']))
 {
-    echo '<div style="padding: 10px;border: solid 1px red;background-color:darkred;color:white;">';
+    echo '<div style="padding: 10px;padding-left:55px;border: solid 1px red;background-color:darkred;color:white;">';
     echo '<p>'.$_SESSION['login_error'].'.</p>';
     echo '</div>';
 }
