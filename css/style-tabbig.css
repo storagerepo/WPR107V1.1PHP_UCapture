@@ -1704,6 +1704,11 @@ a#login_pop:hover, a#join_pop:hover {
     font-size:120%;
     color:#fff;
 }
+.profile_label_value1{
+    padding-bottom:10px;
+    font-size:120%;
+    color:#fff;
+}
 .profile_label_value_number{
     padding-bottom:10px;
     font-size:100%;

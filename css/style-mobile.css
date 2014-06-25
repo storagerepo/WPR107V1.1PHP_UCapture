@@ -398,6 +398,7 @@ border: 1px solid white;
     overflow:auto;
     color:#fff;
     font-size: 100%;
+    margin-bottom: 15px;
 }
 
 
@@ -1827,6 +1828,11 @@ a#login_pop:hover, a#join_pop:hover {
 .profile_label_value{
     padding-bottom:5px;
     font-size:120%;
+    color:#fff;
+}
+.profile_label_value1{
+    padding-bottom:5px;
+    font-size:100%;
     color:#fff;
 }
 .profile_label_value_number{

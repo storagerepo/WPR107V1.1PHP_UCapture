@@ -172,7 +172,7 @@
     padding: 0 0 0 24px;
     width:600px;
     /*border:2px solid blue;*/
-    max-height:500px;
+    max-height:600px;
     overflow:auto;
     color:#fff;
 }
@@ -615,6 +615,11 @@ y-axis
     color:#00ff00;
 }
 .profile_label_value{
+    padding-bottom:20px;
+    font-size:17px;
+    color:#fff;
+}
+.profile_label_value1{
     padding-bottom:20px;
     font-size:17px;
     color:#fff;
