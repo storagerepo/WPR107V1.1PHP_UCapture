@@ -5,10 +5,10 @@
 
                 <!-- Dummy area -->
                <table width="98%"  >
-                    <tr><td align="right" style="padding-right:2px;vertical-align: middle;" class="copyrightfontdivtd"><span class="copyrightfontdiv">INFO @ <a href="#">UCAPTURE.COM </a></span></td>
+                    <tr><td align="right" style="padding-right:2px;vertical-align: middle;" class="copyrightfontdivtd"><span class="copyrightfontdiv"><a href="#">INFO@UCAPTURE.COM </a></span></td>
                             <!--<a href="#"><img src="images/smedia1.png"/></a>
 				<a href="#"><img src="images/smedia2.png"/></a>&nbsp;&nbsp;
-				--><td>&nbsp;&nbsp;<a href="#"><img src="../images/smedia3.png"  class="footer_image"/></a>
+				--><td align="left"><a href="#"><img src="../images/smedia3.png"  class="footer_image"/></a>
                                 <!--<a href="#"><img src="images/smedia4.png"/></a>
                                 --><a href="#"><img src="../images/smedia5.png"  class="footer_image"/></a>
                                 <!--<a href="#"><img src="images/smedia6.png"/></a>

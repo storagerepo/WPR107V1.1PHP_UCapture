@@ -72,7 +72,7 @@ if(isset($_POST['submit'])) {
                          //session_start();
                         if(!isset($_SESSION['user_id']))
                         { ?>
-                        <span class="login_header"><a href="#login_form" id="login_pop"style="padding-left:2px;padding-right: 2px; " >SIGNIN</a>/
+                        <span class="login_header"><a href="#login_form" id="login_pop"style="padding-left:2px;padding-right: 2px; " >SIGN IN</a>/
                         <a href="userRegistration.php" id="join_pop"style="padding-left:2px;padding-right: 2px; " class="highlight">CREATE ACCOUNT</a></font><span class="break_height"> <br/><br/><br/></span></span>
                     <?php
                     }

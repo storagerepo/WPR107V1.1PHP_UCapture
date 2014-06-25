@@ -348,11 +348,12 @@ ul.style5 .first {
     color: #00ff00;
    /* vertical-align: top;*/
     margin-top: -10px;
+
     /* border:2px solid red; */
 }
 .copyrightfontdiv a
 {
-
+    text-decoration:none;
     color: #666;
     margin: -10px 0 -20px 0;
 
