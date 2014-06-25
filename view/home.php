@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -23,8 +27,17 @@
         }
     </style>
 </head>
-<body>
 
+<body>
+<?php
+if(isset($_SESSION['login_error']))
+{
+    echo '<div style="padding: 10px;border: solid 1px red;background-color:darkred;color:white;">';
+    echo '<p>'.$_SESSION['login_error'].'.</p>';
+    echo '</div>';
+}
+
+?>
     <!--[if IE 5]>
 
    <br/>
@@ -44,10 +57,15 @@
 
 <?php
 require("header.php");
-?><div class="login_pop">
+?>
+
+
+    <div class="login_pop">
     <?php
     require("login_popup.php");
     ?>
+
+
 </div><span class="wrapper_height_for_dt"><br><br><br><br><br><br></span>
 <div id="wrapper" class="header-wrapper_scroll_comp">
     <div class="5grid-layout" id="page-wrapper" style=" background: #000">
