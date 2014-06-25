@@ -76,8 +76,10 @@ require("header.php");
                     <div id="tabs-container">
                         <ul class="tabs-menu">
                             <li class="current"><a href="#tab-1">ABOUT <span style="color:#fff;">U</span>CAPTURE</a></li>
-                            <li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                            <li>&nbsp;&nbsp;&nbsp;</li>
                             <li><a href="#tab-2">HOW IT WORKS </a></li>
+                            <li>&nbsp;&nbsp;&nbsp;</li>
+                            <li><a href="#tab-3">HOW TO <span style="color:#fff;">U</span>CAPTURE </a></li>
 
 
                         </ul>
@@ -136,7 +138,36 @@ require("header.php");
                                     </p><br/></div>
                                 </div>
                             </div>
+                            <div id="tab-3" class="tab-content"><br/>
+                                <div id="content-6" class="contentscrollbar">
+                                    <div class="padding_scroll"><p>
 
+
+                                            UCAPTURE IS A UNIQUE BUYERS NETWORK THAT MAKES IT LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT.
+                                        </p><br/>
+                                        <p>
+                                            UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL UT ALIQUIP EX EA COMMODO CONSEQUAT. DUIS AUTEM VEL EUM IRIURE DOLOR IN HENDRERIT IN VULPUTATE VELIT ESSE MOLESTIE CONSEQUAT,
+                                        </p><br/>
+                                        <p>VEL ILLUM DOLORE EU FEUGIAT NULLA FACILISIS AT VERO EROS ET ACCUMSAN ET IUSTO ODIO DIGNISSIM QUI BLANDIT PRAESENT LUPTATUM ZZRIL DELENIT AUGUE DUIS DOLORE TE FEUGAIT NULLA FACILISI. NAM LIBER TEMPOR CUM SOLUTA NOBIS ELEIFEND OPTION CONGUE NIHIL IMPERDIET DOMING ID QUOD MAZIM PLACERAT FACER POSSIM ASSUM.
+                                        </p><br/>
+                                        <p>TYPI NON HABENT CLARITATEM INSITAM; EST USUS LEGENTIS IN IIS QUI FACIT EORUM CLARITATEM. INVESTIGATIONES DEMONSTRAVERUNT LECTORES LEGERE ME LIUS QUOD II LEGUNT SAEPIUS. CLARITAS EST ETIAM PROCESSUS DYNAMICUS, QUI SEQUITUR MUTATIONEM CONSUETUDIUM LECTORUM. MIRUM EST NOTARE QUAM LITTERA GOTHICA,
+                                        </p>	<br/>
+                                        <p>QUAM NUNC PUTAMUS PARUM CLARAM, ANTEPOSUERIT LITTERARUM FORMAS HUMANITATIS PER SEACULA QUARTA DECIMA ET QUINTA DECIMA. EODEM MODO TYPI, QUI NUNC NOBIS VIDENTUR
+                                        </p>		<br/>	<p>QUAM NUNC PUTAMUS PARUM CLARAM, ANTEPOSUERIT LITTERARUM FORMAS HUMANITATIS PER SEACULA QUARTA DECIMA ET QUINTA DECIMA. EODEM MODO TYPI, QUI NUNC NOBIS VIDENTUR
+                                        </p>	<p>&nbsp;</p>
+                                        <p>UCAPTURE IS A UNIQUE BUYERS NETWORK THAT MAKES IT LOREM IPSUM DOLOR SIT AMET, CONSECTETUER ADIPISCING ELIT, SED DIAM NONUMMY NIBH EUISMOD TINCIDUNT UT LAOREET DOLORE MAGNA ALIQUAM ERAT VOLUTPAT.
+                                        </p><br/>
+                                        <p>
+                                            UT WISI ENIM AD MINIM VENIAM, QUIS NOSTRUD EXERCI TATION ULLAMCORPER SUSCIPIT LOBORTIS NISL UT ALIQUIP EX EA COMMODO CONSEQUAT. DUIS AUTEM VEL EUM IRIURE DOLOR IN HENDRERIT IN VULPUTATE VELIT ESSE MOLESTIE CONSEQUAT,
+                                        </p><br/>
+                                        <p>VEL ILLUM DOLORE EU FEUGIAT NULLA FACILISIS AT VERO EROS ET ACCUMSAN ET IUSTO ODIO DIGNISSIM QUI BLANDIT PRAESENT LUPTATUM ZZRIL DELENIT AUGUE DUIS DOLORE TE FEUGAIT NULLA FACILISI. NAM LIBER TEMPOR CUM SOLUTA NOBIS ELEIFEND OPTION CONGUE NIHIL IMPERDIET DOMING ID QUOD MAZIM PLACERAT FACER POSSIM ASSUM.
+                                        </p><br/>
+                                        <p>TYPI NON HABENT CLARITATEM INSITAM; EST USUS LEGENTIS IN IIS QUI FACIT EORUM CLARITATEM. INVESTIGATIONES DEMONSTRAVERUNT LECTORES LEGERE ME LIUS QUOD II LEGUNT SAEPIUS. CLARITAS EST ETIAM PROCESSUS DYNAMICUS, QUI SEQUITUR MUTATIONEM CONSUETUDIUM LECTORUM. MIRUM EST NOTARE QUAM LITTERA GOTHICA,
+                                        </p>	<br/>
+                                        <p>QUAM NUNC PUTAMUS PARUM CLARAM, ANTEPOSUERIT LITTERARUM FORMAS HUMANITATIS PER SEACULA QUARTA DECIMA ET QUINTA DECIMA. EODEM MODO TYPI, QUI NUNC NOBIS VIDENTUR
+                                        </p>		<br/>	<p>QUAM NUNC PUTAMUS PARUM CLARAM, ANTEPOSUERIT LITTERARUM FORMAS HUMANITATIS PER SEACULA QUARTA DECIMA ET QUINTA DECIMA. EODEM MODO TYPI, QUI NUNC NOBIS VIDENTUR
+                                        </p>	<p>&nbsp;</p></div>
+                                </div> </div>
                         </div>
                     </div>
 

@@ -1075,7 +1075,8 @@ a#login_pop:hover, a#join_pop:hover {
     filter:alpha(opacity=48);
 }
 .imgmarquee:hover
-{
+{   border:1px solid #ffffff;
+    box-shadow: inset 0px 0px 8px #ffffff;
     opacity:1.0;
     filter:alpha(opacity=100); /* For IE8 and earlier */
 }

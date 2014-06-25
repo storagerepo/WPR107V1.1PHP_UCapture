@@ -55,6 +55,7 @@
 <!--[if IE 9]><link rel="stylesheet" href="../css/style-ie9.css" /><![endif]-->
     <script src="../js/jquery-1.10.2.js"></script>
     <script src="../js/jquery-ui.js"></script>
+
 <?php
 if(isset($_POST['submit'])) {
     echo ("<SCRIPT LANGUAGE='JavaScript'>
@@ -78,9 +79,10 @@ if(isset($_POST['submit'])) {
                     }
                     elseif(isset($_SESSION['user_id']))
                     {?>
-                        <a href="profile.php" id="login_pop" style="   font-size: 100%; " class="highlight1">MY ACCOUNT</a>&nbsp;
+
                        <span class="invite_user"> <span style="color: #000000"> <?php echo "Hi! ".$_SESSION['user_id']."  " ;?></span>
-                        <a  href="../services/logout.php">Logout</a></span><span class="break_height"> <br/><br/><br/></span>
+                        &nbsp;   <a href="profile.php" id="login_pop" style="   font-size: 100%; " class="highlight1">MY ACCOUNT</a>
+                        <a  href="../services/logout.php" style="color:#666666;">/Logout</a></span><span class="break_height"> <br/><br/><br/></span>
                     <?php
                     }
                     ?>

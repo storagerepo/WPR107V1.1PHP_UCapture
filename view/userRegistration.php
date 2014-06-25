@@ -119,117 +119,73 @@ require("login_popup.php");
                                             {
                                                 ?>
                                                 <tr class="tr" ><td> <span class="register_labels">FIRST NAME</span></td>
-                                                    <td width="32%" style=" padding-bottom:10px; padding-right: 70px;"align="right"/><input type="text" autocomplete="off"class="txtbx" value="" name="firstname"/></td>
+                                                    <td width="32%" style=" padding-bottom:10px; padding-right: 70px;"align="right"/><input type="text" tabindex="1" autocomplete="off"class="txtbx" value="" name="firstname"/></td>
                                                     <td width="32%" style="padding-bottom:10px;"><span class="register_labels">EMAIL</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx" value=""autocomplete="off" name="email" /></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx" tabindex="6" value=""autocomplete="off" name="email" /></td>
                                                 </tr>
                                                 <tr class="tr" ><td> <span class="register_labels">LAST NAME</span></td>
-                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="text" class="txtbx" value="" autocomplete="off"name="lastname"/></td>
+                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="text" tabindex="2" class="txtbx" value="" autocomplete="off"name="lastname"/></td>
                                                     <td width="32%" style="padding-bottom:10px;"><span class="register_labels">PHONE</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right">
-                                                        <input type="text" style="font-size: 15px;" class="txtbx" value=""name="mobile" autocomplete="off"/></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="left">
+                                                     <input type="tel" id="mobile-number" tabindex="7" placeholder="e.g. +1 702 123 4567" style="font-size: 15px;width:230px;border:1px solid #ccc;box-shadow:inset 0px 0px 12px #ccc;border-radius:5px;" name="mobile">
+
+                                                        <!--<input type="text" style="font-size: 15px;" class="txtbx" value=""name="mobile" autocomplete="off"/>--></td>
                                                 </tr>
                                                 <tr class="tr" >
                                                     <td width="32%" style="padding-bottom:10px; vertical-align: middle;" ><span class="register_labels">USERNAME</span></td>
-                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px; vertical-align:middle;"align="right" ><input type="text" class="txtbx" value="" autocomplete="off"name="username"/></td>
+                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px; vertical-align:middle;"align="right" ><input type="text" tabindex="3" class="txtbx" value="" autocomplete="off"name="username"/></td>
                                                     <td width="32%" style=" padding-bottom:10px;vertical-align: middle;"><span class="register_labels">ADDRESS</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx" value="" name="address"autocomplete="off"></textarea></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx"tabindex="8" value="" name="address"autocomplete="off"></textarea></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">PASSWORD</span></td>
-                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" class="txtbx" value="" name="password"/></td>
+                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password"tabindex="4" class="txtbx" value="" name="password"/></td>
                                                     <td width="32%" style="padding-bottom:10px;"><span class="register_labels">DATE OF BIRTH</span></td>
                                                     <td width="32%" style="padding-bottom:10px;"align="right">
-                                                        <input type="date" class="txtbx" placeholder="mm/dd/yyyy" name="dob" autocomplete="off"/></td>
+                                                        <input type="date" class="txtbx" placeholder="mm/dd/yyyy"tabindex="9" name="dob" autocomplete="off"/></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">CONFIRM PASSWORD</span></td>
-                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" class="txtbx" value="" name="confirm_password"/></td>
+                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" tabindex="5" class="txtbx" value="" name="confirm_password"/></td>
                                                     <td width="32%"></td><td width="32%" style="" align="right">
                                                         <input type="submit" value="REGISTER" class="submit_btn_update"/>
                                                         </span></td>
                                                 </tr>
 
-                                                <!--<tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">EMAIL</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx" value=""autocomplete="off" name="email" /></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">PHONE</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right">
-                                                        <input type="text" style="font-size: 15px;" class="txtbx" value=""name="mobile" autocomplete="off"/></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%" style=" padding-bottom:10px;vertical-align: middle;"><span class="register_labels">ADDRESS</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx" value="" name="address"autocomplete="off"></textarea></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">DATE OF BIRTH</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right">
-                                                        <input type="date" class="txtbx" value="25/05/1990" name="dob" autocomplete="off"/></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%" style=" "><span class="register_labels">IMAGE</span></td>
-                                                    <td width="32%" style=""align="right">
-                                                        <input type="file" accept="image/*" class="file-upload" value="" name="userImage" id="userimage" /></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%"></td><td width="32%" style="padding-top:20px;padding-right:20px;" align="right">
-                                                         <input type="submit" value="REGISTER" class="submit_btn_update"/>
-                    </span></td>
-                                                    <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>
-                                                </tr>-->
                                             <?php
                                             }
                                             else
                                             {
                                                 ?>
                                                 <tr class="tr" ><td> <span class="register_labels">FIRST NAME</span></td>
-                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;" align="right"><input autocomplete="off" type="text" class="txtbx"<?php valid_check('firstname');?> value="<?php echo $_SESSION['values']['firstname']; ?>" name="firstname"/></td>
+                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;" align="right"><input autocomplete="off" type="text" tabindex="1" class="txtbx"<?php valid_check('firstname');?> value="<?php echo $_SESSION['values']['firstname']; ?>" name="firstname"/></td>
                                                     <td width="32%" style="padding-bottom:10px;"><span class="register_labels">EMAIL</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx"autocomplete="off" <?php valid_check('email'); ?> value="<?php echo $_SESSION['values']['email']; ?>" name="email" /></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" tabindex="6" class="txtbx"autocomplete="off" <?php valid_check('email'); ?> value="<?php echo $_SESSION['values']['email']; ?>" name="email" /></td>
                                                 </tr>
                                                 <tr class="tr" ><td> <span class="register_labels">LAST NAME</span></td>
-                                                    <td width="32%" style=" padding-bottom:10px; padding-right: 70px;"align="right"><input type="text"autocomplete="off" class="txtbx" <?php valid_check('lastname'); ?> value="<?php echo $_SESSION['values']['lastname']; ?>" name="lastname"/></td>
+                                                    <td width="32%" style=" padding-bottom:10px; padding-right: 70px;"align="right"><input type="text"autocomplete="off" tabindex="2" class="txtbx" <?php valid_check('lastname'); ?> value="<?php echo $_SESSION['values']['lastname']; ?>" name="lastname"/></td>
                                                     <td width="32%" style="padding-bottom:10px;"><span class="register_labels">PHONE</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right">
-                                                        <input type="text" class="txtbx" <?php valid_check('mobile'); ?>autocomplete="off" value="<?php echo $_SESSION['values']['mobile']; ?>" name="mobile" /></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="left">
+                                                        <input type="tel" id="mobile-number" class="txtbx" <?php valid_check('mobile'); ?> tabindex="7" value="<?php echo $_SESSION['values']['mobile']; ?>" name="mobile" style="font-size: 15px;width:230px;border:1px solid #ccc;box-shadow:inset 0px 0px 12px #ccc;border-radius:5px;"/></td>
                                                 </tr>
                                                 <tr class="tr" >
                                                     <td width="32%" style="padding-bottom:10px;vertical-align: middle;"><span class="register_labels">USERNAME</span></td>
-                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;vertical-align: middle;"align="right"><input type="text" autocomplete="off"class="txtbx" <?php valid_check('username'); ?>  value="<?php echo $_SESSION['values']['username']; ?>" name="username"/></td>
+                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;vertical-align: middle;"align="right"><input type="text" tabindex="3" autocomplete="off"class="txtbx" <?php valid_check('username'); ?>  value="<?php echo $_SESSION['values']['username']; ?>" name="username"/></td>
                                                     <td width="32%" style=" padding-bottom:10px;vertical-align: middle;"><span class="register_labels">ADDRESS</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx"autocomplete="off" <?php valid_check('address'); ?>  name="address"><?php echo $_SESSION['values']['address']; ?></textarea></td>
+                                                    <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx"tabindex="8" autocomplete="off" <?php valid_check('address'); ?>  name="address"><?php echo $_SESSION['values']['address']; ?></textarea></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">PASSWORD</span></td>
-                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" class="txtbx" <?php valid_check('password'); ?> value="" name="password"/></td>
+                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" tabindex="4" class="txtbx" <?php valid_check('password'); ?> value="" name="password"/></td>
                                                     <td width="32%" style=" padding-bottom:10px;"><span class="register_labels">DATE OF BIRTH</span></td>
                                                     <td width="32%" style=" padding-bottom:10px;"align="right">
-                                                        <input type="date" autocomplete="off" class="txtbx"  <?php valid_check('dob'); ?> value="<?php echo $_SESSION['values']['dob']; ?>" name="dob" /></td>
+                                                        <input type="date" autocomplete="off" class="txtbx"  <?php valid_check('dob'); ?>tabindex="9" value="<?php echo $_SESSION['values']['dob']; ?>" name="dob" /></td>
                                                 </tr>
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">CONFIRM PASSWORD</span></td>
-                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" class="txtbx" <?php valid_check('confirm_password'); ?> value="" name="confirm_password"/></td>
+                                                    <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" class="txtbx" tabindex="5" <?php valid_check('confirm_password'); ?> value="" name="confirm_password"/></td>
                                                     <td width="32%"></td><td width="32%" style=" " align="right">
                                                         <input type="submit" value="REGISTER" class="submit_btn_update"/>
                                                         </span></td>
                                                 </tr>
 
-                                               <!-- <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">EMAIL</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right"><input type="text" class="txtbx"autocomplete="off" <?php /*valid_check('email'); */?> value="<?php /*echo $_SESSION['values']['email']; */?>" name="email" /></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">PHONE</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right">
-                                                        <input type="text" class="txtbx" <?php /*valid_check('mobile'); */?>autocomplete="off" value="<?php /*echo $_SESSION['values']['mobile']; */?>" name="mobile" /></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%" style=" padding-bottom:10px;vertical-align: middle;"><span class="register_labels">ADDRESS</span></td>
-                                                    <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx"autocomplete="off" <?php /*valid_check('address'); */?>  name="address"><?php /*echo $_SESSION['values']['address']; */?></textarea></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%" style=" padding-bottom:10px;"><span class="register_labels">DATE OF BIRTH</span></td>
-                                                    <td width="32%" style=" padding-bottom:10px;"align="right">
-                                                        <input type="date" autocomplete="off" class="txtbx" style="width: 75%;" <?php /*valid_check('dob'); */?> value="<?php /*echo $_SESSION['values']['dob']; */?>" name="dob" /></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%" style=" "><span class="register_labels">IMAGE</span></td>
-                                                    <td width="32%" align="right">
-                                                        <input type="file" accept="image/*" class="file-upload" value="" name="userImage" id="userimage" /></td>
-                                                </tr>
-                                                <tr class="tr" ><td width="32%"></td>
-                                                <td width="32%" align="right"style="padding-bottom:10px;">
-                                                <input type="submit" value="REGISTER" class="submit_btn"/>
-                                                </td>
-                                                   <td width="32%" style="padding-top:20px;"><input type="reset" value="RESET" class="submit_btn"/></td>
-                                                </tr>-->
+
                                             <?php
 
                                             }?>
@@ -304,11 +260,6 @@ unset($_SESSION['error']);
 <script src="../js/jquery-ui.js"></script>
 
 <script>
-    $(function() {
-        $( "#datepicker" ).datepicker();
-    });
-</script>
-<script>
     <?php
 function valid_check($key)
 {
@@ -321,6 +272,11 @@ function valid_check($key)
  ?>
 </script>
 
+
+<script src="../js/mobilePicker.js"></script>
+<script>
+    $("#mobile-number").intlTelInput();
+</script>
 
 
 </body>

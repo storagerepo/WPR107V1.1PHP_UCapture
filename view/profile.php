@@ -59,7 +59,7 @@ session_start();
 
 <div id="tabs-container">
     <ul class="tabs-menu">
-        <li ><a href="#tab-2"> <span style="color:#fff;">U</span>CAPTURE ACTIVITY</a></li>
+        <li ><a href="#tab-2"> <span style="color:#fff;"></span>MY ACTIVITY</a></li>
         <li>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
         <li class="current"><a href="#tab-1"><span style="color:#fff;">U</span>CAPTURE PROFILE</a></li>
 
@@ -325,35 +325,93 @@ session_start();
     <section id="pboxprofileright">
         <span class="enable_br_in_tabs"><br><br></span>
         <span class="register_header">MY AVATAR</span><br>
-        <img src="../images/avatar.png" class="avatar_image"/><br><br>
+        <img src="../images/avatar.png" class="avatar_image"/><br><br><br>
         <span class="register_header">ACTIVITY IN MY NETWORK</span>
-        <span class="profile_right_scroll" ><br/><br/></span><div id="content-6" class="contentscrollbar_friends1">
-            <br/><br/>
+        <span class="profile_right_scroll" ><br/></span><div id="content-6" class="contentscrollbar_friends1">
+            <br/>
         <table class="profile_friends_table">
-        <tr><td width="70%" style="  padding-bottom:10px;color:#00ff00;" class="profile_label_value1">
+        <tr><td width="40%" style="  padding-bottom:10px;color:#00ff00;" class="profile_label_value1">
                 USERNAME
-            </td><td width="30%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value1">LBS CAPTURED</td></tr></table>
+            </td>
+            <td width="30%" style="  padding-bottom:10px;color:#00ff00;" class="profile_label_value1">
+            ACTIVITY
+            </td>
+            <td width="30%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value1">LBS CAPTURED</td></tr></table>
         <marquee direction="up" scrolldelay=300 onmouseover="this.stop();" onmouseout="this.start();" height="150" >
         <table class="profile_friends_table" >
-<tr><td width="80%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">
-                    JOHN SMITH
-                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">8</td></tr>
-            <tr><td width="80%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+             <tr><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">JOHN SMITH</td>
+                 <td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                 </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">8</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
                 </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value"align="left">56</td></tr>
-            <tr><td width="80%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
                 </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">3</td></tr>
-            <tr><td width="80%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
                 </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">10</td></tr>
-            <tr><td width="80%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">
-                    JOHN SMITH
+            <tr><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">JOHN SMITH</td>
+                <td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
                 </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">8</td></tr>
-            <tr><td width="80%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
                 </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value"align="left">56</td></tr>
-            <tr><td width="80%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
                 </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">3</td></tr>
-            <tr><td width="80%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
                 </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">10</td></tr>
-        </table></marquee></div>
+            <tr><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">JOHN SMITH</td>
+                <td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">8</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value"align="left">56</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">3</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">10</td></tr>
+            <tr><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">JOHN SMITH</td>
+                <td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">8</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value"align="left">56</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">3</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">10</td></tr>
+            <tr><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">JOHN SMITH</td>
+                <td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">8</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value"align="left">56</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">3</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">10</td></tr>
+            <tr><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">JOHN SMITH</td>
+                <td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">8</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">COURTNEY CARL
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value"align="left">56</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">DAVID SEELIG
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">3</td></tr>
+            <tr><td width="40%" style=" padding-bottom:20px;color:#FFF;"class="profile_label">KEVIN SARVER
+                </td><td width="40%" style=" padding-bottom:10px;color:#FFF;" class="profile_label">SOME.COM
+                </td><td width="20%" style=" padding-bottom:20px;color:#00ff00;"class="profile_label_value" align="left">10</td></tr>
+            </table></marquee></div>
     </section>
 </div>
 </div>

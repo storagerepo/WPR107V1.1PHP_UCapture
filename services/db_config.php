@@ -2,8 +2,8 @@
 //set connection variables
 $host = "localhost";
 $db_name = "ucapture";
-$username = "ucapture_user";
-$password = "ucapture@123";
+$username = "root";
+$password = "";
 
 //connect to mysql server
 $mysqli = new mysqli($host, $username, $password, $db_name);
