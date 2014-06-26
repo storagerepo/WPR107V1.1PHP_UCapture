@@ -41,7 +41,7 @@ $emailavai = mysqli_num_rows($sqlcheck1);
     $dob = $_POST['dob'];
     $imgData="";
 
-
+    echo $mobile;
     //Store image
 
 /*if($_FILES['userImage']['size'] > 0)
@@ -113,9 +113,10 @@ if(trim($_POST['password'])!= trim($_POST['confirm_password']))
 
 
     if(!isset($_POST['mobile'])|| trim($_POST['mobile'])=='')
-          $_SESSION['require']['mobile']="Mobile should not be blank";
-   elseif(!preg_match("/^[0-9]{10}/",$_POST['mobile']))
-        $_SESSION['error']['mobile'] = "Invalid Mobile Number";
+          $_SESSION['require']['mobile']="Invalid Mobile Number";
+   /*elseif(!preg_match("/^[0-9]{14})$/",$_POST['mobile']))
+         $_SESSION['error']['mobile'] = "Invalid Mobile Number";*/
+
    if(!isset($_POST['address'])|| trim($_POST['address'])=='')
           $_SESSION['require']['address']="Address Should not blank";
     if(!isset($_POST['dob'])|| trim($_POST['dob'])=='')

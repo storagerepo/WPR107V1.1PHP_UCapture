@@ -88,7 +88,9 @@ require("login_popup.php");
                             <p><strong style="color: yellow;">Oh snap! Change a few things up and try submitting again.</strong></p>';
                             foreach($_SESSION['require'] as $key=>$value)
                                 echo '<p>'.$value.'.</p>';
-                            echo '</div><br>';
+                            echo '
+                            <span id="mobvali"></span>
+                            </div><br>';
                         }
                         if(isset($_SESSION['error']) && count($_SESSION['error'])>0)
                         {
@@ -96,7 +98,9 @@ require("login_popup.php");
                             <p><strong style="color: yellow;">Oh snap! Change a few things up and try submitting again.</strong></p>';
                             foreach($_SESSION['error'] as $key=>$value)
                                 echo '<p>'.$value.'.</p>';
-                            echo '</div><br>';
+                            echo '
+                           <!-- <span id="mobvali"></span>-->
+                            </div><br>';
                         }
                         if(isset($_SESSION['success']))
                         {
@@ -112,7 +116,7 @@ require("login_popup.php");
     <!--end Display --->
 
 
-                                    <form enctype="multipart/form-data" class="form-horizontal" action="../services/insertuser.php" method="POST" ng-app="register" novalidate>
+                                    <form enctype="multipart/form-data" name="user" class="form-horizontal" action="../services/insertuser.php" method="POST" ng-app="register"  onSubmit="return ValidateForm()" novalidate >
                                         <table  cellpadding="0"cellspacing="0" border="1" class="table" >
                                             <?php
                                             if(!isset($_SESSION['error'])&&!isset($_SESSION['require']))
@@ -181,7 +185,7 @@ require("login_popup.php");
                                                 <tr class="tr" ><td width="32%" style="padding-bottom:10px;"><span class="register_labels">CONFIRM PASSWORD</span></td>
                                                     <td width="32%" style="padding-bottom:10px; padding-right: 70px;"align="right"><input type="password" class="txtbx" tabindex="5" <?php valid_check('confirm_password'); ?> value="" name="confirm_password"/></td>
                                                     <td width="32%"></td><td width="32%" style=" " align="right">
-                                                        <input type="submit" value="REGISTER" class="submit_btn_update"/>
+                                                        <input type="submit" value="REGISTER" class="submit_btn_update" />
                                                         </span></td>
                                                 </tr>
 
@@ -276,6 +280,92 @@ function valid_check($key)
 <script src="../js/mobilePicker.js"></script>
 <script>
     $("#mobile-number").intlTelInput();
+</script>
+<script language = "Javascript">
+    /**
+     * DHTML phone number validation script. Courtesy of SmartWebby.com (http://www.smartwebby.com/dhtml/)
+     */
+
+// Declaring required variables
+    var digits = "0123456789";
+    // non-digit characters which are allowed in phone numbers
+    var phoneNumberDelimiters = "()- ";
+    // characters which are allowed in international phone numbers
+    // (a leading + is OK)
+    var validWorldPhoneChars = phoneNumberDelimiters + "+";
+    // Minimum no of digits in an international phone no.
+    var minDigitsInIPhoneNumber = 10;
+
+    function isInteger(s)
+    {   var i;
+        for (i = 0; i < s.length; i++)
+        {
+            // Check that current character is number.
+            var c = s.charAt(i);
+            if (((c < "0") || (c > "9"))) return false;
+        }
+        // All characters are numbers.
+        return true;
+    }
+    function trim(s)
+    {   var i;
+        var returnString = "";
+        // Search through string's characters one by one.
+        // If character is not a whitespace, append to returnString.
+        for (i = 0; i < s.length; i++)
+        {
+            // Check that current character isn't whitespace.
+            var c = s.charAt(i);
+            if (c != " ") returnString += c;
+        }
+        return returnString;
+    }
+    function stripCharsInBag(s, bag)
+    {   var i;
+        var returnString = "";
+        // Search through string's characters one by one.
+        // If character is not in bag, append to returnString.
+        for (i = 0; i < s.length; i++)
+        {
+            // Check that current character isn't whitespace.
+            var c = s.charAt(i);
+            if (bag.indexOf(c) == -1) returnString += c;
+        }
+        return returnString;
+    }
+
+    function checkInternationalPhone(strPhone){
+        var bracket=3
+        strPhone=trim(strPhone)
+        if(strPhone.indexOf("+")>1) return false
+        if(strPhone.indexOf("-")!=-1)bracket=bracket+1
+        if(strPhone.indexOf("(")!=-1 && strPhone.indexOf("(")>bracket)return false
+        var brchr=strPhone.indexOf("(")
+        if(strPhone.indexOf("(")!=-1 && strPhone.charAt(brchr+2)!=")")return false
+        if(strPhone.indexOf("(")==-1 && strPhone.indexOf(")")!=-1)return false
+        s=stripCharsInBag(strPhone,validWorldPhoneChars);
+        return (isInteger(s) && s.length >= minDigitsInIPhoneNumber);
+    }
+
+    function ValidateForm(){
+
+        if(document.getElementById("mobile-number").value!=""){
+        var Phone=document.user.mobile
+
+        /*alert("phone");*/
+
+
+        if (checkInternationalPhone(Phone.value)==false){
+            Phone.value=""
+            Phone.focus()
+           /* alert("Please Enter a Valid Phone Number")
+            document.getElementById("mobvali").innerHTML="Invalid Mobile Number!";*/
+
+            return false
+        }
+        return true
+    }
+    }
 </script>
 
 

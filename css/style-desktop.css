@@ -213,10 +213,10 @@
 #pboxregisterleft {
     margin-top: 80px;
     padding: 0em 0em 0em 1.65em;
-    width:1200px;
-    overflow-x: hidden;
+    width:1250px;
+    /*overflow-x: hidden;*/
     /*border:2px solid blue;*/
-    max-height:490px;
+    max-height:520px;
     overflow-y:auto;
     color:#fff;
 }
@@ -480,6 +480,7 @@ y-axis
     background-color: #000;
     color: #333;
 }
+
 .contentscrollbar_friends{
     overflow: auto;
     position: relative;
@@ -1031,3 +1032,10 @@ margin-top: 0px;}
 .f16 .za { background-position: 0 -3856px; }
 .f16 .zm { background-position: 0 -3872px; }
 .f16 .zw { background-position: 0 -3888px; }
+#mobile-number{
+
+}
+#mobile-number:focus{
+    padding:0 0 0 40px;
+
+}
