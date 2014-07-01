@@ -77,12 +77,12 @@ strong {
 #copyright {
     position: fixed;
     height:30px;
-    width:1365px;
+    width:100%;
     /*width:100%;*/
     /*float:right;*/
     background:#fff;
     overflow: hidden;
-    padding-right:5em;
+    padding-right:2.5%;
     text-align: right;
     border-top: solid 1px rgba(0,0,0,0.15);
     font-weight:bold;
