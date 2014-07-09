@@ -136,7 +136,7 @@ require("login_popup.php");
                                                         <!--<input type="text" style="font-size: 15px;" class="txtbx" value=""name="mobile" autocomplete="off"/>--></td>
                                                 </tr>
                                                 <tr class="tr" >
-                                                    <td width="32%" style="padding-bottom:10px; vertical-align: middle;" ><span class="register_labels">USERNAME</span></td>
+                                                    <td width="32%" style=" padding-bottom:10px; vertical-align: middle;" ><span class="register_labels">USERNAME</span></td>
                                                     <td width="32%" style="padding-bottom:10px; padding-right: 70px; vertical-align:middle;"align="right" ><input type="text" tabindex="3" class="txtbx" value="" autocomplete="off"name="username"/></td>
                                                     <td width="32%" style=" padding-bottom:10px;vertical-align: middle;"><span class="register_labels">ADDRESS</span></td>
                                                     <td width="32%" style="padding-bottom:10px;"align="right"><textarea class="txtbx"tabindex="8" value="" name="address"autocomplete="off"></textarea></td>
@@ -233,6 +233,16 @@ unset($_SESSION['error']);
 
 
 <script>
+    var readOnlyLength = 6;
+    $('#mobile-number').on('keypress, keydown', function(event) {
+        var $field = $(this);
+
+        if ((event.which != 37 && (event.which != 39))
+            && ((this.selectionStart < readOnlyLength)
+            || ((this.selectionStart == readOnlyLength) && (event.which == 8)))) {
+            return false;
+        }
+    });
     $(document).ready(function() {
 
 
