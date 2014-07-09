@@ -176,7 +176,7 @@ require("header.php");
             </div>
             <div class="4u mobileUI-main-content">
                 <section id="pbox3"><br>
-                    <span class="home_right_heading"><br/>SOME OF OUR PARTNERS..</span><br/><br/>
+                    <span class="home_right_heading"><br/>SOME OF OUR PARTNERS</span><br/><br/>
                     <table style="width:99%;"><tr>
 
                             <td><div class="div_marquee">

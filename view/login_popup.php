@@ -23,7 +23,7 @@
 
             <a href="#join_form" id="join_pop">&nbsp;&nbsp;FORGOT PASSWORD?</a></td>
                 <td align="right">
-            <span style="float: right"><input type="submit" value="SIGNIN" class="submit_btn"/></span></td></tr></table>
+            <span style="float: right"><input type="submit" value="SIGN IN" class="submit_btn"/></span></td></tr></table>
                                     <!--<input type="button" class="submit_btn"onclick="location.href='#close'" value="Cancel"/>--><!--<a class="submit_btn" href="#close">X</a>-->
         <?php
         }
@@ -42,7 +42,7 @@
             <tr><td style="vertical-align: middle;">
             <a href="#join_form" id="join_pop" >&nbsp;&nbsp;FORGOT PASSWORD?</a></td>
                 <td align="right">
-            <span style="float: right"> <input type="submit" value="SIGNIN" class="submit_btn"/></span></td></tr></table>
+            <span style="float: right"> <input type="submit" value="SIGN IN" class="submit_btn"/></span></td></tr></table>
                                     <!--<input type="button" class="submit_btn"onclick="location.href='#close'" value="Cancel"/>--><!--<a class="submit_btn" href="#close">Cancel</a>-->
 
         <?php

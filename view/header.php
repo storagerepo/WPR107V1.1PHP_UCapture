@@ -82,7 +82,7 @@ if(isset($_POST['submit'])) {
 
                        <span class="invite_user"> <span style="color: #000000"> <?php echo "Hi! ".$_SESSION['user_id']."  " ;?></span>
                         &nbsp;   <a href="profile.php" id="login_pop" style="   font-size: 100%; " class="highlight1">MY ACCOUNT</a>
-                        <a  href="../services/logout.php" style="color:#666666;">/Logout</a></span><span class="break_height"> <br/><br/><br/></span>
+                        <a  href="../services/logout.php" style="color:#666666;">/SIGN OUT</a></span><span class="break_height"> <br/><br/><br/></span>
                     <?php
                     }
                     ?>
